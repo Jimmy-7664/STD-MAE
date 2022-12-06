@@ -1,40 +1,4 @@
-# <div align="center"> BasicTS: A Time Series Benchmark and Toolkit </div>
 
-<div align="center">
-
-[![EasyTorch](https://img.shields.io/badge/Developing%20with-EasyTorch-2077ff.svg)](https://github.com/cnstark/easytorch)
-[![LICENSE](https://img.shields.io/github/license/zezhishao/BasicTS.svg)](https://github.com/zezhishao/BasicTS/blob/master/LICENSE)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10.0-orange)](https://pytorch.org/)
-[![python lint](https://github.com/zezhishao/BasicTS/actions/workflows/pylint.yml/badge.svg)](https://github.com/zezhishao/BasicTS/blob/master/.github/workflows/pylint.yml)
-
-</div>
-
-BasicTS (**Basic** **T**ime **S**eries) is a PyTorch-based benchmark and toolbox for **time series forecasting** (TSF).
-
-On the one hand, BasicTS utilizes a ***unified and standard pipeline*** to give a fair and exhaustive reproduction and comparison of popular deep learning-based TSF models based on rich datasets. BasicTS now has a wealth of methods built-in and provides the results of their comparison.
-
-On the other hand, BasicTS provides users with ***easy-to-use and extensible interfaces*** to facilitate the quick design and evaluation of new models. At a minimum, users only need to define the model architecture, and all other details can be configured in a configuration file.
-
-## ✨ Highlighted Features
-
-BasicTS is developed based on [EasyTorch](https://github.com/cnstark/easytorch)[1], an easy-to-use and powerful open-source neural network training framework.
-Thanks to EasyTorch, BasicTS has the following highlighted features:
-
-### 😼 Fair Performance Review
-
-- 🛡**Rich Datasets**. BasicTS supports rich datasets to perform an exhaustive evaluation of a given model based on a unified pipeline. More datasets will be added in the future.
-
-- ⚔️**Rich Baselines**. BasicTS has a wealth of built-in methods, such as Spatial-Temporal Graph Neural Network-based (STGNN) methods and Transformer-based methods (under construction👷).
-
-### 👨‍💻 Developing with BasicTS
-
-- 🔧**Everything Based on Config**. Users can control all the details of the pipeline through a config file, such as the hyperparameter of dataloaders, optimization, and other tricks (*e.g.*, curriculum learning). 
-
-- 💻**Minimum Code**. Users only need to implement key codes such as model architecture and data pre/post-processing to build their own deep learning projects.
-
-- 📃**Save Training Log**. Support `logging` log system and `Tensorboard`, and encapsulate it as a unified interface, users can save customized training logs by calling simple interfaces.
-
-- 🔦**Support All Devices**. BasicTS supports CPU, GPU and GPU distributed training (both single node multiple GPUs and multiple nodes) thanks to using EasyTorch as the backend. Users can use it by setting parameters without modifying any code.
 
 ## 💿 Dependencies
 
@@ -50,15 +14,6 @@ Python >= 3.6 (recommended >= 3.9).
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/) are recommended to create a virtual python environment.
 
 ### Other Dependencies
-
-BasicTS is built based on PyTorch and [EasyTorch](https://github.com/cnstark/easytorch).
-You can install PyTorch following the instruction in [PyTorch](https://pytorch.org/get-started/locally/). For example:
-
-```bash
-pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
-```
-
-After ensuring that PyTorch is installed correctly, you can install other dependencies via:
 
 ```bash
 pip install -r requirements.txt
@@ -145,20 +100,10 @@ Replace `${DATASET_NAME}` and `${MODEL_NAME}` with any supported models and data
 python examples/run.py -c examples/GWNet/GWNet_METR-LA.py --gpus '0'
 ```
 
-### Customized Your Own Model
 
-- [Multi-Layer Perceptron (MLP)](examples/MLP)
-- More...
 
 ## 📉 Main Results
 
 ![Main results.](results/results.png)
 
-## 🔗 Acknowledgement
 
-BasicTS is developed based on [EasyTorch](https://github.com/cnstark/easytorch)[1], an easy-to-use and powerful open-source neural network training framework.
-
-## 📜 References
-
-- [1] Yuhao Wang. EasyTorch. <https://github.com/cnstark/easytorch>, 2020.
-- [2] Wu Z, Pan S, Long G, et al. Graph WaveNet for Deep Spatial-Temporal Graph Modeling[C]//The 28th International Joint Conference on Artificial Intelligence (IJCAI). International Joint Conferences on Artificial Intelligence Organization, 2019.
