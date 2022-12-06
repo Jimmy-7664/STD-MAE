@@ -33,13 +33,13 @@ BasicTS is built on PyTorch 1.9.1 or 1.10.0, while other versions have not been 
 
 you can pre-process all datasets by.
 
-    ```bash
+    ```
     cd /path/to/your/project
     bash scripts/data_preparation/all.sh
     ```
 
 or  pre-process one dataset by
-    ```bash
+    ```
     cd /path/to/your/project
     python scripts/data_preparation/${DATASET_NAME}/generate_training_data.py
     ```
