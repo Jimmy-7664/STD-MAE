@@ -30,7 +30,7 @@ BasicTS is built on PyTorch 1.9.1 or 1.10.0, while other versions have not been 
 
 
 - **Pre-process Data**
-- 
+
 you can pre-process all datasets by.
 
     ```bash
@@ -39,7 +39,7 @@ you can pre-process all datasets by.
     ```
 
 or  pre-process one dataset by
-    ```
+    ```bash
     cd /path/to/your/project
     python scripts/data_preparation/${DATASET_NAME}/generate_training_data.py
     ```
