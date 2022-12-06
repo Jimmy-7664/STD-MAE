@@ -69,6 +69,7 @@ python examples/run.py -c examples/GWNet/GWNet_PEMS08.py --gpus '0'
 
 ```
 See the directory \checkpoints\GWNet200 to see all results
+To find the best model in val, you can search "best_" in the training log file.
 ```
 
 ## 📉  Results table
