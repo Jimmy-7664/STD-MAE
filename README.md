@@ -24,7 +24,7 @@ pip install -r requirements.txt
 BasicTS is built on PyTorch 1.9.1 or 1.10.0, while other versions have not been tested.
 
 
-## 🎯 Getting Started of Developing with BasicTS
+## Getting started
 
 ### Preparing Data
 
@@ -33,19 +33,27 @@ BasicTS is built on PyTorch 1.9.1 or 1.10.0, while other versions have not been 
 
 you can pre-process all datasets by.
 
-    ```
+    
     cd /path/to/your/project
     bash scripts/data_preparation/all.sh
-    ```
+    
 
 or  pre-process one dataset by
-    ```
+
+    
     cd /path/to/your/project
     python scripts/data_preparation/${DATASET_NAME}/generate_training_data.py
-    ```
-    Replace `${DATASET_NAME}` with one of `METR-LA`, `PEMS-BAY`, `PEMS03`, `PEMS04`, `PEMS07`, `PEMS08`, or any other supported dataset. The processed data will be placed in `datasets/${DATASET_NAME}`.
+    
+    
+Replace `${DATASET_NAME}` with one of `METR-LA`, `PEMS-BAY`, `PEMS03`, `PEMS04`, `PEMS07`, `PEMS08`, or any other supported dataset. The processed data will be placed in `datasets/${DATASET_NAME}`.
 
 
+### Model definition
+
+GWN model is in the directory
+```
+basicts\archs\arch_zoo\gwnet_arch\
+```
 
 ### Run GWN
 
