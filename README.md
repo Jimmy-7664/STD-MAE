@@ -45,7 +45,7 @@ or  pre-process one dataset by
     python scripts/data_preparation/${DATASET_NAME}/generate_training_data.py
     
     
-Replace `${DATASET_NAME}` with one of `METR-LA`, `PEMS-BAY`, `PEMS03`, `PEMS04`, `PEMS07`, `PEMS08`, or any other supported dataset. The processed data will be placed in `datasets/${DATASET_NAME}`.
+Replace `${DATASET_NAME}` with one of  `PEMS03`, `PEMS04`, `PEMS07`, `PEMS08`, or any other supported dataset. The processed data will be placed in `datasets/${DATASET_NAME}`.
 
 
 ### Model definition
