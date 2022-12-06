@@ -65,9 +65,13 @@ python examples/run.py -c examples/GWNet/GWNet_PEMS08.py --gpus '0'
 
 ```
 
+### Results
 
+```
+See the directory \checkpoints\GWNet200 to see all results
+```
 
-## 📉 Main Results
+## 📉  Results table
 
 ![Main results.](results/results.png)
 
