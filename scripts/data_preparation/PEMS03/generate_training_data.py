@@ -44,9 +44,12 @@ def generate_data(args: argparse.Namespace):
 
     l, n, f = data.shape
     num_samples = l - (history_seq_len + future_seq_len) + 1
-    train_num_short = round(num_samples * train_ratio)
-    valid_num_short = round(num_samples * valid_ratio)
-    test_num_short = num_samples - train_num_short - valid_num_short
+    test_num_short = 5237
+    valid_num_short = 5237
+    train_num_short = num_samples - valid_num_short - test_num_short
+    #train_num_short = round(num_samples * train_ratio)
+    #valid_num_short = round(num_samples * valid_ratio)
+    #test_num_short = num_samples - train_num_short - valid_num_short
     print("number of training samples:{0}".format(train_num_short))
     print("number of validation samples:{0}".format(valid_num_short))
     print("number of test samples:{0}".format(test_num_short))
@@ -153,11 +156,6 @@ if __name__ == "__main__":
         print("|{0:>20} = {1:<45}|".format(key, str(value)))
     print("-"*(20+45+5))
 
-    if os.path.exists(args_metr.output_dir):
-        reply = str(input(
-            f"{args_metr.output_dir} exists. Do you want to overwrite it? (y/n)")).lower().strip()
-        if reply[0] != "y":
-            sys.exit(0)
-    else:
+    if not os.path.exists(args_metr.output_dir):
         os.makedirs(args_metr.output_dir)
     generate_data(args_metr)

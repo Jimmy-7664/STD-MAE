@@ -1,0 +1,88 @@
+DESCRIPTION: Graph WaveNet model configuration
+RUNNER: <class 'basicts.runners.runner_zoo.simple_tsf_runner.SimpleTimeSeriesForecastingRunner'>
+DATASET_CLS: <class 'basicts.data.dataset.TimeSeriesForecastingDataset'>
+DATASET_NAME: PEMS07
+DATASET_TYPE: Traffic flow
+DATASET_INPUT_LEN: 12
+DATASET_OUTPUT_LEN: 12
+GPU_NUM: 1
+ENV:
+  SEED: 1
+  CUDNN:
+    ENABLED: True
+MODEL:
+  NAME: GraphWaveNet
+  ARCH: <class 'basicts.archs.arch_zoo.gwnet_arch.gwnet_arch.GraphWaveNet'>
+  PARAM:
+    num_nodes: 883
+    supports: [tensor([[0.0000, 0.0000, 0.5000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.5000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]]), tensor([[0.0000, 0.0000, 0.5000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.5000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]])]
+    dropout: 0.3
+    gcn_bool: True
+    addaptadj: True
+    aptinit: None
+    in_dim: 2
+    out_dim: 12
+    residual_channels: 32
+    dilation_channels: 32
+    skip_channels: 256
+    end_channels: 512
+    kernel_size: 2
+    blocks: 4
+    layers: 2
+  FORWARD_FEATURES: [0, 1]
+  TARGET_FEATURES: [0]
+TRAIN:
+  LOSS: masked_mae
+  OPTIM:
+    TYPE: Adam
+    PARAM:
+      lr: 0.002
+      weight_decay: 0.0001
+  LR_SCHEDULER:
+    TYPE: MultiStepLR
+    PARAM:
+      milestones: [1, 50, 100]
+      gamma: 0.5
+  CLIP_GRAD_PARAM:
+    max_norm: 5.0
+  NUM_EPOCHS: 200
+  CKPT_SAVE_DIR: checkpoints/GraphWaveNet_200
+  DATA:
+    DIR: datasets/PEMS07
+    BATCH_SIZE: 64
+    PREFETCH: False
+    SHUFFLE: True
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+  NULL_VAL: 0.0
+VAL:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/PEMS07
+    BATCH_SIZE: 64
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+TEST:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/PEMS07
+    BATCH_SIZE: 64
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: False
+MD5: ec9d3edd4376a8fac0538f180663936f
