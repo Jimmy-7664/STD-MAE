@@ -38,7 +38,7 @@ adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME +
                      "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "num_nodes": 307,
-    "supports": [torch.tensor(i) for i in adj_mx],
+    "supports": None,
     "dropout": 0.3,
     "gcn_bool": True,
     "addaptadj": True,
@@ -53,7 +53,7 @@ CFG.MODEL.PARAM = {
     "blocks": 4,
     "layers": 2
 }
-CFG.MODEL.FORWARD_FEATURES = [0, 1]
+CFG.MODEL.FORWARD_FEATURES = [0]
 CFG.MODEL.TARGET_FEATURES = [0]
 
 # ================= optim ================= #
@@ -62,20 +62,12 @@ CFG.TRAIN.LOSS = masked_mae
 CFG.TRAIN.OPTIM = EasyDict()
 CFG.TRAIN.OPTIM.TYPE = "Adam"
 CFG.TRAIN.OPTIM.PARAM = {
-    "lr": 0.002,
-    "weight_decay": 0.0001,
-}
-CFG.TRAIN.LR_SCHEDULER = EasyDict()
-CFG.TRAIN.LR_SCHEDULER.TYPE = "MultiStepLR"
-CFG.TRAIN.LR_SCHEDULER.PARAM = {
-    "milestones": [1, 50, 100],
-    "gamma": 0.5
+    "lr": 0.001,
 }
 
+
 # ================= train ================= #
-CFG.TRAIN.CLIP_GRAD_PARAM = {
-    "max_norm": 5.0
-}
+
 CFG.TRAIN.NUM_EPOCHS = 200
 CFG.TRAIN.CKPT_SAVE_DIR = os.path.join(
     "checkpoints",
@@ -87,7 +79,7 @@ CFG.TRAIN.NULL_VAL = 0.0
 # read data
 CFG.TRAIN.DATA.DIR = "datasets/" + CFG.DATASET_NAME
 # dataloader args, optional
-CFG.TRAIN.DATA.BATCH_SIZE = 32
+CFG.TRAIN.DATA.BATCH_SIZE = 64
 CFG.TRAIN.DATA.PREFETCH = False
 CFG.TRAIN.DATA.SHUFFLE = True
 CFG.TRAIN.DATA.NUM_WORKERS = 2
