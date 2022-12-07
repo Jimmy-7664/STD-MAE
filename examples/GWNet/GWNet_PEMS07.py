@@ -43,7 +43,7 @@ CFG.MODEL.PARAM = {
     "gcn_bool": True,
     "addaptadj": True,
     "aptinit": None,
-    "in_dim": 2,
+    "in_dim": 1,
     "out_dim": 12,
     "residual_channels": 32,
     "dilation_channels": 32,
