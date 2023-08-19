@@ -91,9 +91,13 @@ screen -d -m python stmask/run.py --cfg='stmask/SMask_PEMS08.py' --gpus='0'
 After pre-training , copy your pre-trained best checkpoint to `mask_save/`.
 For example:
 
+
+
 ```bash
-cp checkpoints/TMask_200/5afe80b3e7a3dc055158bcfe99afbd7f/TMask_200_best_val_MAE.pt tsformer_ckpt/TSFormer_$DATASET_NAME.pt
+cp checkpoints/TMask_200/064b0e96c042028c0ec44856f9511e4c/TMask_best_val_MAE.pt mask_save/TMask_PEMS04.pt
 ```
+
+Then run the predictor as :
 
 ```
 screen -d -m python stmask/run.py --cfg='stmask/STMask_PEMS04.py' --gpus='0' 

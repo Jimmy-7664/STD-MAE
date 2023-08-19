@@ -94,7 +94,7 @@ class Mask(nn.Module):
                 unmasked_token_index, masked_token_index = Maskg.uniform_rand()
                 encoder_input = patches[:, unmasked_token_index, :, :]
                 encoder_input=encoder_input.transpose(-2,-3)
-                print(encoder_input.shape)
+                #print(encoder_input.shape)
                 hidden_states_unmasked = self.encoder(encoder_input)
                 hidden_states_unmasked = self.encoder_norm(hidden_states_unmasked).view(batch_size,num_time, -1, self.embed_dim)
 
@@ -108,7 +108,7 @@ class Mask(nn.Module):
                 Maskg=MaskGenerator(patches.shape[2], self.mask_ratio)
                 unmasked_token_index, masked_token_index = Maskg.uniform_rand()
                 encoder_input = patches[:, :, unmasked_token_index, :]
-                print(encoder_input.shape)
+                #print(encoder_input.shape)
                 hidden_states_unmasked = self.encoder(encoder_input)
                 hidden_states_unmasked = self.encoder_norm(hidden_states_unmasked).view(batch_size, num_nodes, -1, self.embed_dim)
 
