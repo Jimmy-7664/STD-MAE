@@ -1,5 +1,7 @@
 
 
+# <div align="center"> **Spatio-Temporal Masked Pre-training for Traffic Forecasting** </div>
+
 * We implement our code based on [STEP](https://github.com/zezhishao/STEP/tree/github ) and  [BasicTS](https://github.com/zezhishao/BasicTS/tree/master).
 
 ## 💿 Dependencies
@@ -56,30 +58,54 @@ datasets
    ├─README.md
 ```
 
-
-### Model definition
-
-GWN model is in the directory
-```
-basicts\archs\arch_zoo\gwnet_arch\
-```
-
-### Run GWN
+### Pre-training on S-Mask and T-Mask
 
 ```
-python examples/run.py -c examples/GWNet/GWNet_PEMS03.py --gpus '0'
-python examples/run.py -c examples/GWNet/GWNet_PEMS04.py --gpus '0'
-python examples/run.py -c examples/GWNet/GWNet_PEMS07.py --gpus '0'
-python examples/run.py -c examples/GWNet/GWNet_PEMS08.py --gpus '0'
-
+cd /path/to/your/project
 ```
 
-### Results
+Then run the folloing command to run in Linux screen.
 
 ```
-See the directory \checkpoints\GWNet200 to see all results
-To find the best model in val, you can search "best_" in the training log file.
+screen -d -m python stmask/run.py --cfg='stmask/TMask_PEMS03.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/TMask_PEMS04.py' --gpus='0'
+
+screen -d -m python stmask/run.py --cfg='stmask/TMask_PEMS07.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/TMask_PEMS08.py' --gpus='0'
+
+screen -d -m python stmask/run.py --cfg='stmask/SMask_PEMS03.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/SMask_PEMS04.py' --gpus='0'
+
+screen -d -m python stmask/run.py --cfg='stmask/SMask_PEMS07.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/SMask_PEMS08.py' --gpus='0'
 ```
+
+
+
+### Downstream Predictor
+
+After pre-training , copy your pre-trained best checkpoint to `mask_save/`.
+For example:
+
+```bash
+cp checkpoints/TMask_200/5afe80b3e7a3dc055158bcfe99afbd7f/TMask_200_best_val_MAE.pt tsformer_ckpt/TSFormer_$DATASET_NAME.pt
+```
+
+```
+screen -d -m python stmask/run.py --cfg='stmask/STMask_PEMS04.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/STMask_PEMS03.py' --gpus='0' 
+
+screen -d -m python stmask/run.py --cfg='stmask/STMask_PEMS08.py' --gpus='0'
+
+screen -d -m python stmask/run.py --cfg='stmask/STMask_PEMS07.py' --gpus='0' 
+```
+
+
 
 ## 📉  Results table
 
