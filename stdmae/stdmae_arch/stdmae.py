@@ -5,7 +5,7 @@ from .mask import Mask
 from .graphwavenet import GraphWaveNet
 
 
-class STMask(nn.Module):
+class STDMAE(nn.Module):
     """Pre-training Enhanced Spatial-temporal Graph Neural Network for Multivariate Time Series Forecasting"""
 
     def __init__(self, dataset_name, pre_trained_tmask_path,pre_trained_smask_path, mask_args, backend_args):
