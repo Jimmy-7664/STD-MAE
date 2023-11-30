@@ -44,8 +44,7 @@ class Mask(nn.Module):
         self.patch_embedding = PatchEmbedding(patch_size, in_channel, embed_dim, norm_layer=None)
         # # positional encoding
         self.positional_encoding = PositionalEncoding()
-        # # masking
-        self.maskgenerator = MaskGenerator(num_token, mask_ratio)
+
         # encoder
         self.encoder = TransformerLayers(embed_dim, encoder_depth, mlp_ratio, num_heads, dropout)
 
@@ -63,12 +62,9 @@ class Mask(nn.Module):
         self.initialize_weights()
 
     def initialize_weights(self):
-        # positional encoding
-        # nn.init.uniform_(self.positional_encoding.position_embedding, -.02, .02)
-        # mask token
         trunc_normal_(self.mask_token, std=.02)
 
-    def encoding(self, long_term_history, mask=True,spatial=True):
+    def encoding(self, long_term_history, mask=True):
         """
 
         Args:
@@ -133,7 +129,7 @@ class Mask(nn.Module):
 
         return hidden_states_unmasked,  unmasked_token_index, masked_token_index
 
-    def decoding(self, hidden_states_unmasked, masked_token_index,spatial=True):
+    def decoding(self, hidden_states_unmasked, masked_token_index):
 
         # encoder 2 decoder layer
         hidden_states_unmasked = self.enc_2_dec_emb(hidden_states_unmasked)# B, N, P, d/# B,P, N,  d
@@ -154,7 +150,7 @@ class Mask(nn.Module):
             hidden_states_full = self.decoder_norm(hidden_states_full)# B, P, N, d
             # prediction (reconstruction)
             reconstruction_full = self.output_layer(hidden_states_full.view(batch_size,num_time, -1,  self.embed_dim))# B, P, N, L
-        if not self.spatial:
+        else:
             batch_size, num_nodes, num_time, _ = hidden_states_unmasked.shape
             unmasked_token_index=[i for i in range(0,len(masked_token_index)+num_time) if i not in masked_token_index ]
             hidden_states_masked = self.pos_mat[:,:,masked_token_index,:]
@@ -172,7 +168,7 @@ class Mask(nn.Module):
         return reconstruction_full
 
     def get_reconstructed_masked_tokens(self, reconstruction_full, real_value_full, unmasked_token_index,
-                                        masked_token_index,spatial=True):
+                                        masked_token_index):
         """Get reconstructed masked tokens and corresponding ground-truth for subsequent loss computing.
 
         Args:
@@ -186,7 +182,7 @@ class Mask(nn.Module):
             torch.Tensor: ground truth masked tokens.
         """
         # get reconstructed masked tokens
-        if spatial:
+        if self.spatial:
             batch_size,  num_time,num_nodes, _ = reconstruction_full.shape# B, P, N, L
             reconstruction_masked_tokens = reconstruction_full[:, :, len(unmasked_token_index):, :]     # B, P, r*N, L
             reconstruction_masked_tokens = reconstruction_masked_tokens.view(batch_size, num_time, -1)     # B, P, r*N*L
@@ -196,7 +192,7 @@ class Mask(nn.Module):
             label_masked_tokens = label_masked_tokens.view(batch_size,  num_time,-1)  # B, P, r*N*L
     
             return reconstruction_masked_tokens, label_masked_tokens
-        if not spatial:
+        else:
             batch_size, num_nodes, num_time, _ = reconstruction_full.shape
 
             reconstruction_masked_tokens = reconstruction_full[:, :, len(unmasked_token_index):, :]     # B, N, r*P, d
@@ -215,9 +211,9 @@ class Mask(nn.Module):
         # feed forward
         if self.mode == "pre-train":
             # encoding
-            hidden_states_unmasked, unmasked_token_index, masked_token_index = self.encoding(history_data,spatial=self.spatial)
+            hidden_states_unmasked, unmasked_token_index, masked_token_index = self.encoding(history_data)
             # decoding
-            reconstruction_full = self.decoding(hidden_states_unmasked, masked_token_index,spatial=self.spatial)
+            reconstruction_full = self.decoding(hidden_states_unmasked, masked_token_index)
             # for subsequent loss computing
             reconstruction_masked_tokens, label_masked_tokens = self.get_reconstructed_masked_tokens(reconstruction_full, history_data, unmasked_token_index, masked_token_index,spatial=self.spatial)
 

@@ -1,17 +1,17 @@
 import os
 import sys
+import random
 
-### T-mask-GWN
 # TODO: remove it when basicts can be installed by pip
 sys.path.append(os.path.abspath(__file__ + "/../../.."))
 import torch
 from easydict import EasyDict
 from basicts.utils.serialization import load_adj
 
-from .step_arch import STEP
-from .step_runner import STEPRunner
-from .step_loss import step_loss
-from .step_data import ForecastingDataset
+from .stdmae_arch import STDMAE
+from .stdmae_runner import STDMAERunner
+
+from .stdmae_data import ForecastingDataset
 from basicts.data import TimeSeriesForecastingDataset
 from basicts.losses import masked_mae
 from basicts.utils import load_adj
@@ -19,48 +19,48 @@ from basicts.utils import load_adj
 CFG = EasyDict()
 
 # ================= general ================= #
-CFG.DESCRIPTION = "STEP(PEMS08) configuration"
-CFG.RUNNER = STEPRunner
+CFG.DESCRIPTION = "STDMAE(PEMS07) configuration"
+CFG.RUNNER = STDMAERunner
 CFG.DATASET_CLS = ForecastingDataset
-CFG.DATASET_NAME = "PEMS08"
+CFG.DATASET_NAME = "PEMS07"
 CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 12
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
-    "seq_len": 288*7*2
+    "seq_len": 288*3
     }
-CFG.GPU_NUM = 4
+CFG.GPU_NUM = 2
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()
-CFG.ENV.SEED = 0
+CFG.ENV.SEED =  random.randint(0,10000000)
 CFG.ENV.CUDNN = EasyDict()
 CFG.ENV.CUDNN.ENABLED = True
 
 # ================= model ================= #
 CFG.MODEL = EasyDict()
-CFG.MODEL.NAME = "STEP"
-CFG.MODEL.ARCH = STEP
+CFG.MODEL.NAME = "STDMAE"
+CFG.MODEL.ARCH = STDMAE
 adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME + "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "dataset_name": CFG.DATASET_NAME,
-    "pre_trained_ttsformer_path": "tsformer_ckpt/TSFormer_PEMS08.pt",
-    "pre_trained_stsformer_path": "tsformer_ckpt/TSFormer_PEMS082.pt",
-    "tsformer_args": {
+    "pre_trained_tmae_path": "mask_save/TMAE_PEMS07_864.pt",
+    "pre_trained_smae_path": "mask_save/SMAE_PEMS07_864.pt",
+    "mask_args": {
                     "patch_size":12,
                     "in_channel":1,
                     "embed_dim":96,
                     "num_heads":4,
                     "mlp_ratio":4,
                     "dropout":0.1,
-                    "num_token":288*7*2/12                ,
-                    "mask_ratio":0.75,
+                    "num_token":288*3/12                ,
+                    "mask_ratio":0.25,
                     "encoder_depth":4,
                     "decoder_depth":1,
                     "mode":"forecasting"
     },
     "backend_args": {
-    "num_nodes": 170,
+    "num_nodes": 883,
     "supports": [torch.tensor(i) for i in adj_mx],
     "dropout": 0.3,
     "gcn_bool": True,
@@ -75,15 +75,9 @@ CFG.MODEL.PARAM = {
     "kernel_size": 2,
     "blocks": 4,
     "layers": 2
-    },
-    "dgl_args": {
-                "dataset_name": CFG.DATASET_NAME,
-                "k": 10,
-                "input_seq_len": CFG.DATASET_INPUT_LEN,
-                "output_seq_len": CFG.DATASET_OUTPUT_LEN
     }
 }
-CFG.MODEL.FROWARD_FEATURES = [0, 1, 2]
+CFG.MODEL.FROWARD_FEATURES = [0,1]
 CFG.MODEL.TARGET_FEATURES = [0]
 CFG.MODEL.DDP_FIND_UNUSED_PARAMETERS = True
 
@@ -120,17 +114,15 @@ CFG.TRAIN.NULL_VAL = 0.0
 # read data
 CFG.TRAIN.DATA.DIR = "datasets/" + CFG.DATASET_NAME
 # dataloader args, optional
-CFG.TRAIN.DATA.BATCH_SIZE = 8
+CFG.TRAIN.DATA.BATCH_SIZE = 4
 CFG.TRAIN.DATA.PREFETCH = False
 CFG.TRAIN.DATA.SHUFFLE = True
-CFG.TRAIN.DATA.NUM_WORKERS = 2
+CFG.TRAIN.DATA.NUM_WORKERS = 9
 CFG.TRAIN.DATA.PIN_MEMORY = True
-# curriculum learning
 CFG.TRAIN.CL = EasyDict()
 CFG.TRAIN.CL.WARM_EPOCHS = 0
 CFG.TRAIN.CL.CL_EPOCHS = 6
 CFG.TRAIN.CL.PREDICTION_LENGTH = 12
-
 # ================= validate ================= #
 CFG.VAL = EasyDict()
 CFG.VAL.INTERVAL = 1
@@ -142,7 +134,7 @@ CFG.VAL.DATA.DIR = "datasets/" + CFG.DATASET_NAME
 CFG.VAL.DATA.BATCH_SIZE = 8
 CFG.VAL.DATA.PREFETCH = False
 CFG.VAL.DATA.SHUFFLE = False
-CFG.VAL.DATA.NUM_WORKERS = 2
+CFG.VAL.DATA.NUM_WORKERS = 9
 CFG.VAL.DATA.PIN_MEMORY = True
 
 # ================= test ================= #
@@ -157,5 +149,5 @@ CFG.TEST.DATA.DIR = "datasets/" + CFG.DATASET_NAME
 CFG.TEST.DATA.BATCH_SIZE = 8
 CFG.TEST.DATA.PREFETCH = False
 CFG.TEST.DATA.SHUFFLE = False
-CFG.TEST.DATA.NUM_WORKERS = 2
+CFG.TEST.DATA.NUM_WORKERS = 9
 CFG.TEST.DATA.PIN_MEMORY = True
