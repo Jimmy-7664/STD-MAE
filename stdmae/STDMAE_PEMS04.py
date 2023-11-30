@@ -1,50 +1,51 @@
 import os
 import sys
+import random
 
-### T-mask-GWN
 # TODO: remove it when basicts can be installed by pip
 sys.path.append(os.path.abspath(__file__ + "/../../.."))
 import torch
 from easydict import EasyDict
 from basicts.utils.serialization import load_adj
 
-from .stmask_arch import STMask
-from .stmask_runner import STMaskRunner
+from .stdmae_arch import STDMAE
+from .stdmae_runner import STDMAERunner
 
-from .stmask_data import ForecastingDataset
+from .stdmae_data import ForecastingDataset
 from basicts.data import TimeSeriesForecastingDataset
 from basicts.losses import masked_mae
 from basicts.utils import load_adj
+
 CFG = EasyDict()
 
 # ================= general ================= #
-CFG.DESCRIPTION = "STMask(PEMS04) configuration"
-CFG.RUNNER = STMaskRunner
+CFG.DESCRIPTION = "STDMAE(PEMS04) configuration"
+CFG.RUNNER = STDMAERunner
 CFG.DATASET_CLS = ForecastingDataset
 CFG.DATASET_NAME = "PEMS04"
 CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 12
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
-    "seq_len": 288*7
+    "seq_len": 288*3
     }
-CFG.GPU_NUM = 1
+CFG.GPU_NUM = 2
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()
-CFG.ENV.SEED = 0
+CFG.ENV.SEED =  random.randint(0,10000000)
 CFG.ENV.CUDNN = EasyDict()
 CFG.ENV.CUDNN.ENABLED = True
 
 # ================= model ================= #
 CFG.MODEL = EasyDict()
-CFG.MODEL.NAME = "STMask"
-CFG.MODEL.ARCH = STMask
+CFG.MODEL.NAME = "STDMAE"
+CFG.MODEL.ARCH = STDMAE
 adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME + "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "dataset_name": CFG.DATASET_NAME,
-    "pre_trained_tmask_path": "mask_save/TMask_PEMS04.pt",
-    "pre_trained_smask_path": "mask_save/SMask_PEMS04.pt",
+    "pre_trained_tmae_path": "mask_save/TMAE_PEMS04_864.pt",
+    "pre_trained_smae_path": "mask_save/SMAE_PEMS04_864.pt",
     "mask_args": {
                     "patch_size":12,
                     "in_channel":1,
@@ -52,8 +53,8 @@ CFG.MODEL.PARAM = {
                     "num_heads":4,
                     "mlp_ratio":4,
                     "dropout":0.1,
-                    "num_token":288*7/12                ,
-                    "mask_ratio":0.75,
+                    "num_token":288*3/12                ,
+                    "mask_ratio":0.25,
                     "encoder_depth":4,
                     "decoder_depth":1,
                     "mode":"forecasting"
