@@ -94,7 +94,7 @@ For example:
 
 
 ```bash
-cp checkpoints/TMAE_200/064b0e96c042028c0ec44856f9511e4c/TMAE_best_val_MAE.pt MAE_save/TMAE_PEMS04.pt
+cp checkpoints/TMAE_200/064b0e96c042028c0ec44856f9511e4c/TMAE_best_val_MAE.pt MAE_save/TMAE_PEMS04_864.pt
 ```
 
 Then run the predictor as :
