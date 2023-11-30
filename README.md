@@ -88,13 +88,13 @@ screen -d -m python stdmae/run.py --cfg='stdmae/SMAE_PEMS08.py' --gpus='0'
 
 ### Downstream Predictor
 
-After pre-training , copy your pre-trained best checkpoint to `Mask_save/`.
+After pre-training , copy your pre-trained best checkpoint to `mask_save/`.
 For example:
 
 
 
 ```bash
-cp checkpoints/TMAE_200/064b0e96c042028c0ec44856f9511e4c/TMAE_best_val_MAE.pt MAE_save/TMAE_PEMS04_864.pt
+cp checkpoints/TMAE_200/064b0e96c042028c0ec44856f9511e4c/TMAE_best_val_MAE.pt mask_save/TMAE_PEMS04_864.pt
 ```
 
 Then run the predictor as :
