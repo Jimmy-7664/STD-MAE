@@ -1,37 +1,38 @@
 import os
 import sys
+import random
 
 # TODO: remove it when basicts can be installed by pip
 sys.path.append(os.path.abspath(__file__ + "/../../.."))
 from easydict import EasyDict
 from basicts.losses import masked_mae
 
-from .stmask_arch import Mask
-from .stmask_runner import MaskRunner
-from .stmask_data import PretrainingDataset
+from .stdmae_arch import Mask
+from .stdmae_runner import MaskRunner
+from .stdmae_data import PretrainingDataset
 os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
 CFG = EasyDict()
 
 # ================= general ================= #
-CFG.DESCRIPTION = "TMask(PEMS08) configuration"
+CFG.DESCRIPTION = "TMAE(PEMS08) configuration"
 CFG.RUNNER = MaskRunner
 CFG.DATASET_CLS = PretrainingDataset
 CFG.DATASET_NAME = "PEMS08"
 CFG.DATASET_TYPE = "Traffic flow"
-CFG.DATASET_INPUT_LEN = 288*7*2
+CFG.DATASET_INPUT_LEN = 288*7
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.GPU_NUM = 1
 BATCH_SIZE_ALL=4
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()
-CFG.ENV.SEED = 0
+CFG.ENV.SEED = random.randint(0,10000000)
 CFG.ENV.CUDNN = EasyDict()
 CFG.ENV.CUDNN.ENABLED = True
 
 # ================= model ================= #
 CFG.MODEL = EasyDict()
-CFG.MODEL.NAME = "TMask"
+CFG.MODEL.NAME = "TMAE"
 CFG.MODEL.ARCH = Mask
 CFG.MODEL.PARAM = {
     "patch_size":12,
