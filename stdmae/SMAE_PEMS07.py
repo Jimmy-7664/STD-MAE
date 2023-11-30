@@ -1,6 +1,6 @@
 import os
 import sys
-
+import random
 # TODO: remove it when basicts can be installed by pip
 sys.path.append(os.path.abspath(__file__ + "/../../.."))
 from easydict import EasyDict
@@ -21,7 +21,7 @@ CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 288*3
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.GPU_NUM = 1
-BATCH_SIZE_ALL=4
+BATCH_SIZE_ALL=2
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()

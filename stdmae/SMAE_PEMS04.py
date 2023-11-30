@@ -1,6 +1,6 @@
 import os
 import sys
-
+import random
 # TODO: remove it when basicts can be installed by pip
 sys.path.append(os.path.abspath(__file__ + "/../../.."))
 from easydict import EasyDict

@@ -215,7 +215,7 @@ class Mask(nn.Module):
             # decoding
             reconstruction_full = self.decoding(hidden_states_unmasked, masked_token_index)
             # for subsequent loss computing
-            reconstruction_masked_tokens, label_masked_tokens = self.get_reconstructed_masked_tokens(reconstruction_full, history_data, unmasked_token_index, masked_token_index,spatial=self.spatial)
+            reconstruction_masked_tokens, label_masked_tokens = self.get_reconstructed_masked_tokens(reconstruction_full, history_data, unmasked_token_index, masked_token_index)
 
             return reconstruction_masked_tokens, label_masked_tokens
         else:

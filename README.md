@@ -100,13 +100,13 @@ cp checkpoints/TMAE_200/064b0e96c042028c0ec44856f9511e4c/TMAE_best_val_MAE.pt MA
 Then run the predictor as :
 
 ```
-screen -d -m python stdmae/run.py --cfg='stdmae/stdmae_PEMS04.py' --gpus='0' 
+screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS04.py' --gpus='0' 
 
-screen -d -m python stdmae/run.py --cfg='stdmae/stdmae_PEMS03.py' --gpus='0' 
+screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS03.py' --gpus='0' 
 
-screen -d -m python stdmae/run.py --cfg='stdmae/stdmae_PEMS08.py' --gpus='0'
+screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS08.py' --gpus='0'
 
-screen -d -m python stdmae/run.py --cfg='stdmae/stdmae_PEMS07.py' --gpus='0' 
+screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS07.py' --gpus='0' 
 ```
 
 
