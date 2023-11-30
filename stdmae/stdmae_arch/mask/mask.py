@@ -20,14 +20,13 @@ def unshuffle(shuffled_tokens):
 
 class Mask(nn.Module):
 
-    def __init__(self, patch_size, in_channel, embed_dim, num_heads, mlp_ratio, dropout, num_token, mask_ratio, encoder_depth, decoder_depth,spatial=False, mode="pre-train"):
+    def __init__(self, patch_size, in_channel, embed_dim, num_heads, mlp_ratio, dropout,  mask_ratio, encoder_depth, decoder_depth,spatial=False, mode="pre-train"):
         super().__init__()
         assert mode in ["pre-train", "forecasting"], "Error mode."
         self.patch_size = patch_size
         self.in_channel = in_channel
         self.embed_dim = embed_dim
         self.num_heads = num_heads
-        self.num_token = num_token
         self.mask_ratio = mask_ratio
         self.encoder_depth = encoder_depth
         self.mode = mode
@@ -234,7 +233,6 @@ def main():
     num_heads=4,
     mlp_ratio=4,
     dropout=0.1,
-    num_token=288 * 7  / 12,
     mask_ratio=0.75,
     encoder_depth=4,
     decoder_depth=1,

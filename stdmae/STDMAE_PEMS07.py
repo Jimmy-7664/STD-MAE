@@ -29,7 +29,7 @@ CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
     "seq_len": 288*3
     }
-CFG.GPU_NUM = 2
+CFG.GPU_NUM = 1
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()
@@ -53,7 +53,6 @@ CFG.MODEL.PARAM = {
                     "num_heads":4,
                     "mlp_ratio":4,
                     "dropout":0.1,
-                    "num_token":288*3/12                ,
                     "mask_ratio":0.25,
                     "encoder_depth":4,
                     "decoder_depth":1,

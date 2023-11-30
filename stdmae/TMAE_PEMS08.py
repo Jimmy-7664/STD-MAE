@@ -41,7 +41,6 @@ CFG.MODEL.PARAM = {
     "num_heads":4,
     "mlp_ratio":4,
     "dropout":0.1,
-    "num_token":288*7*2 /12,
     "mask_ratio":0.25,
     "encoder_depth":4,
     "decoder_depth":1,
