@@ -9,7 +9,7 @@ from basicts import launch_training
 
 def parse_args():
     parser = ArgumentParser(description="Run time series forecasting model in BasicTS framework!")
-    parser.add_argument("-c", "--cfg", default="stmask/STMask_PEMS03.py", help="training config")
+    parser.add_argument("-c", "--cfg", default="stdmae/STDMAE_PEMS03.py", help="training config")
     parser.add_argument("--gpus", default="0", help="visible gpus")
     return parser.parse_args()
 
