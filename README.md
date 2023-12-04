@@ -1,6 +1,6 @@
 
 
-# <div align="center"> **Spatio-Temporal-Decoupled MAEed Pre-training for Traffic Forecasting** </div>
+# <div align="center"> **Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting** </div>
 
 ## 💿 Dependencies
 
