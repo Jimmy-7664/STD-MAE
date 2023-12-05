@@ -2,6 +2,9 @@
 
 # <div align="center"> **Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting** </div>
 
+#### Preprints
+[![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
+
 ## 💿 Dependencies
 
 ### OS
