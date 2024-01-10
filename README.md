@@ -1,6 +1,6 @@
 
 
-# <div align="center"> Spatio-Temporal-Decoupled Masked Pre-training: Benchmarked on Traffic Forecasting </div>
+# <div align="center"> Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting </div>
 
 #### Preprints
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
@@ -26,7 +26,7 @@ You can install PyTorch following the instruction in [PyTorch](https://pytorch.o
 
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/) are recommended to create a virtual python environment.
 
-We implement our code based on [BasicTS](https://github.com/zezhishao/BasicTS/tree/master) and [STEP](https://github.com/zezhishao/STEP/tree/github ).
+We implement our code based on [BasicTS](https://github.com/zezhishao/BasicTS/tree/master).
 
 ### Other Dependencies
 
