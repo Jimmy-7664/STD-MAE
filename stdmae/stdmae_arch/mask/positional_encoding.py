@@ -22,6 +22,6 @@ class PositionalEncoding(nn.Module):
         """
 
         batch_size, num_nodes, num_patches, num_feat = input_data.shape
-        tp_enc_2d = PositionalEncoding2D(num_feat).to(input_data.device)
+        tp_enc_2d = PositionalEncoding2D(num_feat)
         input_data+=tp_enc_2d(input_data)
         return input_data,tp_enc_2d(input_data)
