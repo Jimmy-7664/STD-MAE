@@ -7,7 +7,15 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 ![Framework](results/Framework.png)
 ## Preprint Link 
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
-
+## Citation
+```
+@article{gao2023spatio,
+  title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
+  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Song, Xuan},
+  journal={arXiv preprint arXiv:2312.00516},
+  year={2023}
+}
+```
 ## Performance on Spatiotemporal Forecasting Benchmarks
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pems04)](https://paperswithcode.com/sota/traffic-prediction-on-pems04?p=spatio-temporal-decoupled-masked-pre-training)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pems07)](https://paperswithcode.com/sota/traffic-prediction-on-pems07?p=spatio-temporal-decoupled-masked-pre-training)
@@ -18,15 +26,7 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 Metr-LA             |  PEMS-BAY
 :-------------------------:|:-------------------------:
 ![](results/performance_la.png)  |  ![](results/performance_bay.png)
-## Citation
-```
-@article{gao2023spatio,
-  title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
-  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Song, Xuan},
-  journal={arXiv preprint arXiv:2312.00516},
-  year={2023}
-}
-```
+
 ## 💿 Dependencies
 
 ### OS
