@@ -11,13 +11,14 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pemsd8)](https://paperswithcode.com/sota/traffic-prediction-on-pemsd8?p=spatio-temporal-decoupled-masked-pre-training)
 
 ## Citation
+```
 @article{gao2023spatio,
   title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
   author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Song, Xuan},
   journal={arXiv preprint arXiv:2312.00516},
   year={2023}
 }
-
+```
 ## 💿 Dependencies
 
 ### OS
