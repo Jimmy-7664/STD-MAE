@@ -142,4 +142,4 @@ screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS07.py' --gpus='0'
 
 
 ![Main results.](results/results.png)
-
+![More results.](results/performance_la_bay.png)
