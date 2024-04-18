@@ -142,5 +142,6 @@ screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS07.py' --gpus='0'
 
 
 ![Main results.](results/results.png)
-<figure class="half">
-    <img src="results/performance_la.png" width="100"> <img src="results/performance_bay.png" width="100"> </figure>
+Metr-LA             |  PEMS-BAY
+:-------------------------:|:-------------------------:
+![](results/performance_la.png)  |  ![](results/performance_bay.png
