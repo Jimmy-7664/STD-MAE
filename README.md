@@ -30,7 +30,6 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 Metr-LA             |  PEMS-BAY
 :-------------------------:|:-------------------------:
 ![](results/performance_la.png)  |  ![](results/performance_bay.png)
-* **Please note you can get a much better performance on PEMS07 dataset using pre-training length of 2016. But it is a time-cosuming operation.**
 
 ## 💿 Dependencies
 
@@ -144,9 +143,3 @@ screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS07.py' --gpus='0'
 * To find the best result in logs, you can search `best_` in the log files.
 
 
-
-## 📉  Results table
-
-
-
-![Main results.](results/results.png)
