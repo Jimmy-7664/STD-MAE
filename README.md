@@ -27,7 +27,7 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-metr-la)](https://paperswithcode.com/sota/traffic-prediction-on-metr-la?p=spatio-temporal-decoupled-masked-pre-training)
 ![Main results.](results/results.png)
 
-Metr-LA             |  PEMS-BAY
+METR-LA             |  PEMS-BAY
 :-------------------------:|:-------------------------:
 ![](results/performance_la.png)  |  ![](results/performance_bay.png)
 
