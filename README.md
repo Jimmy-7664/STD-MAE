@@ -24,9 +24,11 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pems-bay)](https://paperswithcode.com/sota/traffic-prediction-on-pems-bay?p=spatio-temporal-decoupled-masked-pre-training)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-metr-la)](https://paperswithcode.com/sota/traffic-prediction-on-metr-la?p=spatio-temporal-decoupled-masked-pre-training)
 ![Main results.](results/results.png)
+
 Metr-LA             |  PEMS-BAY
 :-------------------------:|:-------------------------:
 ![](results/performance_la.png)  |  ![](results/performance_bay.png)
+* **Please note you can get a much better performance on PEMS07 dataset using pre-training length of 2016. But it is a time-cosuming operation.**
 
 ## 💿 Dependencies
 
