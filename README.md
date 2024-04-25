@@ -22,7 +22,7 @@ Our work is already accepted by IJCAI2024 main track. The citation information w
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pems07)](https://paperswithcode.com/sota/traffic-prediction-on-pems07?p=spatio-temporal-decoupled-masked-pre-training)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pemsd8)](https://paperswithcode.com/sota/traffic-prediction-on-pemsd8?p=spatio-temporal-decoupled-masked-pre-training)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-pems-bay)](https://paperswithcode.com/sota/traffic-prediction-on-pems-bay?p=spatio-temporal-decoupled-masked-pre-training)
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spatio-temporal-decoupled-masked-pre-training/traffic-prediction-on-metr-la)](https://paperswithcode.com/sota/traffic-prediction-on-metr-la?p=spatio-temporal-decoupled-masked-pre-training)
 ![Main results.](results/results.png)
 Metr-LA             |  PEMS-BAY
 :-------------------------:|:-------------------------:
