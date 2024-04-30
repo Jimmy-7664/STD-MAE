@@ -2,7 +2,7 @@
 
 # <div align="center">[IJCAI-24] Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting </div>
 
-Our work is already accepted by IJCAI2024 main track. The citation information will be updated when the official IJCAI24 proceeding is online.
+**Our work is already accepted by IJCAI2024 main track. The citation information will be updated when the official IJCAI24 proceeding is online.**
 
 ![Framework](results/Framework.png)
 ## Preprint Link (All six datasets [PEMS03, 04, 07, 08, PEMS-BAY, and METR-LA] are included.)
