@@ -7,6 +7,8 @@
 ![Framework](results/Framework.png)
 ## Preprint Link (All six datasets [PEMS03, 04, 07, 08, PEMS-BAY, and METR-LA] are included.)
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
+## Google Scholar
+**Due to the modification of STD-MAE's title, you can simply search for "STD-MAE" in Google Scholar to get our article.**
 ## Citation
 ```
 @article{gao2023spatio,
