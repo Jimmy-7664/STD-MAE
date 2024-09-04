@@ -145,4 +145,5 @@ screen -d -m python stdmae/run.py --cfg='stdmae/STDMAE_PEMS07.py' --gpus='0'
 
 * To find the best result in logs, you can search `best_` in the log files.
 
-
+### IJCAI Poster
+![Poster](results/ijcai24-Poster-STD-MAE.png)
