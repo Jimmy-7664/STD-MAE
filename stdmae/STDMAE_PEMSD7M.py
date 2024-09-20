@@ -44,8 +44,8 @@ CFG.MODEL.ARCH = STDMAE
 adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME + "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "dataset_name": CFG.DATASET_NAME,
-    "pre_trained_tmae_path": "mask_save/TMAE_PEMSD7M_864.pt",
-    "pre_trained_smae_path": "mask_save/SMAE_PEMSD7M_864.pt",
+    "pre_trained_tmae_path": "mask_save/TMAE_PEMSD7M_2016.pt",
+    "pre_trained_smae_path": "mask_save/SMAE_PEMSD7M_2016.pt",
     "mask_args": {
                     "patch_size":12,
                     "in_channel":1,
