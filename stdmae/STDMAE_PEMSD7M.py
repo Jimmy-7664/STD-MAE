@@ -27,7 +27,7 @@ CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 12
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
-    "seq_len": 288*3
+    "seq_len": 288*7
     }
 CFG.GPU_NUM = 2
 
@@ -44,8 +44,8 @@ CFG.MODEL.ARCH = STDMAE
 adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME + "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "dataset_name": CFG.DATASET_NAME,
-    "pre_trained_tmae_path": "mask_save/TMAE_PEMSD7M_864.pt",
-    "pre_trained_smae_path": "mask_save/SMAE_PEMSD7M_864.pt",
+    "pre_trained_tmae_path": "mask_save/TMAE_PEMSD7M_2016.pt",
+    "pre_trained_smae_path": "mask_save/SMAE_PEMSD7M_2016.pt",
     "mask_args": {
                     "patch_size":12,
                     "in_channel":1,
