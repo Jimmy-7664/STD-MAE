@@ -27,7 +27,7 @@ CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 12
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
-    "seq_len": 288*3
+    "seq_len": 288*7
     }
 CFG.GPU_NUM = 2
 
