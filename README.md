@@ -7,17 +7,23 @@
 ![Framework](results/Framework.png)
 ## Preprint Link (All six datasets [PEMS03, 04, 07, 08, PEMS-BAY, and METR-LA] are included.)
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
+[![IJCAI link](https://img.shields.io/badge/IJCAI_Link-STD--MAE-blue)](https://www.ijcai.org/proceedings/2024/0442.pdf)
+
+
 ## Google Scholar
 **Due to the modification of STD-MAE's title, you can simply search for "STD-MAE" in Google Scholar to get our article.**
 ## Citation
-```
-@article{gao2023spatio,
-  title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
-  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Song, Xuan},
-  journal={arXiv preprint arXiv:2312.00516},
-  year={2023}
-}
-```
+> [!NOTE] 
+> If you find this repository useful for your research, please cite our work :)
+> ```LaTeX
+> @article{gao2023spatio,
+>   title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
+>   author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Song, Xuan},
+>   journal={arXiv preprint arXiv:2312.00516},
+>   year={2023}
+> }
+>  ```
+
 ## Performance on Spatiotemporal Forecasting Benchmarks
 * **Please note you can get a much better performance on PEMS07 dataset using pre-training length of 2016. But it is a time-cosuming operation.**
 
