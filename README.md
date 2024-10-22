@@ -2,7 +2,6 @@
 
 # <div align="center">[IJCAI-24] Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting </div>
 
-**Our work is already accepted by IJCAI2024 main track. The citation information will be updated when the official IJCAI24 proceeding is online.**
 
 ![Framework](results/Framework.png)
 ## Preprint Link (All six datasets [PEMS03, 04, 07, 08, PEMS-BAY, and METR-LA] are included.)
@@ -23,7 +22,16 @@
 >   year={2023}
 > }
 >  ```
-
+> 2024 Version
+> ```LaTeX
+>@article{gao2024spatial,
+>  title={Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting},
+>  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Ma, Yuxin and Song, Xuan},
+>  journal={arXiv preprint arXiv:2312.00516},
+>  year={2024},
+>  publisher={Apr}
+>}
+>  ```
 ## Performance on Spatiotemporal Forecasting Benchmarks
 * **Please note you can get a much better performance on PEMS07 dataset using pre-training length of 2016. But it is a time-cosuming operation.**
 
@@ -71,6 +79,7 @@ pip install -r requirements.txt
 
 
 ## Getting started
+STD-MAE has now been integrated into [BasicTS](https://github.com/GestaltCogTeam/BasicTS/tree/master/baselines/STDMAE). You can also check many baselines there.
 
 ### Download Data
 
