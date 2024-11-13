@@ -14,6 +14,7 @@
 ## Citation
 > [!NOTE] 
 > If you find this repository useful for your research, please cite our work :)
+> 
 > ArXiv Version
 > ```LaTeX
 > @article{gao2023spatio,
