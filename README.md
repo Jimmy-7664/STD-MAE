@@ -14,6 +14,7 @@
 ## Citation
 > [!NOTE] 
 > If you find this repository useful for your research, please cite our work :)
+> ArXiv Version
 > ```LaTeX
 > @article{gao2023spatio,
 >   title={Spatio-Temporal-Decoupled Masked Pre-training for Traffic Forecasting},
@@ -22,14 +23,21 @@
 >   year={2023}
 > }
 >  ```
-> 2024 Version
+> IJCAI-2024 Version
 > ```LaTeX
->@article{gao2024spatial,
->  title={Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting},
->  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Ma, Yuxin and Song, Xuan},
->  journal={arXiv preprint arXiv:2312.00516},
->  year={2024},
->  publisher={Apr}
+>@inproceedings{ijcai2024p0442,
+>  title     = {Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting},
+>  author    = {Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Ma, Yuxin and Song, Xuan},
+>  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+>               Artificial Intelligence, {IJCAI-24}},
+>  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+>  editor    = {Kate Larson},
+>  pages     = {3998--4006},
+>  year      = {2024},
+>  month     = {8},
+>  note      = {Main Track},
+>  doi       = {10.24963/ijcai.2024/442},
+>  url       = {https://doi.org/10.24963/ijcai.2024/442},
 >}
 >  ```
 ## Performance on Spatiotemporal Forecasting Benchmarks
