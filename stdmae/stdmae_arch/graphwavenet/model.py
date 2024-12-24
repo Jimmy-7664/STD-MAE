@@ -69,6 +69,7 @@ class GraphWaveNet(nn.Module):
         self.skip_convs = nn.ModuleList()
         self.bn = nn.ModuleList()
         self.gconv = nn.ModuleList()
+        self.in_dim=in_dim
         self.fc_his_t = nn.Sequential(nn.Linear(96, 512), nn.ReLU(), nn.Linear(512, 256), nn.ReLU())
         self.fc_his_s = nn.Sequential(nn.Linear(96, 512), nn.ReLU(), nn.Linear(512, 256), nn.ReLU())
         self.start_conv = nn.Conv2d(in_channels=in_dim, out_channels=residual_channels, kernel_size=(1,1))
@@ -139,7 +140,7 @@ class GraphWaveNet(nn.Module):
         # feed forward
         input = nn.functional.pad(input,(1,0,0,0))
 
-        input = input[:, :2, :, :]
+        input = input[:, :self.in_dim, :, :]
         in_len = input.size(3)
         if in_len<self.receptive_field:
             x = nn.functional.pad(input,(self.receptive_field-in_len,0,0,0))
