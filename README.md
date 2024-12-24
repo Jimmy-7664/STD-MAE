@@ -4,13 +4,15 @@
 
 
 ![Framework](results/Framework.png)
+
+## Google Scholar
+Due to the change in title, you can find our article by searching **STD-MAE** directly.
+
 ## Preprint Link (All six datasets [PEMS03, 04, 07, 08, PEMS-BAY, and METR-LA] are included.)
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=STD-MAE&color=red&logo=arxiv)](https://arxiv.org/abs/2312.00516)
 [![IJCAI link](https://img.shields.io/badge/IJCAI_Link-STD--MAE-blue)](https://www.ijcai.org/proceedings/2024/0442.pdf)
 
 
-## Google Scholar
-**Due to the modification of STD-MAE's title, you can simply search for "STD-MAE" in Google Scholar to get our article.**
 ## Citation
 > [!NOTE] 
 > If you find this repository useful for your research, please cite our work :)
