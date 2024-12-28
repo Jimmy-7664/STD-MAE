@@ -1,0 +1,1365 @@
+2024-12-23 12:44:31,908 - easytorch-training - INFO - Initializing training.
+2024-12-23 12:44:31,908 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 3.0}
+2024-12-23 12:44:31,908 - easytorch-training - INFO - Building training data loader.
+2024-12-23 12:44:32,452 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.002
+    maximize: False
+    weight_decay: 1e-05
+)
+2024-12-23 12:44:32,453 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7f46e0333430>
+2024-12-23 12:44:32,457 - easytorch-training - INFO - Initializing validation.
+2024-12-23 12:44:32,457 - easytorch-training - INFO - Building val data loader.
+2024-12-23 12:44:33,379 - easytorch-training - INFO - Epoch 1 / 100
+2024-12-23 12:51:06,856 - easytorch-training - INFO - Result <train>: [train_time: 393.48 (s), lr: 2.00e-03, train_MAE: 6.0439, train_RMSE: 9.1970, train_MAPE: 0.2565]
+2024-12-23 12:51:06,857 - easytorch-training - INFO - Start validation.
+2024-12-23 12:54:48,456 - easytorch-training - INFO - Result <val>: [val_time: 221.60 (s), val_MAE: 17.2122, val_RMSE: 21.9901, val_MAPE: 1.0194]
+2024-12-23 12:54:48,505 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 13:01:39,887 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.9371, Test RMSE: 9.3091, Test MAPE: 0.2551
+2024-12-23 13:01:39,892 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 13:01:39,897 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 13:01:39,902 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 13:01:39,906 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 13:01:39,911 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 13:01:39,938 - easytorch-training - INFO - Result <test>: [test_time: 411.43 (s), test_MAE: 17.2956, test_RMSE: 22.1273, test_MAPE: 0.9693]
+2024-12-23 13:01:39,991 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_001.pt saved
+2024-12-23 13:01:39,991 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:15:34
+2024-12-23 13:01:39,992 - easytorch-training - INFO - Epoch 2 / 100
+2024-12-23 13:08:02,427 - easytorch-training - INFO - Result <train>: [train_time: 382.43 (s), lr: 1.00e-03, train_MAE: 5.7549, train_RMSE: 8.9852, train_MAPE: 0.2391]
+2024-12-23 13:08:02,428 - easytorch-training - INFO - Start validation.
+2024-12-23 13:11:24,557 - easytorch-training - INFO - Result <val>: [val_time: 202.13 (s), val_MAE: 17.1867, val_RMSE: 21.9809, val_MAPE: 1.0187]
+2024-12-23 13:11:24,638 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 13:17:20,850 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7804, Test RMSE: 9.1704, Test MAPE: 0.2478
+2024-12-23 13:17:20,855 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 13:17:20,860 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 13:17:20,864 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 13:17:20,869 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 13:17:20,873 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 13:17:20,900 - easytorch-training - INFO - Result <test>: [test_time: 356.26 (s), test_MAE: 17.2695, test_RMSE: 22.1177, test_MAPE: 0.9681]
+2024-12-23 13:17:20,953 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_002.pt saved
+2024-12-23 13:17:20,954 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:04:12
+2024-12-23 13:17:20,954 - easytorch-training - INFO - Epoch 3 / 100
+2024-12-23 13:24:21,854 - easytorch-training - INFO - Result <train>: [train_time: 420.90 (s), lr: 1.00e-03, train_MAE: 5.7260, train_RMSE: 8.9606, train_MAPE: 0.2372]
+2024-12-23 13:24:21,855 - easytorch-training - INFO - Start validation.
+2024-12-23 13:27:40,457 - easytorch-training - INFO - Result <val>: [val_time: 198.60 (s), val_MAE: 17.1887, val_RMSE: 21.9817, val_MAPE: 1.0176]
+2024-12-23 13:34:37,552 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7901, Test RMSE: 9.1811, Test MAPE: 0.2419
+2024-12-23 13:34:37,557 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 13:34:37,562 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 13:34:37,567 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 13:34:37,571 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 13:34:37,576 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 13:34:37,602 - easytorch-training - INFO - Result <test>: [test_time: 417.14 (s), test_MAE: 17.2711, test_RMSE: 22.1184, test_MAPE: 0.9671]
+2024-12-23 13:34:37,651 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_003.pt saved
+2024-12-23 13:34:37,652 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:33:35
+2024-12-23 13:34:37,652 - easytorch-training - INFO - Epoch 4 / 100
+2024-12-23 13:41:12,829 - easytorch-training - INFO - Result <train>: [train_time: 395.18 (s), lr: 1.00e-03, train_MAE: 5.7164, train_RMSE: 8.9639, train_MAPE: 0.2313]
+2024-12-23 13:41:12,830 - easytorch-training - INFO - Start validation.
+2024-12-23 13:44:10,202 - easytorch-training - INFO - Result <val>: [val_time: 177.37 (s), val_MAE: 17.1871, val_RMSE: 21.9791, val_MAPE: 1.0191]
+2024-12-23 13:49:56,970 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7841, Test RMSE: 9.1550, Test MAPE: 0.2503
+2024-12-23 13:49:56,975 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 13:49:56,979 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 13:49:56,984 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 13:49:56,989 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 13:49:56,993 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 13:49:57,020 - easytorch-training - INFO - Result <test>: [test_time: 346.82 (s), test_MAE: 17.2701, test_RMSE: 22.1166, test_MAPE: 0.9685]
+2024-12-23 13:49:57,067 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_004.pt saved
+2024-12-23 13:49:57,067 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:59:25
+2024-12-23 13:49:57,067 - easytorch-training - INFO - Epoch 5 / 100
+2024-12-23 13:56:10,059 - easytorch-training - INFO - Result <train>: [train_time: 372.99 (s), lr: 1.00e-03, train_MAE: 5.7166, train_RMSE: 8.9580, train_MAPE: 0.2373]
+2024-12-23 13:56:10,061 - easytorch-training - INFO - Start validation.
+2024-12-23 13:59:03,436 - easytorch-training - INFO - Result <val>: [val_time: 173.37 (s), val_MAE: 17.1910, val_RMSE: 21.9810, val_MAPE: 1.0184]
+2024-12-23 14:04:51,900 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.8072, Test RMSE: 9.1707, Test MAPE: 0.2484
+2024-12-23 14:04:51,905 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 14:04:51,910 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 14:04:51,914 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 14:04:51,919 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 14:04:51,924 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 14:04:51,950 - easytorch-training - INFO - Result <test>: [test_time: 348.51 (s), test_MAE: 17.2740, test_RMSE: 22.1177, test_MAPE: 0.9682]
+2024-12-23 14:04:51,996 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_005.pt saved
+2024-12-23 14:04:51,997 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:30:45
+2024-12-23 14:04:51,997 - easytorch-training - INFO - Epoch 6 / 100
+2024-12-23 14:11:05,172 - easytorch-training - INFO - Result <train>: [train_time: 373.17 (s), lr: 1.00e-03, train_MAE: 5.7054, train_RMSE: 8.9500, train_MAPE: 0.2283]
+2024-12-23 14:11:05,173 - easytorch-training - INFO - Start validation.
+2024-12-23 14:13:57,828 - easytorch-training - INFO - Result <val>: [val_time: 172.65 (s), val_MAE: 17.1841, val_RMSE: 21.9785, val_MAPE: 1.0198]
+2024-12-23 14:13:57,901 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 14:19:44,457 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7697, Test RMSE: 9.1475, Test MAPE: 0.2560
+2024-12-23 14:19:44,463 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 19.5680, Test RMSE: 23.8799, Test MAPE: 1.1125
+2024-12-23 14:19:44,467 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 14:19:44,472 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 14:19:44,476 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 14:19:44,481 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 14:19:44,508 - easytorch-training - INFO - Result <test>: [test_time: 346.61 (s), test_MAE: 17.2677, test_RMSE: 22.1161, test_MAPE: 0.9695]
+2024-12-23 14:19:44,563 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_006.pt saved
+2024-12-23 14:19:44,563 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:10:59
+2024-12-23 14:19:44,563 - easytorch-training - INFO - Epoch 7 / 100
+2024-12-23 14:25:56,158 - easytorch-training - INFO - Result <train>: [train_time: 371.59 (s), lr: 1.00e-03, train_MAE: 5.9649, train_RMSE: 9.3525, train_MAPE: 0.2507]
+2024-12-23 14:25:56,159 - easytorch-training - INFO - Start validation.
+2024-12-23 14:28:51,323 - easytorch-training - INFO - Result <val>: [val_time: 175.16 (s), val_MAE: 14.9776, val_RMSE: 20.1326, val_MAPE: 0.8788]
+2024-12-23 14:28:51,401 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 14:34:42,391 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7879, Test RMSE: 9.1347, Test MAPE: 0.2570
+2024-12-23 14:34:42,396 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2472, Test RMSE: 9.9477, Test MAPE: 0.2923
+2024-12-23 14:34:42,401 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 14:34:42,405 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 14:34:42,410 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 14:34:42,414 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 14:34:42,441 - easytorch-training - INFO - Result <test>: [test_time: 351.04 (s), test_MAE: 15.0506, test_RMSE: 20.2616, test_MAPE: 0.8329]
+2024-12-23 14:34:42,491 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_007.pt saved
+2024-12-23 14:34:42,492 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:58:09
+2024-12-23 14:34:42,492 - easytorch-training - INFO - Epoch 8 / 100
+2024-12-23 14:40:57,527 - easytorch-training - INFO - Result <train>: [train_time: 375.03 (s), lr: 1.00e-03, train_MAE: 5.8705, train_RMSE: 9.2267, train_MAPE: 0.2451]
+2024-12-23 14:40:57,528 - easytorch-training - INFO - Start validation.
+2024-12-23 14:43:51,657 - easytorch-training - INFO - Result <val>: [val_time: 174.13 (s), val_MAE: 14.9634, val_RMSE: 20.1312, val_MAPE: 0.8735]
+2024-12-23 14:43:51,730 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 14:49:46,560 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7555, Test RMSE: 9.1557, Test MAPE: 0.2437
+2024-12-23 14:49:46,565 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2151, Test RMSE: 9.9741, Test MAPE: 0.2767
+2024-12-23 14:49:46,570 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 14:49:46,574 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 14:49:46,579 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 14:49:46,583 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 14:49:46,610 - easytorch-training - INFO - Result <test>: [test_time: 354.88 (s), test_MAE: 15.0399, test_RMSE: 20.2654, test_MAPE: 0.8281]
+2024-12-23 14:49:46,662 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_008.pt saved
+2024-12-23 14:49:46,662 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:49:49
+2024-12-23 14:49:46,662 - easytorch-training - INFO - Epoch 9 / 100
+2024-12-23 14:56:07,000 - easytorch-training - INFO - Result <train>: [train_time: 380.34 (s), lr: 1.00e-03, train_MAE: 5.8820, train_RMSE: 9.2578, train_MAPE: 0.2442]
+2024-12-23 14:56:07,001 - easytorch-training - INFO - Start validation.
+2024-12-23 14:59:04,401 - easytorch-training - INFO - Result <val>: [val_time: 177.40 (s), val_MAE: 14.9712, val_RMSE: 20.1345, val_MAPE: 0.8711]
+2024-12-23 15:04:54,291 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7751, Test RMSE: 9.1622, Test MAPE: 0.2368
+2024-12-23 15:04:54,296 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2235, Test RMSE: 9.9562, Test MAPE: 0.2667
+2024-12-23 15:04:54,300 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 15:04:54,305 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 15:04:54,310 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 15:04:54,314 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 15:04:54,341 - easytorch-training - INFO - Result <test>: [test_time: 349.94 (s), test_MAE: 15.0445, test_RMSE: 20.2644, test_MAPE: 0.8253]
+2024-12-23 15:04:54,388 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_009.pt saved
+2024-12-23 15:04:54,388 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:44:00
+2024-12-23 15:04:54,388 - easytorch-training - INFO - Epoch 10 / 100
+2024-12-23 15:11:12,539 - easytorch-training - INFO - Result <train>: [train_time: 378.15 (s), lr: 1.00e-03, train_MAE: 5.8708, train_RMSE: 9.2415, train_MAPE: 0.2433]
+2024-12-23 15:11:12,540 - easytorch-training - INFO - Start validation.
+2024-12-23 15:14:10,258 - easytorch-training - INFO - Result <val>: [val_time: 177.72 (s), val_MAE: 14.9586, val_RMSE: 20.1275, val_MAPE: 0.8736]
+2024-12-23 15:14:10,339 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 15:20:00,567 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7378, Test RMSE: 9.1204, Test MAPE: 0.2453
+2024-12-23 15:20:00,572 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1917, Test RMSE: 9.9193, Test MAPE: 0.2772
+2024-12-23 15:20:00,576 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 15:20:00,581 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 15:20:00,586 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 15:20:00,590 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 15:20:00,617 - easytorch-training - INFO - Result <test>: [test_time: 350.28 (s), test_MAE: 15.0330, test_RMSE: 20.2582, test_MAPE: 0.8285]
+2024-12-23 15:20:00,664 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_010.pt saved
+2024-12-23 15:20:00,686 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:39:06
+2024-12-23 15:20:00,686 - easytorch-training - INFO - Epoch 11 / 100
+2024-12-23 15:26:19,451 - easytorch-training - INFO - Result <train>: [train_time: 378.76 (s), lr: 1.00e-03, train_MAE: 5.8616, train_RMSE: 9.2281, train_MAPE: 0.2450]
+2024-12-23 15:26:19,452 - easytorch-training - INFO - Start validation.
+2024-12-23 15:29:16,535 - easytorch-training - INFO - Result <val>: [val_time: 177.08 (s), val_MAE: 14.9624, val_RMSE: 20.1265, val_MAPE: 0.8736]
+2024-12-23 15:35:06,180 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7611, Test RMSE: 9.1291, Test MAPE: 0.2480
+2024-12-23 15:35:06,185 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2123, Test RMSE: 9.9427, Test MAPE: 0.2772
+2024-12-23 15:35:06,190 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 15:35:06,194 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 15:35:06,199 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 15:35:06,204 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 15:35:06,230 - easytorch-training - INFO - Result <test>: [test_time: 349.69 (s), test_MAE: 15.0403, test_RMSE: 20.2608, test_MAPE: 0.8289]
+2024-12-23 15:35:06,361 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_011.pt saved
+2024-12-23 15:35:06,361 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:35:00
+2024-12-23 15:35:06,361 - easytorch-training - INFO - Epoch 12 / 100
+2024-12-23 15:41:15,486 - easytorch-training - INFO - Result <train>: [train_time: 369.12 (s), lr: 1.00e-03, train_MAE: 5.8610, train_RMSE: 9.2262, train_MAPE: 0.2385]
+2024-12-23 15:41:15,487 - easytorch-training - INFO - Start validation.
+2024-12-23 15:44:10,762 - easytorch-training - INFO - Result <val>: [val_time: 175.27 (s), val_MAE: 14.9641, val_RMSE: 20.1262, val_MAPE: 0.8764]
+2024-12-23 15:50:02,117 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7596, Test RMSE: 9.1171, Test MAPE: 0.2506
+2024-12-23 15:50:02,122 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2147, Test RMSE: 9.9312, Test MAPE: 0.2856
+2024-12-23 15:50:02,126 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 19.5676, Test RMSE: 23.8794, Test MAPE: 1.1125
+2024-12-23 15:50:02,131 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 15:50:02,135 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 15:50:02,140 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 15:50:02,167 - easytorch-training - INFO - Result <test>: [test_time: 351.40 (s), test_MAE: 15.0405, test_RMSE: 20.2589, test_MAPE: 0.8308]
+2024-12-23 15:50:02,213 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_012.pt saved
+2024-12-23 15:50:02,213 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:30:13
+2024-12-23 15:50:02,213 - easytorch-training - INFO - Epoch 13 / 100
+2024-12-23 15:56:18,735 - easytorch-training - INFO - Result <train>: [train_time: 376.52 (s), lr: 1.00e-03, train_MAE: 6.0385, train_RMSE: 9.5037, train_MAPE: 0.2600]
+2024-12-23 15:56:18,737 - easytorch-training - INFO - Start validation.
+2024-12-23 15:59:20,568 - easytorch-training - INFO - Result <val>: [val_time: 181.83 (s), val_MAE: 12.7826, val_RMSE: 18.1400, val_MAPE: 0.7310]
+2024-12-23 15:59:20,649 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 16:05:15,183 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7461, Test RMSE: 9.1623, Test MAPE: 0.2423
+2024-12-23 16:05:15,188 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1965, Test RMSE: 9.9505, Test MAPE: 0.2738
+2024-12-23 16:05:15,193 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4776, Test RMSE: 10.4679, Test MAPE: 0.2933
+2024-12-23 16:05:15,197 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 16:05:15,202 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 16:05:15,206 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 16:05:15,233 - easytorch-training - INFO - Result <test>: [test_time: 354.58 (s), test_MAE: 12.8535, test_RMSE: 18.2716, test_MAPE: 0.6909]
+2024-12-23 16:05:15,285 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_013.pt saved
+2024-12-23 16:05:15,285 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:28:23
+2024-12-23 16:05:15,285 - easytorch-training - INFO - Epoch 14 / 100
+2024-12-23 16:11:32,220 - easytorch-training - INFO - Result <train>: [train_time: 376.93 (s), lr: 1.00e-03, train_MAE: 5.9843, train_RMSE: 9.4402, train_MAPE: 0.2573]
+2024-12-23 16:11:32,221 - easytorch-training - INFO - Start validation.
+2024-12-23 16:14:30,955 - easytorch-training - INFO - Result <val>: [val_time: 178.73 (s), val_MAE: 12.7725, val_RMSE: 18.1279, val_MAPE: 0.7283]
+2024-12-23 16:14:31,030 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 16:20:21,259 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7375, Test RMSE: 9.1307, Test MAPE: 0.2411
+2024-12-23 16:20:21,265 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1814, Test RMSE: 9.9215, Test MAPE: 0.2695
+2024-12-23 16:20:21,269 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4507, Test RMSE: 10.4137, Test MAPE: 0.2837
+2024-12-23 16:20:21,274 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 16:20:21,279 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 16:20:21,283 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 16:20:21,310 - easytorch-training - INFO - Result <test>: [test_time: 350.28 (s), test_MAE: 12.8451, test_RMSE: 18.2612, test_MAPE: 0.6884]
+2024-12-23 16:20:21,361 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_014.pt saved
+2024-12-23 16:20:21,361 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:25:58
+2024-12-23 16:20:21,361 - easytorch-training - INFO - Epoch 15 / 100
+2024-12-23 16:26:38,972 - easytorch-training - INFO - Result <train>: [train_time: 377.61 (s), lr: 1.00e-03, train_MAE: 5.9898, train_RMSE: 9.4489, train_MAPE: 0.2567]
+2024-12-23 16:26:38,973 - easytorch-training - INFO - Start validation.
+2024-12-23 16:29:37,324 - easytorch-training - INFO - Result <val>: [val_time: 178.35 (s), val_MAE: 12.7956, val_RMSE: 18.1301, val_MAPE: 0.7267]
+2024-12-23 16:35:33,545 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7673, Test RMSE: 9.1478, Test MAPE: 0.2371
+2024-12-23 16:35:33,550 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2355, Test RMSE: 9.9376, Test MAPE: 0.2652
+2024-12-23 16:35:33,555 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.5001, Test RMSE: 10.4154, Test MAPE: 0.2813
+2024-12-23 16:35:33,559 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 16:35:33,564 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 16:35:33,569 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 16:35:33,595 - easytorch-training - INFO - Result <test>: [test_time: 356.27 (s), test_MAE: 12.8673, test_RMSE: 18.2642, test_MAPE: 0.6866]
+2024-12-23 16:35:33,646 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_015.pt saved
+2024-12-23 16:35:33,647 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:24:35
+2024-12-23 16:35:33,647 - easytorch-training - INFO - Epoch 16 / 100
+2024-12-23 16:41:54,459 - easytorch-training - INFO - Result <train>: [train_time: 380.81 (s), lr: 1.00e-03, train_MAE: 5.9670, train_RMSE: 9.4002, train_MAPE: 0.2484]
+2024-12-23 16:41:54,460 - easytorch-training - INFO - Start validation.
+2024-12-23 16:44:49,332 - easytorch-training - INFO - Result <val>: [val_time: 174.87 (s), val_MAE: 12.7800, val_RMSE: 18.1258, val_MAPE: 0.7296]
+2024-12-23 16:50:38,735 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7648, Test RMSE: 9.1357, Test MAPE: 0.2427
+2024-12-23 16:50:38,740 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2073, Test RMSE: 9.9253, Test MAPE: 0.2709
+2024-12-23 16:50:38,745 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4666, Test RMSE: 10.4179, Test MAPE: 0.2850
+2024-12-23 16:50:38,749 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 16:50:38,754 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 16:50:38,758 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 16:50:38,785 - easytorch-training - INFO - Result <test>: [test_time: 349.45 (s), test_MAE: 12.8566, test_RMSE: 18.2623, test_MAPE: 0.6891]
+2024-12-23 16:50:38,831 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_016.pt saved
+2024-12-23 16:50:38,832 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:22:37
+2024-12-23 16:50:38,832 - easytorch-training - INFO - Epoch 17 / 100
+2024-12-23 16:56:55,899 - easytorch-training - INFO - Result <train>: [train_time: 377.07 (s), lr: 1.00e-03, train_MAE: 5.9730, train_RMSE: 9.4275, train_MAPE: 0.2523]
+2024-12-23 16:56:55,900 - easytorch-training - INFO - Start validation.
+2024-12-23 16:59:57,687 - easytorch-training - INFO - Result <val>: [val_time: 181.79 (s), val_MAE: 12.7838, val_RMSE: 18.1151, val_MAPE: 0.7335]
+2024-12-23 17:05:52,159 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7613, Test RMSE: 9.0929, Test MAPE: 0.2500
+2024-12-23 17:05:52,165 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.2016, Test RMSE: 9.8615, Test MAPE: 0.2751
+2024-12-23 17:05:52,169 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4724, Test RMSE: 10.3531, Test MAPE: 0.2913
+2024-12-23 17:05:52,174 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 17:05:52,178 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 17:05:52,183 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 17:05:52,210 - easytorch-training - INFO - Result <test>: [test_time: 354.52 (s), test_MAE: 12.8560, test_RMSE: 18.2469, test_MAPE: 0.6920]
+2024-12-23 17:05:52,262 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_017.pt saved
+2024-12-23 17:05:52,262 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:21:42
+2024-12-23 17:05:52,262 - easytorch-training - INFO - Epoch 18 / 100
+2024-12-23 17:12:08,153 - easytorch-training - INFO - Result <train>: [train_time: 375.89 (s), lr: 1.00e-03, train_MAE: 5.9551, train_RMSE: 9.3914, train_MAPE: 0.2538]
+2024-12-23 17:12:08,155 - easytorch-training - INFO - Start validation.
+2024-12-23 17:15:02,058 - easytorch-training - INFO - Result <val>: [val_time: 173.90 (s), val_MAE: 12.7702, val_RMSE: 18.1209, val_MAPE: 0.7293]
+2024-12-23 17:15:02,132 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 17:20:51,929 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7432, Test RMSE: 9.1306, Test MAPE: 0.2383
+2024-12-23 17:20:51,935 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1844, Test RMSE: 9.8982, Test MAPE: 0.2715
+2024-12-23 17:20:51,939 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4385, Test RMSE: 10.3724, Test MAPE: 0.2866
+2024-12-23 17:20:51,944 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 19.5673, Test RMSE: 23.8791, Test MAPE: 1.1120
+2024-12-23 17:20:51,948 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 17:20:51,953 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 17:20:51,979 - easytorch-training - INFO - Result <test>: [test_time: 349.85 (s), test_MAE: 12.8445, test_RMSE: 18.2551, test_MAPE: 0.6887]
+2024-12-23 17:20:52,025 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_018.pt saved
+2024-12-23 17:20:52,025 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:19:36
+2024-12-23 17:20:52,025 - easytorch-training - INFO - Epoch 19 / 100
+2024-12-23 17:26:59,604 - easytorch-training - INFO - Result <train>: [train_time: 367.58 (s), lr: 5.00e-04, train_MAE: 6.0923, train_RMSE: 9.6074, train_MAPE: 0.2626]
+2024-12-23 17:26:59,605 - easytorch-training - INFO - Start validation.
+2024-12-23 17:29:52,707 - easytorch-training - INFO - Result <val>: [val_time: 173.10 (s), val_MAE: 10.6113, val_RMSE: 15.8844, val_MAPE: 0.5940]
+2024-12-23 17:29:52,782 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 17:35:38,606 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7409, Test RMSE: 9.1041, Test MAPE: 0.2434
+2024-12-23 17:35:38,611 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1810, Test RMSE: 9.8700, Test MAPE: 0.2752
+2024-12-23 17:35:38,616 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4442, Test RMSE: 10.3455, Test MAPE: 0.2941
+2024-12-23 17:35:38,620 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6240, Test RMSE: 10.6695, Test MAPE: 0.3063
+2024-12-23 17:35:38,625 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 17:35:38,629 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 17:35:38,656 - easytorch-training - INFO - Result <test>: [test_time: 345.87 (s), test_MAE: 10.6873, test_RMSE: 16.0288, test_MAPE: 0.5572]
+2024-12-23 17:35:38,702 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_019.pt saved
+2024-12-23 17:35:38,703 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:16:36
+2024-12-23 17:35:38,703 - easytorch-training - INFO - Epoch 20 / 100
+2024-12-23 17:41:45,867 - easytorch-training - INFO - Result <train>: [train_time: 367.16 (s), lr: 5.00e-04, train_MAE: 6.0475, train_RMSE: 9.5594, train_MAPE: 0.2581]
+2024-12-23 17:41:45,868 - easytorch-training - INFO - Start validation.
+2024-12-23 17:44:38,025 - easytorch-training - INFO - Result <val>: [val_time: 172.16 (s), val_MAE: 10.6107, val_RMSE: 15.8920, val_MAPE: 0.5885]
+2024-12-23 17:44:38,097 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 17:50:23,739 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7476, Test RMSE: 9.1216, Test MAPE: 0.2408
+2024-12-23 17:50:23,745 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1841, Test RMSE: 9.9035, Test MAPE: 0.2692
+2024-12-23 17:50:23,749 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4377, Test RMSE: 10.3628, Test MAPE: 0.2853
+2024-12-23 17:50:23,754 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6100, Test RMSE: 10.6729, Test MAPE: 0.2949
+2024-12-23 17:50:23,758 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 17:50:23,763 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 17:50:23,789 - easytorch-training - INFO - Result <test>: [test_time: 345.69 (s), test_MAE: 10.6855, test_RMSE: 16.0361, test_MAPE: 0.5524]
+2024-12-23 17:50:23,835 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_020.pt saved
+2024-12-23 17:50:23,857 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:13:45
+2024-12-23 17:50:23,857 - easytorch-training - INFO - Epoch 21 / 100
+2024-12-23 17:56:32,968 - easytorch-training - INFO - Result <train>: [train_time: 369.11 (s), lr: 5.00e-04, train_MAE: 6.0408, train_RMSE: 9.5527, train_MAPE: 0.2597]
+2024-12-23 17:56:32,969 - easytorch-training - INFO - Start validation.
+2024-12-23 17:59:25,218 - easytorch-training - INFO - Result <val>: [val_time: 172.25 (s), val_MAE: 10.6087, val_RMSE: 15.8960, val_MAPE: 0.5867]
+2024-12-23 17:59:25,290 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 18:05:10,826 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7398, Test RMSE: 9.1203, Test MAPE: 0.2403
+2024-12-23 18:05:10,831 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1844, Test RMSE: 9.9038, Test MAPE: 0.2676
+2024-12-23 18:05:10,836 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4417, Test RMSE: 10.3846, Test MAPE: 0.2831
+2024-12-23 18:05:10,840 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6212, Test RMSE: 10.7129, Test MAPE: 0.2931
+2024-12-23 18:05:10,845 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 18:05:10,850 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 18:05:10,876 - easytorch-training - INFO - Result <test>: [test_time: 345.59 (s), test_MAE: 10.6868, test_RMSE: 16.0428, test_MAPE: 0.5513]
+2024-12-23 18:05:10,922 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_021.pt saved
+2024-12-23 18:05:10,922 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:11:20
+2024-12-23 18:05:10,922 - easytorch-training - INFO - Epoch 22 / 100
+2024-12-23 18:11:17,156 - easytorch-training - INFO - Result <train>: [train_time: 366.23 (s), lr: 5.00e-04, train_MAE: 6.0462, train_RMSE: 9.5635, train_MAPE: 0.2601]
+2024-12-23 18:11:17,157 - easytorch-training - INFO - Start validation.
+2024-12-23 18:14:11,905 - easytorch-training - INFO - Result <val>: [val_time: 174.75 (s), val_MAE: 10.6040, val_RMSE: 15.8921, val_MAPE: 0.5866]
+2024-12-23 18:14:11,985 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 18:20:02,061 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7525, Test RMSE: 9.1313, Test MAPE: 0.2382
+2024-12-23 18:20:02,066 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1825, Test RMSE: 9.9081, Test MAPE: 0.2672
+2024-12-23 18:20:02,071 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4271, Test RMSE: 10.3514, Test MAPE: 0.2838
+2024-12-23 18:20:02,075 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5989, Test RMSE: 10.6733, Test MAPE: 0.2938
+2024-12-23 18:20:02,080 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 18:20:02,085 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 18:20:02,111 - easytorch-training - INFO - Result <test>: [test_time: 350.13 (s), test_MAE: 10.6824, test_RMSE: 16.0363, test_MAPE: 0.5512]
+2024-12-23 18:20:02,163 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_022.pt saved
+2024-12-23 18:20:02,163 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:09:27
+2024-12-23 18:20:02,163 - easytorch-training - INFO - Epoch 23 / 100
+2024-12-23 18:26:12,676 - easytorch-training - INFO - Result <train>: [train_time: 370.51 (s), lr: 5.00e-04, train_MAE: 6.0441, train_RMSE: 9.5522, train_MAPE: 0.2631]
+2024-12-23 18:26:12,677 - easytorch-training - INFO - Start validation.
+2024-12-23 18:29:07,603 - easytorch-training - INFO - Result <val>: [val_time: 174.93 (s), val_MAE: 10.6027, val_RMSE: 15.8888, val_MAPE: 0.5896]
+2024-12-23 18:29:07,682 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 18:34:54,599 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7304, Test RMSE: 9.0992, Test MAPE: 0.2410
+2024-12-23 18:34:54,604 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1751, Test RMSE: 9.8819, Test MAPE: 0.2722
+2024-12-23 18:34:54,609 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4357, Test RMSE: 10.3573, Test MAPE: 0.2897
+2024-12-23 18:34:54,613 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6134, Test RMSE: 10.6925, Test MAPE: 0.2992
+2024-12-23 18:34:54,618 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 18:34:54,622 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 18:34:54,649 - easytorch-training - INFO - Result <test>: [test_time: 346.97 (s), test_MAE: 10.6814, test_RMSE: 16.0333, test_MAPE: 0.5543]
+2024-12-23 18:34:54,695 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_023.pt saved
+2024-12-23 18:34:54,695 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:07:50
+2024-12-23 18:34:54,695 - easytorch-training - INFO - Epoch 24 / 100
+2024-12-23 18:41:00,409 - easytorch-training - INFO - Result <train>: [train_time: 365.71 (s), lr: 5.00e-04, train_MAE: 6.0248, train_RMSE: 9.5285, train_MAPE: 0.2588]
+2024-12-23 18:41:00,411 - easytorch-training - INFO - Start validation.
+2024-12-23 18:43:54,971 - easytorch-training - INFO - Result <val>: [val_time: 174.56 (s), val_MAE: 10.5942, val_RMSE: 15.8849, val_MAPE: 0.5924]
+2024-12-23 18:43:55,050 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 18:49:42,832 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7266, Test RMSE: 9.1008, Test MAPE: 0.2420
+2024-12-23 18:49:42,837 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1646, Test RMSE: 9.8714, Test MAPE: 0.2751
+2024-12-23 18:49:42,842 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4159, Test RMSE: 10.3404, Test MAPE: 0.2920
+2024-12-23 18:49:42,847 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5871, Test RMSE: 10.6600, Test MAPE: 0.3020
+2024-12-23 18:49:42,851 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 19.5669, Test RMSE: 23.8786, Test MAPE: 1.1119
+2024-12-23 18:49:42,856 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 18:49:42,882 - easytorch-training - INFO - Result <test>: [test_time: 347.83 (s), test_MAE: 10.6713, test_RMSE: 16.0270, test_MAPE: 0.5558]
+2024-12-23 18:49:42,928 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_024.pt saved
+2024-12-23 18:49:42,929 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:06:03
+2024-12-23 18:49:42,929 - easytorch-training - INFO - Epoch 25 / 100
+2024-12-23 18:55:51,974 - easytorch-training - INFO - Result <train>: [train_time: 369.04 (s), lr: 5.00e-04, train_MAE: 6.1449, train_RMSE: 9.7052, train_MAPE: 0.2670]
+2024-12-23 18:55:51,975 - easytorch-training - INFO - Start validation.
+2024-12-23 18:58:47,046 - easytorch-training - INFO - Result <val>: [val_time: 175.07 (s), val_MAE: 8.4639, val_RMSE: 13.3088, val_MAPE: 0.4532]
+2024-12-23 18:58:47,125 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 19:04:34,004 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7442, Test RMSE: 9.1167, Test MAPE: 0.2448
+2024-12-23 19:04:34,009 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1835, Test RMSE: 9.8856, Test MAPE: 0.2756
+2024-12-23 19:04:34,014 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4341, Test RMSE: 10.3391, Test MAPE: 0.2913
+2024-12-23 19:04:34,018 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6006, Test RMSE: 10.6587, Test MAPE: 0.3023
+2024-12-23 19:04:34,023 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7272, Test RMSE: 10.8687, Test MAPE: 0.3103
+2024-12-23 19:04:34,027 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 19:04:34,054 - easytorch-training - INFO - Result <test>: [test_time: 346.93 (s), test_MAE: 8.5427, test_RMSE: 13.4762, test_MAPE: 0.4227]
+2024-12-23 19:04:34,099 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_025.pt saved
+2024-12-23 19:04:34,099 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:04:36
+2024-12-23 19:04:34,099 - easytorch-training - INFO - Epoch 26 / 100
+2024-12-23 19:10:42,997 - easytorch-training - INFO - Result <train>: [train_time: 368.90 (s), lr: 5.00e-04, train_MAE: 6.1200, train_RMSE: 9.6831, train_MAPE: 0.2697]
+2024-12-23 19:10:42,998 - easytorch-training - INFO - Start validation.
+2024-12-23 19:13:35,217 - easytorch-training - INFO - Result <val>: [val_time: 172.22 (s), val_MAE: 8.4648, val_RMSE: 13.2891, val_MAPE: 0.4555]
+2024-12-23 19:19:20,678 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7455, Test RMSE: 9.0905, Test MAPE: 0.2482
+2024-12-23 19:19:20,683 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1879, Test RMSE: 9.8514, Test MAPE: 0.2788
+2024-12-23 19:19:20,688 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4367, Test RMSE: 10.3131, Test MAPE: 0.2935
+2024-12-23 19:19:20,693 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6063, Test RMSE: 10.6334, Test MAPE: 0.3029
+2024-12-23 19:19:20,697 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7336, Test RMSE: 10.8537, Test MAPE: 0.3087
+2024-12-23 19:19:20,702 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 19:19:20,728 - easytorch-training - INFO - Result <test>: [test_time: 345.51 (s), test_MAE: 8.5461, test_RMSE: 13.4604, test_MAPE: 0.4240]
+2024-12-23 19:19:20,774 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_026.pt saved
+2024-12-23 19:19:20,774 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:02:58
+2024-12-23 19:19:20,774 - easytorch-training - INFO - Epoch 27 / 100
+2024-12-23 19:25:32,179 - easytorch-training - INFO - Result <train>: [train_time: 371.40 (s), lr: 5.00e-04, train_MAE: 6.1019, train_RMSE: 9.6439, train_MAPE: 0.2665]
+2024-12-23 19:25:32,180 - easytorch-training - INFO - Start validation.
+2024-12-23 19:28:28,118 - easytorch-training - INFO - Result <val>: [val_time: 175.94 (s), val_MAE: 8.4566, val_RMSE: 13.3025, val_MAPE: 0.4528]
+2024-12-23 19:28:28,197 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 19:34:14,469 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7379, Test RMSE: 9.1052, Test MAPE: 0.2445
+2024-12-23 19:34:14,474 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1818, Test RMSE: 9.8912, Test MAPE: 0.2758
+2024-12-23 19:34:14,479 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4311, Test RMSE: 10.3520, Test MAPE: 0.2912
+2024-12-23 19:34:14,484 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6006, Test RMSE: 10.6625, Test MAPE: 0.3007
+2024-12-23 19:34:14,488 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7263, Test RMSE: 10.8877, Test MAPE: 0.3086
+2024-12-23 19:34:14,493 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 19:34:14,519 - easytorch-training - INFO - Result <test>: [test_time: 346.32 (s), test_MAE: 8.5407, test_RMSE: 13.4803, test_MAPE: 0.4221]
+2024-12-23 19:34:14,565 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_027.pt saved
+2024-12-23 19:34:14,566 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:01:54
+2024-12-23 19:34:14,566 - easytorch-training - INFO - Epoch 28 / 100
+2024-12-23 19:40:14,785 - easytorch-training - INFO - Result <train>: [train_time: 360.22 (s), lr: 5.00e-04, train_MAE: 6.1010, train_RMSE: 9.6431, train_MAPE: 0.2584]
+2024-12-23 19:40:14,786 - easytorch-training - INFO - Start validation.
+2024-12-23 19:43:06,794 - easytorch-training - INFO - Result <val>: [val_time: 172.01 (s), val_MAE: 8.4491, val_RMSE: 13.3094, val_MAPE: 0.4504]
+2024-12-23 19:43:06,868 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 19:48:57,278 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7337, Test RMSE: 9.1224, Test MAPE: 0.2426
+2024-12-23 19:48:57,284 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1711, Test RMSE: 9.8870, Test MAPE: 0.2709
+2024-12-23 19:48:57,288 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4185, Test RMSE: 10.3393, Test MAPE: 0.2886
+2024-12-23 19:48:57,293 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5828, Test RMSE: 10.6438, Test MAPE: 0.2980
+2024-12-23 19:48:57,297 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7052, Test RMSE: 10.8610, Test MAPE: 0.3048
+2024-12-23 19:48:57,302 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 19:48:57,329 - easytorch-training - INFO - Result <test>: [test_time: 350.46 (s), test_MAE: 8.5297, test_RMSE: 13.4740, test_MAPE: 0.4195]
+2024-12-23 19:48:57,379 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_028.pt saved
+2024-12-23 19:48:57,380 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:00:16
+2024-12-23 19:48:57,380 - easytorch-training - INFO - Epoch 29 / 100
+2024-12-23 19:55:09,136 - easytorch-training - INFO - Result <train>: [train_time: 371.76 (s), lr: 5.00e-04, train_MAE: 6.0915, train_RMSE: 9.6415, train_MAPE: 0.2656]
+2024-12-23 19:55:09,137 - easytorch-training - INFO - Start validation.
+2024-12-23 19:58:15,687 - easytorch-training - INFO - Result <val>: [val_time: 186.55 (s), val_MAE: 8.4495, val_RMSE: 13.2922, val_MAPE: 0.4490]
+2024-12-23 20:04:06,103 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7351, Test RMSE: 9.1071, Test MAPE: 0.2413
+2024-12-23 20:04:06,108 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1754, Test RMSE: 9.8901, Test MAPE: 0.2690
+2024-12-23 20:04:06,113 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4235, Test RMSE: 10.3430, Test MAPE: 0.2863
+2024-12-23 20:04:06,117 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5893, Test RMSE: 10.6340, Test MAPE: 0.2963
+2024-12-23 20:04:06,122 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7139, Test RMSE: 10.8406, Test MAPE: 0.3045
+2024-12-23 20:04:06,127 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 20:04:06,153 - easytorch-training - INFO - Result <test>: [test_time: 350.47 (s), test_MAE: 8.5340, test_RMSE: 13.4691, test_MAPE: 0.4182]
+2024-12-23 20:04:06,204 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_029.pt saved
+2024-12-23 20:04:06,204 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:00:14
+2024-12-23 20:04:06,204 - easytorch-training - INFO - Epoch 30 / 100
+2024-12-23 20:10:11,424 - easytorch-training - INFO - Result <train>: [train_time: 365.22 (s), lr: 5.00e-04, train_MAE: 6.0935, train_RMSE: 9.6373, train_MAPE: 0.2658]
+2024-12-23 20:10:11,425 - easytorch-training - INFO - Start validation.
+2024-12-23 20:13:03,611 - easytorch-training - INFO - Result <val>: [val_time: 172.19 (s), val_MAE: 8.4552, val_RMSE: 13.3060, val_MAPE: 0.4554]
+2024-12-23 20:18:54,142 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7364, Test RMSE: 9.1087, Test MAPE: 0.2466
+2024-12-23 20:18:54,147 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1806, Test RMSE: 9.8902, Test MAPE: 0.2772
+2024-12-23 20:18:54,152 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4355, Test RMSE: 10.3811, Test MAPE: 0.2937
+2024-12-23 20:18:54,157 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6038, Test RMSE: 10.6835, Test MAPE: 0.3055
+2024-12-23 20:18:54,161 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7335, Test RMSE: 10.8874, Test MAPE: 0.3152
+2024-12-23 20:18:54,166 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 19.5667, Test RMSE: 23.8783, Test MAPE: 1.1119
+2024-12-23 20:18:54,193 - easytorch-training - INFO - Result <test>: [test_time: 350.58 (s), test_MAE: 8.5428, test_RMSE: 13.4870, test_MAPE: 0.4250]
+2024-12-23 20:18:54,244 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_030.pt saved
+2024-12-23 20:18:54,265 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:59:03
+2024-12-23 20:18:54,266 - easytorch-training - INFO - Epoch 31 / 100
+2024-12-23 20:24:58,929 - easytorch-training - INFO - Result <train>: [train_time: 364.66 (s), lr: 5.00e-04, train_MAE: 6.1926, train_RMSE: 9.7891, train_MAPE: 0.2710]
+2024-12-23 20:24:58,930 - easytorch-training - INFO - Start validation.
+2024-12-23 20:27:50,875 - easytorch-training - INFO - Result <val>: [val_time: 171.95 (s), val_MAE: 6.3250, val_RMSE: 10.0429, val_MAPE: 0.3238]
+2024-12-23 20:27:50,949 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 20:33:35,865 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7476, Test RMSE: 9.0857, Test MAPE: 0.2516
+2024-12-23 20:33:35,871 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1804, Test RMSE: 9.8449, Test MAPE: 0.2819
+2024-12-23 20:33:35,875 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4272, Test RMSE: 10.3013, Test MAPE: 0.2986
+2024-12-23 20:33:35,880 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5940, Test RMSE: 10.6074, Test MAPE: 0.3093
+2024-12-23 20:33:35,884 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7128, Test RMSE: 10.8328, Test MAPE: 0.3164
+2024-12-23 20:33:35,889 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8180, Test RMSE: 10.9652, Test MAPE: 0.3255
+2024-12-23 20:33:35,915 - easytorch-training - INFO - Result <test>: [test_time: 344.97 (s), test_MAE: 6.4134, test_RMSE: 10.2931, test_MAPE: 0.2972]
+2024-12-23 20:33:35,960 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_031.pt saved
+2024-12-23 20:33:35,961 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:57:35
+2024-12-23 20:33:35,961 - easytorch-training - INFO - Epoch 32 / 100
+2024-12-23 20:39:41,048 - easytorch-training - INFO - Result <train>: [train_time: 365.09 (s), lr: 5.00e-04, train_MAE: 6.1718, train_RMSE: 9.7701, train_MAPE: 0.2682]
+2024-12-23 20:39:41,050 - easytorch-training - INFO - Start validation.
+2024-12-23 20:42:35,454 - easytorch-training - INFO - Result <val>: [val_time: 174.40 (s), val_MAE: 6.3179, val_RMSE: 10.0661, val_MAPE: 0.3165]
+2024-12-23 20:42:35,534 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 20:48:22,969 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7425, Test RMSE: 9.1151, Test MAPE: 0.2488
+2024-12-23 20:48:22,974 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1787, Test RMSE: 9.8818, Test MAPE: 0.2775
+2024-12-23 20:48:22,979 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4235, Test RMSE: 10.3398, Test MAPE: 0.2928
+2024-12-23 20:48:22,983 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5849, Test RMSE: 10.6350, Test MAPE: 0.3018
+2024-12-23 20:48:22,988 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7038, Test RMSE: 10.8513, Test MAPE: 0.3087
+2024-12-23 20:48:22,993 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8054, Test RMSE: 11.0062, Test MAPE: 0.3138
+2024-12-23 20:48:23,019 - easytorch-training - INFO - Result <test>: [test_time: 347.48 (s), test_MAE: 6.4065, test_RMSE: 10.3250, test_MAPE: 0.2906]
+2024-12-23 20:48:23,065 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_032.pt saved
+2024-12-23 20:48:23,065 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:56:31
+2024-12-23 20:48:23,065 - easytorch-training - INFO - Epoch 33 / 100
+2024-12-23 20:54:25,971 - easytorch-training - INFO - Result <train>: [train_time: 362.91 (s), lr: 5.00e-04, train_MAE: 6.1706, train_RMSE: 9.7662, train_MAPE: 0.2686]
+2024-12-23 20:54:25,972 - easytorch-training - INFO - Start validation.
+2024-12-23 20:57:18,056 - easytorch-training - INFO - Result <val>: [val_time: 172.08 (s), val_MAE: 6.3172, val_RMSE: 10.0855, val_MAPE: 0.3120]
+2024-12-23 20:57:18,130 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 21:03:08,288 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7373, Test RMSE: 9.1189, Test MAPE: 0.2420
+2024-12-23 21:03:08,293 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1746, Test RMSE: 9.8908, Test MAPE: 0.2727
+2024-12-23 21:03:08,297 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4279, Test RMSE: 10.3743, Test MAPE: 0.2898
+2024-12-23 21:03:08,302 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5908, Test RMSE: 10.6694, Test MAPE: 0.3004
+2024-12-23 21:03:08,307 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7041, Test RMSE: 10.8691, Test MAPE: 0.3075
+2024-12-23 21:03:08,311 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8011, Test RMSE: 11.0190, Test MAPE: 0.3143
+2024-12-23 21:03:08,338 - easytorch-training - INFO - Result <test>: [test_time: 350.21 (s), test_MAE: 6.4060, test_RMSE: 10.3441, test_MAPE: 0.2878]
+2024-12-23 21:03:08,388 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_033.pt saved
+2024-12-23 21:03:08,389 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:55:24
+2024-12-23 21:03:08,389 - easytorch-training - INFO - Epoch 34 / 100
+2024-12-23 21:09:16,095 - easytorch-training - INFO - Result <train>: [train_time: 367.71 (s), lr: 5.00e-04, train_MAE: 6.1519, train_RMSE: 9.7380, train_MAPE: 0.2661]
+2024-12-23 21:09:16,096 - easytorch-training - INFO - Start validation.
+2024-12-23 21:12:07,900 - easytorch-training - INFO - Result <val>: [val_time: 171.80 (s), val_MAE: 6.3383, val_RMSE: 10.1035, val_MAPE: 0.3137]
+2024-12-23 21:17:56,276 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7483, Test RMSE: 9.1203, Test MAPE: 0.2461
+2024-12-23 21:17:56,282 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1985, Test RMSE: 9.9025, Test MAPE: 0.2757
+2024-12-23 21:17:56,286 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4539, Test RMSE: 10.3852, Test MAPE: 0.2904
+2024-12-23 21:17:56,291 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.6215, Test RMSE: 10.7015, Test MAPE: 0.3001
+2024-12-23 21:17:56,295 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7389, Test RMSE: 10.9238, Test MAPE: 0.3094
+2024-12-23 21:17:56,300 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8376, Test RMSE: 11.0897, Test MAPE: 0.3156
+2024-12-23 21:17:56,327 - easytorch-training - INFO - Result <test>: [test_time: 348.43 (s), test_MAE: 6.4331, test_RMSE: 10.3756, test_MAPE: 0.2896]
+2024-12-23 21:17:56,373 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_034.pt saved
+2024-12-23 21:17:56,373 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:54:30
+2024-12-23 21:17:56,373 - easytorch-training - INFO - Epoch 35 / 100
+2024-12-23 21:24:05,972 - easytorch-training - INFO - Result <train>: [train_time: 369.60 (s), lr: 5.00e-04, train_MAE: 6.1467, train_RMSE: 9.7277, train_MAPE: 0.2695]
+2024-12-23 21:24:05,973 - easytorch-training - INFO - Start validation.
+2024-12-23 21:27:01,894 - easytorch-training - INFO - Result <val>: [val_time: 175.92 (s), val_MAE: 6.3207, val_RMSE: 10.0884, val_MAPE: 0.3041]
+2024-12-23 21:32:48,478 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7411, Test RMSE: 9.1193, Test MAPE: 0.2391
+2024-12-23 21:32:48,483 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1789, Test RMSE: 9.8888, Test MAPE: 0.2689
+2024-12-23 21:32:48,487 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4275, Test RMSE: 10.3511, Test MAPE: 0.2832
+2024-12-23 21:32:48,492 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5882, Test RMSE: 10.6411, Test MAPE: 0.2924
+2024-12-23 21:32:48,497 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7059, Test RMSE: 10.8642, Test MAPE: 0.2978
+2024-12-23 21:32:48,501 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8040, Test RMSE: 11.0357, Test MAPE: 0.3035
+2024-12-23 21:32:48,528 - easytorch-training - INFO - Result <test>: [test_time: 346.63 (s), test_MAE: 6.4076, test_RMSE: 10.3372, test_MAPE: 0.2808]
+2024-12-23 21:32:48,574 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_035.pt saved
+2024-12-23 21:32:48,575 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:53:51
+2024-12-23 21:32:48,575 - easytorch-training - INFO - Epoch 36 / 100
+2024-12-23 21:38:54,711 - easytorch-training - INFO - Result <train>: [train_time: 366.14 (s), lr: 5.00e-04, train_MAE: 6.1516, train_RMSE: 9.7364, train_MAPE: 0.2671]
+2024-12-23 21:38:54,712 - easytorch-training - INFO - Start validation.
+2024-12-23 21:41:49,394 - easytorch-training - INFO - Result <val>: [val_time: 174.68 (s), val_MAE: 6.3076, val_RMSE: 10.0475, val_MAPE: 0.3062]
+2024-12-23 21:41:49,473 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 21:47:35,387 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7386, Test RMSE: 9.1123, Test MAPE: 0.2411
+2024-12-23 21:47:35,392 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1717, Test RMSE: 9.8717, Test MAPE: 0.2693
+2024-12-23 21:47:35,397 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4185, Test RMSE: 10.3240, Test MAPE: 0.2840
+2024-12-23 21:47:35,401 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5784, Test RMSE: 10.6058, Test MAPE: 0.2935
+2024-12-23 21:47:35,406 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6939, Test RMSE: 10.8050, Test MAPE: 0.3015
+2024-12-23 21:47:35,410 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7897, Test RMSE: 10.9720, Test MAPE: 0.3059
+2024-12-23 21:47:35,437 - easytorch-training - INFO - Result <test>: [test_time: 345.96 (s), test_MAE: 6.3985, test_RMSE: 10.3012, test_MAPE: 0.2826]
+2024-12-23 21:47:35,483 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_036.pt saved
+2024-12-23 21:47:35,483 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:52:59
+2024-12-23 21:47:35,483 - easytorch-training - INFO - Epoch 37 / 100
+2024-12-23 21:53:44,731 - easytorch-training - INFO - Result <train>: [train_time: 369.25 (s), lr: 2.50e-04, train_MAE: 6.1313, train_RMSE: 9.7109, train_MAPE: 0.2639]
+2024-12-23 21:53:44,732 - easytorch-training - INFO - Start validation.
+2024-12-23 21:56:37,845 - easytorch-training - INFO - Result <val>: [val_time: 173.11 (s), val_MAE: 6.2978, val_RMSE: 10.0354, val_MAPE: 0.3122]
+2024-12-23 21:56:37,918 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 22:02:22,881 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7399, Test RMSE: 9.1081, Test MAPE: 0.2438
+2024-12-23 22:02:22,887 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1770, Test RMSE: 9.8841, Test MAPE: 0.2732
+2024-12-23 22:02:22,891 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4235, Test RMSE: 10.3490, Test MAPE: 0.2893
+2024-12-23 22:02:22,896 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5824, Test RMSE: 10.6331, Test MAPE: 0.2994
+2024-12-23 22:02:22,900 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6970, Test RMSE: 10.8385, Test MAPE: 0.3075
+2024-12-23 22:02:22,905 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7854, Test RMSE: 10.9848, Test MAPE: 0.3123
+2024-12-23 22:02:22,932 - easytorch-training - INFO - Result <test>: [test_time: 345.01 (s), test_MAE: 6.4009, test_RMSE: 10.3195, test_MAPE: 0.2876]
+2024-12-23 22:02:22,981 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_037.pt saved
+2024-12-23 22:02:22,981 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:52:11
+2024-12-23 22:02:22,981 - easytorch-training - INFO - Epoch 38 / 100
+2024-12-23 22:08:31,093 - easytorch-training - INFO - Result <train>: [train_time: 368.11 (s), lr: 2.50e-04, train_MAE: 6.1279, train_RMSE: 9.7066, train_MAPE: 0.2667]
+2024-12-23 22:08:31,094 - easytorch-training - INFO - Start validation.
+2024-12-23 22:11:23,163 - easytorch-training - INFO - Result <val>: [val_time: 172.07 (s), val_MAE: 6.3008, val_RMSE: 10.0453, val_MAPE: 0.3114]
+2024-12-23 22:17:08,754 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7393, Test RMSE: 9.1090, Test MAPE: 0.2448
+2024-12-23 22:17:08,759 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1780, Test RMSE: 9.8854, Test MAPE: 0.2745
+2024-12-23 22:17:08,763 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4214, Test RMSE: 10.3463, Test MAPE: 0.2885
+2024-12-23 22:17:08,768 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5787, Test RMSE: 10.6384, Test MAPE: 0.2968
+2024-12-23 22:17:08,773 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6909, Test RMSE: 10.8375, Test MAPE: 0.3041
+2024-12-23 22:17:08,777 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7886, Test RMSE: 10.9953, Test MAPE: 0.3087
+2024-12-23 22:17:08,804 - easytorch-training - INFO - Result <test>: [test_time: 345.64 (s), test_MAE: 6.3995, test_RMSE: 10.3220, test_MAPE: 0.2862]
+2024-12-23 22:17:08,849 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_038.pt saved
+2024-12-23 22:17:08,850 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:51:22
+2024-12-23 22:17:08,850 - easytorch-training - INFO - Epoch 39 / 100
+2024-12-23 22:23:15,003 - easytorch-training - INFO - Result <train>: [train_time: 366.15 (s), lr: 2.50e-04, train_MAE: 6.1139, train_RMSE: 9.6830, train_MAPE: 0.2683]
+2024-12-23 22:23:15,004 - easytorch-training - INFO - Start validation.
+2024-12-23 22:26:07,169 - easytorch-training - INFO - Result <val>: [val_time: 172.16 (s), val_MAE: 6.2965, val_RMSE: 10.0538, val_MAPE: 0.3114]
+2024-12-23 22:26:07,243 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 22:31:52,012 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7393, Test RMSE: 9.1152, Test MAPE: 0.2430
+2024-12-23 22:31:52,017 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1754, Test RMSE: 9.8832, Test MAPE: 0.2730
+2024-12-23 22:31:52,022 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4169, Test RMSE: 10.3365, Test MAPE: 0.2877
+2024-12-23 22:31:52,026 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5730, Test RMSE: 10.6263, Test MAPE: 0.2994
+2024-12-23 22:31:52,031 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6851, Test RMSE: 10.8385, Test MAPE: 0.3060
+2024-12-23 22:31:52,036 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7757, Test RMSE: 10.9907, Test MAPE: 0.3095
+2024-12-23 22:31:52,062 - easytorch-training - INFO - Result <test>: [test_time: 344.82 (s), test_MAE: 6.3942, test_RMSE: 10.3182, test_MAPE: 0.2865]
+2024-12-23 22:31:52,107 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_039.pt saved
+2024-12-23 22:31:52,107 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:50:29
+2024-12-23 22:31:52,107 - easytorch-training - INFO - Epoch 40 / 100
+2024-12-23 22:37:55,545 - easytorch-training - INFO - Result <train>: [train_time: 363.44 (s), lr: 2.50e-04, train_MAE: 6.1037, train_RMSE: 9.6648, train_MAPE: 0.2683]
+2024-12-23 22:37:55,547 - easytorch-training - INFO - Start validation.
+2024-12-23 22:40:51,955 - easytorch-training - INFO - Result <val>: [val_time: 176.41 (s), val_MAE: 6.2994, val_RMSE: 10.0603, val_MAPE: 0.3145]
+2024-12-23 22:46:38,913 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7382, Test RMSE: 9.1071, Test MAPE: 0.2438
+2024-12-23 22:46:38,918 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1746, Test RMSE: 9.8855, Test MAPE: 0.2751
+2024-12-23 22:46:38,923 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4206, Test RMSE: 10.3547, Test MAPE: 0.2913
+2024-12-23 22:46:38,927 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5865, Test RMSE: 10.6584, Test MAPE: 0.3029
+2024-12-23 22:46:38,932 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6989, Test RMSE: 10.8717, Test MAPE: 0.3109
+2024-12-23 22:46:38,936 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7911, Test RMSE: 11.0312, Test MAPE: 0.3160
+2024-12-23 22:46:38,963 - easytorch-training - INFO - Result <test>: [test_time: 347.01 (s), test_MAE: 6.4017, test_RMSE: 10.3390, test_MAPE: 0.2900]
+2024-12-23 22:46:39,009 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_040.pt saved
+2024-12-23 22:46:39,031 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:49:47
+2024-12-23 22:46:39,031 - easytorch-training - INFO - Epoch 41 / 100
+2024-12-23 22:52:40,683 - easytorch-training - INFO - Result <train>: [train_time: 361.65 (s), lr: 2.50e-04, train_MAE: 6.1142, train_RMSE: 9.6857, train_MAPE: 0.2702]
+2024-12-23 22:52:40,685 - easytorch-training - INFO - Start validation.
+2024-12-23 22:55:32,641 - easytorch-training - INFO - Result <val>: [val_time: 171.96 (s), val_MAE: 6.2904, val_RMSE: 10.0244, val_MAPE: 0.3101]
+2024-12-23 22:55:32,715 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 23:01:17,919 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7344, Test RMSE: 9.1018, Test MAPE: 0.2438
+2024-12-23 23:01:17,924 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1720, Test RMSE: 9.8736, Test MAPE: 0.2742
+2024-12-23 23:01:17,928 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4198, Test RMSE: 10.3365, Test MAPE: 0.2887
+2024-12-23 23:01:17,933 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5816, Test RMSE: 10.6263, Test MAPE: 0.2981
+2024-12-23 23:01:17,938 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6938, Test RMSE: 10.8312, Test MAPE: 0.3056
+2024-12-23 23:01:17,942 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7829, Test RMSE: 10.9855, Test MAPE: 0.3107
+2024-12-23 23:01:17,969 - easytorch-training - INFO - Result <test>: [test_time: 345.25 (s), test_MAE: 6.3974, test_RMSE: 10.3125, test_MAPE: 0.2868]
+2024-12-23 23:01:18,014 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_041.pt saved
+2024-12-23 23:01:18,015 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:48:48
+2024-12-23 23:01:18,015 - easytorch-training - INFO - Epoch 42 / 100
+2024-12-23 23:07:27,723 - easytorch-training - INFO - Result <train>: [train_time: 369.71 (s), lr: 2.50e-04, train_MAE: 6.1188, train_RMSE: 9.6910, train_MAPE: 0.2663]
+2024-12-23 23:07:27,724 - easytorch-training - INFO - Start validation.
+2024-12-23 23:10:22,587 - easytorch-training - INFO - Result <val>: [val_time: 174.86 (s), val_MAE: 6.3068, val_RMSE: 10.0771, val_MAPE: 0.3012]
+2024-12-23 23:16:10,443 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7485, Test RMSE: 9.1406, Test MAPE: 0.2378
+2024-12-23 23:16:10,448 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1895, Test RMSE: 9.9248, Test MAPE: 0.2663
+2024-12-23 23:16:10,453 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4375, Test RMSE: 10.3981, Test MAPE: 0.2805
+2024-12-23 23:16:10,458 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5951, Test RMSE: 10.6886, Test MAPE: 0.2895
+2024-12-23 23:16:10,462 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7092, Test RMSE: 10.8955, Test MAPE: 0.2949
+2024-12-23 23:16:10,467 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7947, Test RMSE: 11.0418, Test MAPE: 0.3001
+2024-12-23 23:16:10,493 - easytorch-training - INFO - Result <test>: [test_time: 347.91 (s), test_MAE: 6.4124, test_RMSE: 10.3686, test_MAPE: 0.2782]
+2024-12-23 23:16:10,539 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_042.pt saved
+2024-12-23 23:16:10,540 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:48:24
+2024-12-23 23:16:10,540 - easytorch-training - INFO - Epoch 43 / 100
+2024-12-23 23:22:17,377 - easytorch-training - INFO - Result <train>: [train_time: 366.84 (s), lr: 2.50e-04, train_MAE: 6.1232, train_RMSE: 9.6976, train_MAPE: 0.2645]
+2024-12-23 23:22:17,378 - easytorch-training - INFO - Start validation.
+2024-12-23 23:25:10,359 - easytorch-training - INFO - Result <val>: [val_time: 172.98 (s), val_MAE: 6.2939, val_RMSE: 10.0296, val_MAPE: 0.3137]
+2024-12-23 23:30:58,141 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7434, Test RMSE: 9.1013, Test MAPE: 0.2460
+2024-12-23 23:30:58,146 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1795, Test RMSE: 9.8719, Test MAPE: 0.2758
+2024-12-23 23:30:58,151 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4229, Test RMSE: 10.3320, Test MAPE: 0.2912
+2024-12-23 23:30:58,156 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5849, Test RMSE: 10.6340, Test MAPE: 0.3018
+2024-12-23 23:30:58,160 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6908, Test RMSE: 10.8374, Test MAPE: 0.3071
+2024-12-23 23:30:58,165 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7760, Test RMSE: 10.9910, Test MAPE: 0.3113
+2024-12-23 23:30:58,191 - easytorch-training - INFO - Result <test>: [test_time: 347.83 (s), test_MAE: 6.3996, test_RMSE: 10.3148, test_MAPE: 0.2889]
+2024-12-23 23:30:58,238 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_043.pt saved
+2024-12-23 23:30:58,238 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:47:50
+2024-12-23 23:30:58,239 - easytorch-training - INFO - Epoch 44 / 100
+2024-12-23 23:37:11,735 - easytorch-training - INFO - Result <train>: [train_time: 373.50 (s), lr: 2.50e-04, train_MAE: 6.1212, train_RMSE: 9.6898, train_MAPE: 0.2693]
+2024-12-23 23:37:11,736 - easytorch-training - INFO - Start validation.
+2024-12-23 23:40:10,864 - easytorch-training - INFO - Result <val>: [val_time: 179.13 (s), val_MAE: 6.2892, val_RMSE: 10.0354, val_MAPE: 0.3118]
+2024-12-23 23:40:10,945 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-23 23:46:05,440 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7454, Test RMSE: 9.1228, Test MAPE: 0.2431
+2024-12-23 23:46:05,446 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1789, Test RMSE: 9.8981, Test MAPE: 0.2737
+2024-12-23 23:46:05,450 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4283, Test RMSE: 10.3660, Test MAPE: 0.2887
+2024-12-23 23:46:05,455 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5876, Test RMSE: 10.6579, Test MAPE: 0.2983
+2024-12-23 23:46:05,460 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6984, Test RMSE: 10.8557, Test MAPE: 0.3059
+2024-12-23 23:46:05,464 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7884, Test RMSE: 11.0126, Test MAPE: 0.3107
+2024-12-23 23:46:05,491 - easytorch-training - INFO - Result <test>: [test_time: 354.55 (s), test_MAE: 6.4045, test_RMSE: 10.3390, test_MAPE: 0.2867]
+2024-12-23 23:46:05,555 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_044.pt saved
+2024-12-23 23:46:05,555 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:48:02
+2024-12-23 23:46:05,555 - easytorch-training - INFO - Epoch 45 / 100
+2024-12-23 23:52:24,632 - easytorch-training - INFO - Result <train>: [train_time: 379.08 (s), lr: 2.50e-04, train_MAE: 6.1054, train_RMSE: 9.6678, train_MAPE: 0.2660]
+2024-12-23 23:52:24,633 - easytorch-training - INFO - Start validation.
+2024-12-23 23:55:23,465 - easytorch-training - INFO - Result <val>: [val_time: 178.83 (s), val_MAE: 6.2860, val_RMSE: 10.0211, val_MAPE: 0.3087]
+2024-12-23 23:55:23,546 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 00:01:16,952 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7401, Test RMSE: 9.1056, Test MAPE: 0.2454
+2024-12-24 00:01:16,957 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1729, Test RMSE: 9.8727, Test MAPE: 0.2735
+2024-12-24 00:01:16,962 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4178, Test RMSE: 10.3330, Test MAPE: 0.2878
+2024-12-24 00:01:16,967 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5753, Test RMSE: 10.6237, Test MAPE: 0.2961
+2024-12-24 00:01:16,971 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6858, Test RMSE: 10.8291, Test MAPE: 0.3024
+2024-12-24 00:01:16,976 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7762, Test RMSE: 10.9964, Test MAPE: 0.3064
+2024-12-24 00:01:17,003 - easytorch-training - INFO - Result <test>: [test_time: 353.46 (s), test_MAE: 6.3947, test_RMSE: 10.3135, test_MAPE: 0.2853]
+2024-12-24 00:01:17,055 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_045.pt saved
+2024-12-24 00:01:17,055 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:48:23
+2024-12-24 00:01:17,055 - easytorch-training - INFO - Epoch 46 / 100
+2024-12-24 00:07:36,397 - easytorch-training - INFO - Result <train>: [train_time: 379.34 (s), lr: 2.50e-04, train_MAE: 6.0978, train_RMSE: 9.6557, train_MAPE: 0.2638]
+2024-12-24 00:07:36,398 - easytorch-training - INFO - Start validation.
+2024-12-24 00:10:34,186 - easytorch-training - INFO - Result <val>: [val_time: 177.79 (s), val_MAE: 6.2982, val_RMSE: 10.0390, val_MAPE: 0.3103]
+2024-12-24 00:16:23,917 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7492, Test RMSE: 9.1144, Test MAPE: 0.2441
+2024-12-24 00:16:23,922 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1920, Test RMSE: 9.9015, Test MAPE: 0.2731
+2024-12-24 00:16:23,927 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4334, Test RMSE: 10.3699, Test MAPE: 0.2875
+2024-12-24 00:16:23,931 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5929, Test RMSE: 10.6579, Test MAPE: 0.2966
+2024-12-24 00:16:23,936 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7083, Test RMSE: 10.8703, Test MAPE: 0.3023
+2024-12-24 00:16:23,941 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8005, Test RMSE: 11.0245, Test MAPE: 0.3064
+2024-12-24 00:16:23,967 - easytorch-training - INFO - Result <test>: [test_time: 349.78 (s), test_MAE: 6.4127, test_RMSE: 10.3436, test_MAPE: 0.2850]
+2024-12-24 00:16:24,014 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_046.pt saved
+2024-12-24 00:16:24,014 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:48:33
+2024-12-24 00:16:24,014 - easytorch-training - INFO - Epoch 47 / 100
+2024-12-24 00:22:39,121 - easytorch-training - INFO - Result <train>: [train_time: 375.11 (s), lr: 2.50e-04, train_MAE: 6.0913, train_RMSE: 9.6488, train_MAPE: 0.2631]
+2024-12-24 00:22:39,122 - easytorch-training - INFO - Start validation.
+2024-12-24 00:25:45,101 - easytorch-training - INFO - Result <val>: [val_time: 185.98 (s), val_MAE: 6.2847, val_RMSE: 10.0067, val_MAPE: 0.3084]
+2024-12-24 00:25:45,182 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 00:32:13,138 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7378, Test RMSE: 9.1132, Test MAPE: 0.2435
+2024-12-24 00:32:13,144 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1731, Test RMSE: 9.8852, Test MAPE: 0.2716
+2024-12-24 00:32:13,149 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4199, Test RMSE: 10.3321, Test MAPE: 0.2860
+2024-12-24 00:32:13,154 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5843, Test RMSE: 10.6204, Test MAPE: 0.2943
+2024-12-24 00:32:13,159 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6988, Test RMSE: 10.8237, Test MAPE: 0.3008
+2024-12-24 00:32:13,164 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7889, Test RMSE: 10.9729, Test MAPE: 0.3080
+2024-12-24 00:32:13,195 - easytorch-training - INFO - Result <test>: [test_time: 388.01 (s), test_MAE: 6.4005, test_RMSE: 10.3108, test_MAPE: 0.2840]
+2024-12-24 00:32:13,243 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_047.pt saved
+2024-12-24 00:32:13,243 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:50:13
+2024-12-24 00:32:13,243 - easytorch-training - INFO - Epoch 48 / 100
+2024-12-24 00:39:22,151 - easytorch-training - INFO - Result <train>: [train_time: 428.91 (s), lr: 2.50e-04, train_MAE: 6.1039, train_RMSE: 9.6644, train_MAPE: 0.2648]
+2024-12-24 00:39:22,152 - easytorch-training - INFO - Start validation.
+2024-12-24 00:42:38,128 - easytorch-training - INFO - Result <val>: [val_time: 195.98 (s), val_MAE: 6.2950, val_RMSE: 10.0560, val_MAPE: 0.3166]
+2024-12-24 00:49:11,181 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7436, Test RMSE: 9.1122, Test MAPE: 0.2474
+2024-12-24 00:49:11,187 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1834, Test RMSE: 9.9047, Test MAPE: 0.2779
+2024-12-24 00:49:11,192 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4333, Test RMSE: 10.3772, Test MAPE: 0.2943
+2024-12-24 00:49:11,197 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5999, Test RMSE: 10.6948, Test MAPE: 0.3042
+2024-12-24 00:49:11,202 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7205, Test RMSE: 10.9235, Test MAPE: 0.3118
+2024-12-24 00:49:11,207 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.8032, Test RMSE: 11.0703, Test MAPE: 0.3153
+2024-12-24 00:49:11,239 - easytorch-training - INFO - Result <test>: [test_time: 393.11 (s), test_MAE: 6.4140, test_RMSE: 10.3688, test_MAPE: 0.2918]
+2024-12-24 00:49:11,290 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_048.pt saved
+2024-12-24 00:49:11,290 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:54:12
+2024-12-24 00:49:11,290 - easytorch-training - INFO - Epoch 49 / 100
+2024-12-24 00:56:23,652 - easytorch-training - INFO - Result <train>: [train_time: 432.36 (s), lr: 2.50e-04, train_MAE: 6.0946, train_RMSE: 9.6479, train_MAPE: 0.2662]
+2024-12-24 00:56:23,654 - easytorch-training - INFO - Start validation.
+2024-12-24 00:59:37,639 - easytorch-training - INFO - Result <val>: [val_time: 193.98 (s), val_MAE: 6.2830, val_RMSE: 10.0246, val_MAPE: 0.3115]
+2024-12-24 00:59:37,714 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 01:06:17,963 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7380, Test RMSE: 9.1010, Test MAPE: 0.2469
+2024-12-24 01:06:17,969 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1751, Test RMSE: 9.8851, Test MAPE: 0.2752
+2024-12-24 01:06:17,974 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4199, Test RMSE: 10.3511, Test MAPE: 0.2904
+2024-12-24 01:06:17,979 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5777, Test RMSE: 10.6545, Test MAPE: 0.2981
+2024-12-24 01:06:17,990 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6868, Test RMSE: 10.8512, Test MAPE: 0.3049
+2024-12-24 01:06:18,002 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7761, Test RMSE: 11.0028, Test MAPE: 0.3091
+2024-12-24 01:06:18,036 - easytorch-training - INFO - Result <test>: [test_time: 400.32 (s), test_MAE: 6.3956, test_RMSE: 10.3281, test_MAPE: 0.2874]
+2024-12-24 01:06:18,084 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_049.pt saved
+2024-12-24 01:06:18,085 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 13:58:19
+2024-12-24 01:06:18,085 - easytorch-training - INFO - Epoch 50 / 100
+2024-12-24 01:13:22,509 - easytorch-training - INFO - Result <train>: [train_time: 424.42 (s), lr: 2.50e-04, train_MAE: 6.0846, train_RMSE: 9.6312, train_MAPE: 0.2698]
+2024-12-24 01:13:22,510 - easytorch-training - INFO - Start validation.
+2024-12-24 01:16:37,276 - easytorch-training - INFO - Result <val>: [val_time: 194.77 (s), val_MAE: 6.2930, val_RMSE: 10.0545, val_MAPE: 0.3113]
+2024-12-24 01:23:27,112 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7370, Test RMSE: 9.1077, Test MAPE: 0.2414
+2024-12-24 01:23:27,118 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1749, Test RMSE: 9.8830, Test MAPE: 0.2731
+2024-12-24 01:23:27,123 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4247, Test RMSE: 10.3565, Test MAPE: 0.2894
+2024-12-24 01:23:27,128 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5925, Test RMSE: 10.6750, Test MAPE: 0.2985
+2024-12-24 01:23:27,133 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7076, Test RMSE: 10.8954, Test MAPE: 0.3053
+2024-12-24 01:23:27,138 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7924, Test RMSE: 11.0398, Test MAPE: 0.3091
+2024-12-24 01:23:27,170 - easytorch-training - INFO - Result <test>: [test_time: 409.89 (s), test_MAE: 6.4048, test_RMSE: 10.3475, test_MAPE: 0.2861]
+2024-12-24 01:23:27,216 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_050.pt saved
+2024-12-24 01:23:27,238 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:02:21
+2024-12-24 01:23:27,239 - easytorch-training - INFO - Epoch 51 / 100
+2024-12-24 01:30:25,400 - easytorch-training - INFO - Result <train>: [train_time: 418.16 (s), lr: 2.50e-04, train_MAE: 6.0812, train_RMSE: 9.6287, train_MAPE: 0.2674]
+2024-12-24 01:30:25,402 - easytorch-training - INFO - Start validation.
+2024-12-24 01:34:00,669 - easytorch-training - INFO - Result <val>: [val_time: 215.27 (s), val_MAE: 6.2817, val_RMSE: 10.0285, val_MAPE: 0.3081]
+2024-12-24 01:34:00,748 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 01:41:35,379 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7417, Test RMSE: 9.1163, Test MAPE: 0.2459
+2024-12-24 01:41:35,385 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1766, Test RMSE: 9.8938, Test MAPE: 0.2733
+2024-12-24 01:41:35,390 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4244, Test RMSE: 10.3596, Test MAPE: 0.2880
+2024-12-24 01:41:35,395 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5826, Test RMSE: 10.6525, Test MAPE: 0.2956
+2024-12-24 01:41:35,400 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6982, Test RMSE: 10.8661, Test MAPE: 0.3016
+2024-12-24 01:41:35,405 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7849, Test RMSE: 11.0165, Test MAPE: 0.3046
+2024-12-24 01:41:35,436 - easytorch-training - INFO - Result <test>: [test_time: 454.69 (s), test_MAE: 6.4014, test_RMSE: 10.3378, test_MAPE: 0.2848]
+2024-12-24 01:41:35,486 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_051.pt saved
+2024-12-24 01:41:35,486 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:08:09
+2024-12-24 01:41:35,486 - easytorch-training - INFO - Epoch 52 / 100
+2024-12-24 01:50:18,717 - easytorch-training - INFO - Result <train>: [train_time: 523.23 (s), lr: 2.50e-04, train_MAE: 6.0921, train_RMSE: 9.6499, train_MAPE: 0.2669]
+2024-12-24 01:50:18,718 - easytorch-training - INFO - Start validation.
+2024-12-24 01:54:51,235 - easytorch-training - INFO - Result <val>: [val_time: 272.52 (s), val_MAE: 6.2746, val_RMSE: 10.0013, val_MAPE: 0.3118]
+2024-12-24 01:54:51,313 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 02:03:12,276 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7422, Test RMSE: 9.1134, Test MAPE: 0.2457
+2024-12-24 02:03:12,282 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1747, Test RMSE: 9.8792, Test MAPE: 0.2765
+2024-12-24 02:03:12,287 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4197, Test RMSE: 10.3404, Test MAPE: 0.2908
+2024-12-24 02:03:12,292 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5768, Test RMSE: 10.6358, Test MAPE: 0.2997
+2024-12-24 02:03:12,297 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6796, Test RMSE: 10.8248, Test MAPE: 0.3059
+2024-12-24 02:03:12,302 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7631, Test RMSE: 10.9700, Test MAPE: 0.3095
+2024-12-24 02:03:12,333 - easytorch-training - INFO - Result <test>: [test_time: 501.02 (s), test_MAE: 6.3927, test_RMSE: 10.3135, test_MAPE: 0.2880]
+2024-12-24 02:03:12,384 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_052.pt saved
+2024-12-24 02:03:12,385 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:20:25
+2024-12-24 02:03:12,385 - easytorch-training - INFO - Epoch 53 / 100
+2024-12-24 02:11:42,685 - easytorch-training - INFO - Result <train>: [train_time: 510.30 (s), lr: 2.50e-04, train_MAE: 6.0905, train_RMSE: 9.6483, train_MAPE: 0.2657]
+2024-12-24 02:11:42,686 - easytorch-training - INFO - Start validation.
+2024-12-24 02:15:50,301 - easytorch-training - INFO - Result <val>: [val_time: 247.62 (s), val_MAE: 6.2809, val_RMSE: 10.0235, val_MAPE: 0.3068]
+2024-12-24 02:23:25,379 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7400, Test RMSE: 9.1185, Test MAPE: 0.2397
+2024-12-24 02:23:25,385 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1757, Test RMSE: 9.8898, Test MAPE: 0.2680
+2024-12-24 02:23:25,390 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4187, Test RMSE: 10.3438, Test MAPE: 0.2848
+2024-12-24 02:23:25,395 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5732, Test RMSE: 10.6314, Test MAPE: 0.2940
+2024-12-24 02:23:25,400 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6794, Test RMSE: 10.8256, Test MAPE: 0.3008
+2024-12-24 02:23:25,405 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7633, Test RMSE: 10.9675, Test MAPE: 0.3059
+2024-12-24 02:23:25,436 - easytorch-training - INFO - Result <test>: [test_time: 455.13 (s), test_MAE: 6.3917, test_RMSE: 10.3155, test_MAPE: 0.2822]
+2024-12-24 02:23:25,488 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_053.pt saved
+2024-12-24 02:23:25,488 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:29:35
+2024-12-24 02:23:25,488 - easytorch-training - INFO - Epoch 54 / 100
+2024-12-24 02:31:26,226 - easytorch-training - INFO - Result <train>: [train_time: 480.74 (s), lr: 2.50e-04, train_MAE: 6.0742, train_RMSE: 9.6210, train_MAPE: 0.2673]
+2024-12-24 02:31:26,227 - easytorch-training - INFO - Start validation.
+2024-12-24 02:35:15,758 - easytorch-training - INFO - Result <val>: [val_time: 229.53 (s), val_MAE: 6.2815, val_RMSE: 10.0165, val_MAPE: 0.3152]
+2024-12-24 02:42:48,063 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7401, Test RMSE: 9.1090, Test MAPE: 0.2447
+2024-12-24 02:42:48,069 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1800, Test RMSE: 9.8781, Test MAPE: 0.2770
+2024-12-24 02:42:48,074 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4259, Test RMSE: 10.3441, Test MAPE: 0.2927
+2024-12-24 02:42:48,079 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5870, Test RMSE: 10.6399, Test MAPE: 0.3028
+2024-12-24 02:42:48,084 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6910, Test RMSE: 10.8250, Test MAPE: 0.3105
+2024-12-24 02:42:48,089 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7749, Test RMSE: 10.9726, Test MAPE: 0.3135
+2024-12-24 02:42:48,120 - easytorch-training - INFO - Result <test>: [test_time: 452.36 (s), test_MAE: 6.3998, test_RMSE: 10.3145, test_MAPE: 0.2902]
+2024-12-24 02:42:48,170 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_054.pt saved
+2024-12-24 02:42:48,171 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:36:51
+2024-12-24 02:42:48,171 - easytorch-training - INFO - Epoch 55 / 100
+2024-12-24 02:50:31,386 - easytorch-training - INFO - Result <train>: [train_time: 463.21 (s), lr: 1.25e-04, train_MAE: 6.0733, train_RMSE: 9.6218, train_MAPE: 0.2642]
+2024-12-24 02:50:31,388 - easytorch-training - INFO - Start validation.
+2024-12-24 02:54:41,039 - easytorch-training - INFO - Result <val>: [val_time: 249.65 (s), val_MAE: 6.2692, val_RMSE: 9.9992, val_MAPE: 0.3104]
+2024-12-24 02:54:41,142 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 03:02:29,720 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7348, Test RMSE: 9.1047, Test MAPE: 0.2427
+2024-12-24 03:02:29,726 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1683, Test RMSE: 9.8685, Test MAPE: 0.2729
+2024-12-24 03:02:29,731 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4131, Test RMSE: 10.3249, Test MAPE: 0.2877
+2024-12-24 03:02:29,736 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5746, Test RMSE: 10.6221, Test MAPE: 0.2971
+2024-12-24 03:02:29,741 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6857, Test RMSE: 10.8325, Test MAPE: 0.3048
+2024-12-24 03:02:29,746 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7712, Test RMSE: 10.9800, Test MAPE: 0.3099
+2024-12-24 03:02:29,777 - easytorch-training - INFO - Result <test>: [test_time: 468.63 (s), test_MAE: 6.3913, test_RMSE: 10.3087, test_MAPE: 0.2858]
+2024-12-24 03:02:29,829 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_055.pt saved
+2024-12-24 03:02:29,829 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:44:26
+2024-12-24 03:02:29,829 - easytorch-training - INFO - Epoch 56 / 100
+2024-12-24 03:10:46,181 - easytorch-training - INFO - Result <train>: [train_time: 496.35 (s), lr: 1.25e-04, train_MAE: 6.0761, train_RMSE: 9.6238, train_MAPE: 0.2626]
+2024-12-24 03:10:46,182 - easytorch-training - INFO - Start validation.
+2024-12-24 03:15:02,574 - easytorch-training - INFO - Result <val>: [val_time: 256.39 (s), val_MAE: 6.2702, val_RMSE: 9.9917, val_MAPE: 0.3143]
+2024-12-24 03:23:25,169 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7339, Test RMSE: 9.0910, Test MAPE: 0.2463
+2024-12-24 03:23:25,174 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1679, Test RMSE: 9.8548, Test MAPE: 0.2763
+2024-12-24 03:23:25,180 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4138, Test RMSE: 10.3170, Test MAPE: 0.2926
+2024-12-24 03:23:25,184 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5718, Test RMSE: 10.6113, Test MAPE: 0.3014
+2024-12-24 03:23:25,190 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6817, Test RMSE: 10.8101, Test MAPE: 0.3092
+2024-12-24 03:23:25,195 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7674, Test RMSE: 10.9571, Test MAPE: 0.3141
+2024-12-24 03:23:25,226 - easytorch-training - INFO - Result <test>: [test_time: 502.65 (s), test_MAE: 6.3894, test_RMSE: 10.2933, test_MAPE: 0.2900]
+2024-12-24 03:23:25,379 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_056.pt saved
+2024-12-24 03:23:25,379 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 14:53:57
+2024-12-24 03:23:25,379 - easytorch-training - INFO - Epoch 57 / 100
+2024-12-24 03:31:33,763 - easytorch-training - INFO - Result <train>: [train_time: 488.38 (s), lr: 1.25e-04, train_MAE: 6.0586, train_RMSE: 9.5915, train_MAPE: 0.2656]
+2024-12-24 03:31:33,764 - easytorch-training - INFO - Start validation.
+2024-12-24 03:35:26,054 - easytorch-training - INFO - Result <val>: [val_time: 232.29 (s), val_MAE: 6.2674, val_RMSE: 10.0013, val_MAPE: 0.3105]
+2024-12-24 03:35:26,131 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 03:43:50,629 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7310, Test RMSE: 9.1012, Test MAPE: 0.2434
+2024-12-24 03:43:50,634 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1650, Test RMSE: 9.8679, Test MAPE: 0.2722
+2024-12-24 03:43:50,640 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4087, Test RMSE: 10.3314, Test MAPE: 0.2870
+2024-12-24 03:43:50,645 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5662, Test RMSE: 10.6183, Test MAPE: 0.2977
+2024-12-24 03:43:50,650 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6755, Test RMSE: 10.8210, Test MAPE: 0.3054
+2024-12-24 03:43:50,655 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7599, Test RMSE: 10.9715, Test MAPE: 0.3114
+2024-12-24 03:43:50,686 - easytorch-training - INFO - Result <test>: [test_time: 504.55 (s), test_MAE: 6.3844, test_RMSE: 10.3050, test_MAPE: 0.2862]
+2024-12-24 03:43:50,738 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_057.pt saved
+2024-12-24 03:43:50,739 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:02:15
+2024-12-24 03:43:50,739 - easytorch-training - INFO - Epoch 58 / 100
+2024-12-24 03:51:28,110 - easytorch-training - INFO - Result <train>: [train_time: 457.37 (s), lr: 1.25e-04, train_MAE: 6.0588, train_RMSE: 9.6001, train_MAPE: 0.2622]
+2024-12-24 03:51:28,112 - easytorch-training - INFO - Start validation.
+2024-12-24 03:55:06,537 - easytorch-training - INFO - Result <val>: [val_time: 218.43 (s), val_MAE: 6.2680, val_RMSE: 10.0075, val_MAPE: 0.3091]
+2024-12-24 04:03:48,075 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7343, Test RMSE: 9.1024, Test MAPE: 0.2432
+2024-12-24 04:03:48,080 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1711, Test RMSE: 9.8785, Test MAPE: 0.2733
+2024-12-24 04:03:48,085 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4184, Test RMSE: 10.3546, Test MAPE: 0.2879
+2024-12-24 04:03:48,090 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5758, Test RMSE: 10.6476, Test MAPE: 0.2968
+2024-12-24 04:03:48,095 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6812, Test RMSE: 10.8386, Test MAPE: 0.3033
+2024-12-24 04:03:48,100 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7664, Test RMSE: 10.9830, Test MAPE: 0.3067
+2024-12-24 04:03:48,131 - easytorch-training - INFO - Result <test>: [test_time: 521.59 (s), test_MAE: 6.3912, test_RMSE: 10.3209, test_MAPE: 0.2852]
+2024-12-24 04:03:48,180 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_058.pt saved
+2024-12-24 04:03:48,181 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:09:27
+2024-12-24 04:03:48,181 - easytorch-training - INFO - Epoch 59 / 100
+2024-12-24 04:10:54,418 - easytorch-training - INFO - Result <train>: [train_time: 426.24 (s), lr: 1.25e-04, train_MAE: 6.0568, train_RMSE: 9.5918, train_MAPE: 0.2660]
+2024-12-24 04:10:54,419 - easytorch-training - INFO - Start validation.
+2024-12-24 04:15:02,386 - easytorch-training - INFO - Result <val>: [val_time: 247.97 (s), val_MAE: 6.2698, val_RMSE: 10.0089, val_MAPE: 0.3107]
+2024-12-24 04:23:12,906 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7374, Test RMSE: 9.1065, Test MAPE: 0.2431
+2024-12-24 04:23:12,911 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1738, Test RMSE: 9.8850, Test MAPE: 0.2727
+2024-12-24 04:23:12,916 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4200, Test RMSE: 10.3544, Test MAPE: 0.2886
+2024-12-24 04:23:12,921 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5778, Test RMSE: 10.6475, Test MAPE: 0.2985
+2024-12-24 04:23:12,925 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6859, Test RMSE: 10.8492, Test MAPE: 0.3053
+2024-12-24 04:23:12,930 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7713, Test RMSE: 10.9949, Test MAPE: 0.3107
+2024-12-24 04:23:12,956 - easytorch-training - INFO - Result <test>: [test_time: 490.57 (s), test_MAE: 6.3944, test_RMSE: 10.3265, test_MAPE: 0.2865]
+2024-12-24 04:23:13,003 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_059.pt saved
+2024-12-24 04:23:13,004 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:15:30
+2024-12-24 04:23:13,004 - easytorch-training - INFO - Epoch 60 / 100
+2024-12-24 04:30:12,082 - easytorch-training - INFO - Result <train>: [train_time: 419.08 (s), lr: 1.25e-04, train_MAE: 6.0699, train_RMSE: 9.6161, train_MAPE: 0.2646]
+2024-12-24 04:30:12,084 - easytorch-training - INFO - Start validation.
+2024-12-24 04:34:11,694 - easytorch-training - INFO - Result <val>: [val_time: 239.61 (s), val_MAE: 6.2691, val_RMSE: 9.9847, val_MAPE: 0.3094]
+2024-12-24 04:43:04,359 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7398, Test RMSE: 9.0969, Test MAPE: 0.2441
+2024-12-24 04:43:04,365 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1730, Test RMSE: 9.8637, Test MAPE: 0.2743
+2024-12-24 04:43:04,370 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4192, Test RMSE: 10.3311, Test MAPE: 0.2881
+2024-12-24 04:43:04,375 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5753, Test RMSE: 10.6130, Test MAPE: 0.2967
+2024-12-24 04:43:04,380 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6777, Test RMSE: 10.8028, Test MAPE: 0.3033
+2024-12-24 04:43:04,385 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7595, Test RMSE: 10.9414, Test MAPE: 0.3060
+2024-12-24 04:43:04,416 - easytorch-training - INFO - Result <test>: [test_time: 532.72 (s), test_MAE: 6.3907, test_RMSE: 10.2942, test_MAPE: 0.2854]
+2024-12-24 04:43:04,464 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_060.pt saved
+2024-12-24 04:43:04,490 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:22:05
+2024-12-24 04:43:04,490 - easytorch-training - INFO - Epoch 61 / 100
+2024-12-24 04:51:13,852 - easytorch-training - INFO - Result <train>: [train_time: 489.36 (s), lr: 1.25e-04, train_MAE: 6.0461, train_RMSE: 9.5696, train_MAPE: 0.2675]
+2024-12-24 04:51:13,853 - easytorch-training - INFO - Start validation.
+2024-12-24 04:55:04,958 - easytorch-training - INFO - Result <val>: [val_time: 231.10 (s), val_MAE: 6.2674, val_RMSE: 9.9980, val_MAPE: 0.3117]
+2024-12-24 04:55:05,035 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 05:03:12,610 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7349, Test RMSE: 9.0995, Test MAPE: 0.2452
+2024-12-24 05:03:12,616 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1724, Test RMSE: 9.8738, Test MAPE: 0.2753
+2024-12-24 05:03:12,621 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4182, Test RMSE: 10.3457, Test MAPE: 0.2899
+2024-12-24 05:03:12,626 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5759, Test RMSE: 10.6387, Test MAPE: 0.2987
+2024-12-24 05:03:12,636 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6836, Test RMSE: 10.8346, Test MAPE: 0.3053
+2024-12-24 05:03:12,647 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7670, Test RMSE: 10.9776, Test MAPE: 0.3088
+2024-12-24 05:03:12,683 - easytorch-training - INFO - Result <test>: [test_time: 487.65 (s), test_MAE: 6.3920, test_RMSE: 10.3151, test_MAPE: 0.2872]
+2024-12-24 05:03:12,733 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_061.pt saved
+2024-12-24 05:03:12,734 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:28:54
+2024-12-24 05:03:12,734 - easytorch-training - INFO - Epoch 62 / 100
+2024-12-24 05:11:17,565 - easytorch-training - INFO - Result <train>: [train_time: 484.83 (s), lr: 1.25e-04, train_MAE: 6.0529, train_RMSE: 9.5682, train_MAPE: 0.2608]
+2024-12-24 05:11:17,566 - easytorch-training - INFO - Start validation.
+2024-12-24 05:15:04,802 - easytorch-training - INFO - Result <val>: [val_time: 227.24 (s), val_MAE: 6.2697, val_RMSE: 10.0080, val_MAPE: 0.3060]
+2024-12-24 05:22:39,630 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7356, Test RMSE: 9.1130, Test MAPE: 0.2406
+2024-12-24 05:22:39,636 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1688, Test RMSE: 9.8830, Test MAPE: 0.2694
+2024-12-24 05:22:39,641 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4139, Test RMSE: 10.3450, Test MAPE: 0.2853
+2024-12-24 05:22:39,646 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5734, Test RMSE: 10.6355, Test MAPE: 0.2940
+2024-12-24 05:22:39,651 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6808, Test RMSE: 10.8279, Test MAPE: 0.3001
+2024-12-24 05:22:39,656 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7650, Test RMSE: 10.9796, Test MAPE: 0.3053
+2024-12-24 05:22:39,687 - easytorch-training - INFO - Result <test>: [test_time: 454.88 (s), test_MAE: 6.3896, test_RMSE: 10.3170, test_MAPE: 0.2824]
+2024-12-24 05:22:39,735 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_062.pt saved
+2024-12-24 05:22:39,735 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:34:24
+2024-12-24 05:22:39,735 - easytorch-training - INFO - Epoch 63 / 100
+2024-12-24 05:30:30,478 - easytorch-training - INFO - Result <train>: [train_time: 470.74 (s), lr: 1.25e-04, train_MAE: 6.0483, train_RMSE: 9.5781, train_MAPE: 0.2623]
+2024-12-24 05:30:30,479 - easytorch-training - INFO - Start validation.
+2024-12-24 05:34:28,674 - easytorch-training - INFO - Result <val>: [val_time: 238.19 (s), val_MAE: 6.2617, val_RMSE: 9.9866, val_MAPE: 0.3107]
+2024-12-24 05:34:28,750 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 05:42:03,337 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7334, Test RMSE: 9.1050, Test MAPE: 0.2428
+2024-12-24 05:42:03,343 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1668, Test RMSE: 9.8786, Test MAPE: 0.2733
+2024-12-24 05:42:03,348 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4104, Test RMSE: 10.3325, Test MAPE: 0.2891
+2024-12-24 05:42:03,353 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5695, Test RMSE: 10.6205, Test MAPE: 0.2980
+2024-12-24 05:42:03,358 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6780, Test RMSE: 10.8198, Test MAPE: 0.3039
+2024-12-24 05:42:03,363 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7617, Test RMSE: 10.9659, Test MAPE: 0.3076
+2024-12-24 05:42:03,395 - easytorch-training - INFO - Result <test>: [test_time: 454.64 (s), test_MAE: 6.3866, test_RMSE: 10.3066, test_MAPE: 0.2858]
+2024-12-24 05:42:03,454 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_063.pt saved
+2024-12-24 05:42:03,454 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:39:38
+2024-12-24 05:42:03,454 - easytorch-training - INFO - Epoch 64 / 100
+2024-12-24 05:50:22,441 - easytorch-training - INFO - Result <train>: [train_time: 498.99 (s), lr: 1.25e-04, train_MAE: 6.0480, train_RMSE: 9.5896, train_MAPE: 0.2699]
+2024-12-24 05:50:22,443 - easytorch-training - INFO - Start validation.
+2024-12-24 05:54:02,128 - easytorch-training - INFO - Result <val>: [val_time: 219.68 (s), val_MAE: 6.2623, val_RMSE: 9.9784, val_MAPE: 0.3125]
+2024-12-24 06:01:38,510 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7311, Test RMSE: 9.0946, Test MAPE: 0.2454
+2024-12-24 06:01:38,515 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1662, Test RMSE: 9.8550, Test MAPE: 0.2749
+2024-12-24 06:01:38,521 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4120, Test RMSE: 10.3151, Test MAPE: 0.2906
+2024-12-24 06:01:38,526 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5710, Test RMSE: 10.6047, Test MAPE: 0.2999
+2024-12-24 06:01:38,530 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6780, Test RMSE: 10.8021, Test MAPE: 0.3059
+2024-12-24 06:01:38,536 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7629, Test RMSE: 10.9487, Test MAPE: 0.3101
+2024-12-24 06:01:38,567 - easytorch-training - INFO - Result <test>: [test_time: 456.44 (s), test_MAE: 6.3869, test_RMSE: 10.2896, test_MAPE: 0.2878]
+2024-12-24 06:01:38,615 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_064.pt saved
+2024-12-24 06:01:38,615 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:45:00
+2024-12-24 06:01:38,615 - easytorch-training - INFO - Epoch 65 / 100
+2024-12-24 06:09:19,585 - easytorch-training - INFO - Result <train>: [train_time: 460.97 (s), lr: 1.25e-04, train_MAE: 6.0538, train_RMSE: 9.5922, train_MAPE: 0.2676]
+2024-12-24 06:09:19,587 - easytorch-training - INFO - Start validation.
+2024-12-24 06:13:15,608 - easytorch-training - INFO - Result <val>: [val_time: 236.02 (s), val_MAE: 6.2683, val_RMSE: 9.9945, val_MAPE: 0.3134]
+2024-12-24 06:20:27,194 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7368, Test RMSE: 9.1039, Test MAPE: 0.2446
+2024-12-24 06:20:27,200 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1719, Test RMSE: 9.8784, Test MAPE: 0.2744
+2024-12-24 06:20:27,205 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4197, Test RMSE: 10.3398, Test MAPE: 0.2906
+2024-12-24 06:20:27,210 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5794, Test RMSE: 10.6333, Test MAPE: 0.3003
+2024-12-24 06:20:27,215 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6885, Test RMSE: 10.8341, Test MAPE: 0.3074
+2024-12-24 06:20:27,220 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7731, Test RMSE: 10.9826, Test MAPE: 0.3118
+2024-12-24 06:20:27,251 - easytorch-training - INFO - Result <test>: [test_time: 431.64 (s), test_MAE: 6.3949, test_RMSE: 10.3154, test_MAPE: 0.2882]
+2024-12-24 06:20:27,303 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_065.pt saved
+2024-12-24 06:20:27,303 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:49:00
+2024-12-24 06:20:27,303 - easytorch-training - INFO - Epoch 66 / 100
+2024-12-24 06:27:46,509 - easytorch-training - INFO - Result <train>: [train_time: 439.21 (s), lr: 1.25e-04, train_MAE: 6.0424, train_RMSE: 9.5722, train_MAPE: 0.2632]
+2024-12-24 06:27:46,510 - easytorch-training - INFO - Start validation.
+2024-12-24 06:31:20,179 - easytorch-training - INFO - Result <val>: [val_time: 213.67 (s), val_MAE: 6.2636, val_RMSE: 9.9920, val_MAPE: 0.3127]
+2024-12-24 06:38:49,042 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7374, Test RMSE: 9.1019, Test MAPE: 0.2445
+2024-12-24 06:38:49,048 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1759, Test RMSE: 9.8812, Test MAPE: 0.2756
+2024-12-24 06:38:49,053 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4230, Test RMSE: 10.3517, Test MAPE: 0.2912
+2024-12-24 06:38:49,058 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5802, Test RMSE: 10.6425, Test MAPE: 0.3002
+2024-12-24 06:38:49,063 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6866, Test RMSE: 10.8382, Test MAPE: 0.3074
+2024-12-24 06:38:49,068 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7698, Test RMSE: 10.9843, Test MAPE: 0.3119
+2024-12-24 06:38:49,099 - easytorch-training - INFO - Result <test>: [test_time: 448.92 (s), test_MAE: 6.3955, test_RMSE: 10.3201, test_MAPE: 0.2885]
+2024-12-24 06:38:49,146 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_066.pt saved
+2024-12-24 06:38:49,147 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:52:13
+2024-12-24 06:38:49,147 - easytorch-training - INFO - Epoch 67 / 100
+2024-12-24 06:45:59,792 - easytorch-training - INFO - Result <train>: [train_time: 430.65 (s), lr: 1.25e-04, train_MAE: 6.0526, train_RMSE: 9.5761, train_MAPE: 0.2663]
+2024-12-24 06:45:59,793 - easytorch-training - INFO - Start validation.
+2024-12-24 06:49:33,837 - easytorch-training - INFO - Result <val>: [val_time: 214.04 (s), val_MAE: 6.2685, val_RMSE: 10.0149, val_MAPE: 0.3115]
+2024-12-24 06:57:00,611 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7355, Test RMSE: 9.1084, Test MAPE: 0.2436
+2024-12-24 06:57:00,616 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1762, Test RMSE: 9.8916, Test MAPE: 0.2743
+2024-12-24 06:57:00,622 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4278, Test RMSE: 10.3797, Test MAPE: 0.2906
+2024-12-24 06:57:00,626 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5880, Test RMSE: 10.6772, Test MAPE: 0.3006
+2024-12-24 06:57:00,632 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6952, Test RMSE: 10.8805, Test MAPE: 0.3064
+2024-12-24 06:57:00,637 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7756, Test RMSE: 11.0182, Test MAPE: 0.3112
+2024-12-24 06:57:00,668 - easytorch-training - INFO - Result <test>: [test_time: 446.83 (s), test_MAE: 6.3997, test_RMSE: 10.3468, test_MAPE: 0.2878]
+2024-12-24 06:57:00,714 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_067.pt saved
+2024-12-24 06:57:00,715 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:55:05
+2024-12-24 06:57:00,715 - easytorch-training - INFO - Epoch 68 / 100
+2024-12-24 07:04:08,567 - easytorch-training - INFO - Result <train>: [train_time: 427.85 (s), lr: 1.25e-04, train_MAE: 6.0490, train_RMSE: 9.5903, train_MAPE: 0.2647]
+2024-12-24 07:04:08,568 - easytorch-training - INFO - Start validation.
+2024-12-24 07:07:55,572 - easytorch-training - INFO - Result <val>: [val_time: 227.00 (s), val_MAE: 6.2589, val_RMSE: 9.9945, val_MAPE: 0.3108]
+2024-12-24 07:07:55,648 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 07:15:07,446 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7354, Test RMSE: 9.1044, Test MAPE: 0.2456
+2024-12-24 07:15:07,452 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1717, Test RMSE: 9.8806, Test MAPE: 0.2746
+2024-12-24 07:15:07,457 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4157, Test RMSE: 10.3479, Test MAPE: 0.2892
+2024-12-24 07:15:07,461 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5728, Test RMSE: 10.6376, Test MAPE: 0.2978
+2024-12-24 07:15:07,467 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6776, Test RMSE: 10.8333, Test MAPE: 0.3042
+2024-12-24 07:15:07,472 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7593, Test RMSE: 10.9759, Test MAPE: 0.3076
+2024-12-24 07:15:07,502 - easytorch-training - INFO - Result <test>: [test_time: 431.85 (s), test_MAE: 6.3888, test_RMSE: 10.3165, test_MAPE: 0.2865]
+2024-12-24 07:15:07,550 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_068.pt saved
+2024-12-24 07:15:07,550 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 15:57:44
+2024-12-24 07:15:07,550 - easytorch-training - INFO - Epoch 69 / 100
+2024-12-24 07:23:58,343 - easytorch-training - INFO - Result <train>: [train_time: 530.79 (s), lr: 1.25e-04, train_MAE: 6.0449, train_RMSE: 9.5756, train_MAPE: 0.2666]
+2024-12-24 07:23:58,344 - easytorch-training - INFO - Start validation.
+2024-12-24 07:28:33,282 - easytorch-training - INFO - Result <val>: [val_time: 274.94 (s), val_MAE: 6.2626, val_RMSE: 9.9943, val_MAPE: 0.3103]
+2024-12-24 07:37:54,395 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7357, Test RMSE: 9.1048, Test MAPE: 0.2433
+2024-12-24 07:37:54,400 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1741, Test RMSE: 9.8771, Test MAPE: 0.2730
+2024-12-24 07:37:54,405 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4177, Test RMSE: 10.3451, Test MAPE: 0.2893
+2024-12-24 07:37:54,410 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5763, Test RMSE: 10.6414, Test MAPE: 0.2971
+2024-12-24 07:37:54,415 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6844, Test RMSE: 10.8389, Test MAPE: 0.3037
+2024-12-24 07:37:54,420 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7667, Test RMSE: 10.9877, Test MAPE: 0.3080
+2024-12-24 07:37:54,451 - easytorch-training - INFO - Result <test>: [test_time: 561.17 (s), test_MAE: 6.3925, test_RMSE: 10.3193, test_MAPE: 0.2857]
+2024-12-24 07:37:54,502 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_069.pt saved
+2024-12-24 07:37:54,503 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:07:05
+2024-12-24 07:37:54,503 - easytorch-training - INFO - Epoch 70 / 100
+2024-12-24 07:46:56,693 - easytorch-training - INFO - Result <train>: [train_time: 542.19 (s), lr: 1.25e-04, train_MAE: 6.0383, train_RMSE: 9.5685, train_MAPE: 0.2641]
+2024-12-24 07:46:56,694 - easytorch-training - INFO - Start validation.
+2024-12-24 07:51:27,847 - easytorch-training - INFO - Result <val>: [val_time: 271.15 (s), val_MAE: 6.2614, val_RMSE: 9.9865, val_MAPE: 0.3104]
+2024-12-24 07:58:29,339 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7368, Test RMSE: 9.1047, Test MAPE: 0.2425
+2024-12-24 07:58:29,345 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1725, Test RMSE: 9.8805, Test MAPE: 0.2719
+2024-12-24 07:58:29,350 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4202, Test RMSE: 10.3457, Test MAPE: 0.2875
+2024-12-24 07:58:29,355 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5780, Test RMSE: 10.6314, Test MAPE: 0.2970
+2024-12-24 07:58:29,360 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6852, Test RMSE: 10.8318, Test MAPE: 0.3041
+2024-12-24 07:58:29,365 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7668, Test RMSE: 10.9763, Test MAPE: 0.3078
+2024-12-24 07:58:29,396 - easytorch-training - INFO - Result <test>: [test_time: 421.55 (s), test_MAE: 6.3932, test_RMSE: 10.3149, test_MAPE: 0.2851]
+2024-12-24 07:58:29,445 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_070.pt saved
+2024-12-24 07:58:29,470 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:13:02
+2024-12-24 07:58:29,470 - easytorch-training - INFO - Epoch 71 / 100
+2024-12-24 08:05:40,890 - easytorch-training - INFO - Result <train>: [train_time: 431.42 (s), lr: 1.25e-04, train_MAE: 6.0495, train_RMSE: 9.5827, train_MAPE: 0.2658]
+2024-12-24 08:05:40,891 - easytorch-training - INFO - Start validation.
+2024-12-24 08:09:15,539 - easytorch-training - INFO - Result <val>: [val_time: 214.65 (s), val_MAE: 6.2643, val_RMSE: 9.9917, val_MAPE: 0.3111]
+2024-12-24 08:17:23,355 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7431, Test RMSE: 9.1235, Test MAPE: 0.2420
+2024-12-24 08:17:23,361 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1763, Test RMSE: 9.8908, Test MAPE: 0.2725
+2024-12-24 08:17:23,366 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4229, Test RMSE: 10.3514, Test MAPE: 0.2890
+2024-12-24 08:17:23,371 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5820, Test RMSE: 10.6400, Test MAPE: 0.2985
+2024-12-24 08:17:23,376 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6914, Test RMSE: 10.8395, Test MAPE: 0.3059
+2024-12-24 08:17:23,381 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7757, Test RMSE: 10.9913, Test MAPE: 0.3102
+2024-12-24 08:17:23,412 - easytorch-training - INFO - Result <test>: [test_time: 487.87 (s), test_MAE: 6.3986, test_RMSE: 10.3258, test_MAPE: 0.2864]
+2024-12-24 08:17:23,475 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_071.pt saved
+2024-12-24 08:17:23,476 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:16:26
+2024-12-24 08:17:23,476 - easytorch-training - INFO - Epoch 72 / 100
+2024-12-24 08:26:37,746 - easytorch-training - INFO - Result <train>: [train_time: 554.27 (s), lr: 1.25e-04, train_MAE: 6.0298, train_RMSE: 9.5475, train_MAPE: 0.2617]
+2024-12-24 08:26:37,748 - easytorch-training - INFO - Start validation.
+2024-12-24 08:31:03,961 - easytorch-training - INFO - Result <val>: [val_time: 266.21 (s), val_MAE: 6.2597, val_RMSE: 9.9817, val_MAPE: 0.3144]
+2024-12-24 08:38:56,414 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7375, Test RMSE: 9.1091, Test MAPE: 0.2455
+2024-12-24 08:38:56,420 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1780, Test RMSE: 9.8885, Test MAPE: 0.2768
+2024-12-24 08:38:56,425 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4279, Test RMSE: 10.3526, Test MAPE: 0.2926
+2024-12-24 08:38:56,430 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5891, Test RMSE: 10.6520, Test MAPE: 0.3013
+2024-12-24 08:38:56,435 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.7003, Test RMSE: 10.8549, Test MAPE: 0.3081
+2024-12-24 08:38:56,440 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7798, Test RMSE: 10.9964, Test MAPE: 0.3111
+2024-12-24 08:38:56,472 - easytorch-training - INFO - Result <test>: [test_time: 472.51 (s), test_MAE: 6.4021, test_RMSE: 10.3292, test_MAPE: 0.2892]
+2024-12-24 08:38:56,521 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_072.pt saved
+2024-12-24 08:38:56,521 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:23:25
+2024-12-24 08:38:56,521 - easytorch-training - INFO - Epoch 73 / 100
+2024-12-24 08:47:44,599 - easytorch-training - INFO - Result <train>: [train_time: 528.08 (s), lr: 6.25e-05, train_MAE: 6.0537, train_RMSE: 9.5934, train_MAPE: 0.2665]
+2024-12-24 08:47:44,600 - easytorch-training - INFO - Start validation.
+2024-12-24 08:52:07,115 - easytorch-training - INFO - Result <val>: [val_time: 262.51 (s), val_MAE: 6.2592, val_RMSE: 9.9934, val_MAPE: 0.3105]
+2024-12-24 09:00:29,836 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7343, Test RMSE: 9.1088, Test MAPE: 0.2427
+2024-12-24 09:00:29,842 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1732, Test RMSE: 9.8851, Test MAPE: 0.2726
+2024-12-24 09:00:29,847 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4219, Test RMSE: 10.3551, Test MAPE: 0.2890
+2024-12-24 09:00:29,852 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5812, Test RMSE: 10.6501, Test MAPE: 0.2982
+2024-12-24 09:00:29,857 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6898, Test RMSE: 10.8544, Test MAPE: 0.3053
+2024-12-24 09:00:29,862 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7713, Test RMSE: 11.0001, Test MAPE: 0.3094
+2024-12-24 09:00:29,893 - easytorch-training - INFO - Result <test>: [test_time: 502.78 (s), test_MAE: 6.3953, test_RMSE: 10.3292, test_MAPE: 0.2862]
+2024-12-24 09:00:29,943 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_073.pt saved
+2024-12-24 09:00:29,943 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:30:13
+2024-12-24 09:00:29,943 - easytorch-training - INFO - Epoch 74 / 100
+2024-12-24 09:08:38,483 - easytorch-training - INFO - Result <train>: [train_time: 488.54 (s), lr: 6.25e-05, train_MAE: 6.0483, train_RMSE: 9.5894, train_MAPE: 0.2620]
+2024-12-24 09:08:38,484 - easytorch-training - INFO - Start validation.
+2024-12-24 09:12:23,790 - easytorch-training - INFO - Result <val>: [val_time: 225.31 (s), val_MAE: 6.2542, val_RMSE: 9.9797, val_MAPE: 0.3123]
+2024-12-24 09:12:23,951 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 09:20:22,593 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7339, Test RMSE: 9.0981, Test MAPE: 0.2452
+2024-12-24 09:20:22,599 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1690, Test RMSE: 9.8721, Test MAPE: 0.2748
+2024-12-24 09:20:22,604 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4142, Test RMSE: 10.3373, Test MAPE: 0.2905
+2024-12-24 09:20:22,609 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5726, Test RMSE: 10.6308, Test MAPE: 0.2995
+2024-12-24 09:20:22,614 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6790, Test RMSE: 10.8293, Test MAPE: 0.3065
+2024-12-24 09:20:22,619 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7598, Test RMSE: 10.9709, Test MAPE: 0.3109
+2024-12-24 09:20:22,650 - easytorch-training - INFO - Result <test>: [test_time: 478.70 (s), test_MAE: 6.3881, test_RMSE: 10.3097, test_MAPE: 0.2879]
+2024-12-24 09:20:22,697 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_074.pt saved
+2024-12-24 09:20:22,698 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:34:35
+2024-12-24 09:20:22,698 - easytorch-training - INFO - Epoch 75 / 100
+2024-12-24 09:28:23,018 - easytorch-training - INFO - Result <train>: [train_time: 480.32 (s), lr: 6.25e-05, train_MAE: 6.0418, train_RMSE: 9.5757, train_MAPE: 0.2627]
+2024-12-24 09:28:23,020 - easytorch-training - INFO - Start validation.
+2024-12-24 09:32:29,615 - easytorch-training - INFO - Result <val>: [val_time: 246.59 (s), val_MAE: 6.2557, val_RMSE: 9.9766, val_MAPE: 0.3138]
+2024-12-24 09:39:52,028 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7332, Test RMSE: 9.1010, Test MAPE: 0.2460
+2024-12-24 09:39:52,034 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1695, Test RMSE: 9.8746, Test MAPE: 0.2755
+2024-12-24 09:39:52,039 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4172, Test RMSE: 10.3395, Test MAPE: 0.2914
+2024-12-24 09:39:52,044 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5753, Test RMSE: 10.6290, Test MAPE: 0.3004
+2024-12-24 09:39:52,049 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6822, Test RMSE: 10.8207, Test MAPE: 0.3078
+2024-12-24 09:39:52,054 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7648, Test RMSE: 10.9616, Test MAPE: 0.3129
+2024-12-24 09:39:52,086 - easytorch-training - INFO - Result <test>: [test_time: 442.47 (s), test_MAE: 6.3903, test_RMSE: 10.3075, test_MAPE: 0.2890]
+2024-12-24 09:39:52,134 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_075.pt saved
+2024-12-24 09:39:52,134 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:38:18
+2024-12-24 09:39:52,134 - easytorch-training - INFO - Epoch 76 / 100
+2024-12-24 09:48:01,582 - easytorch-training - INFO - Result <train>: [train_time: 489.45 (s), lr: 6.25e-05, train_MAE: 6.0408, train_RMSE: 9.5772, train_MAPE: 0.2661]
+2024-12-24 09:48:01,583 - easytorch-training - INFO - Start validation.
+2024-12-24 09:52:01,863 - easytorch-training - INFO - Result <val>: [val_time: 240.28 (s), val_MAE: 6.2535, val_RMSE: 9.9769, val_MAPE: 0.3097]
+2024-12-24 09:52:01,941 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 10:00:14,787 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7328, Test RMSE: 9.1040, Test MAPE: 0.2425
+2024-12-24 10:00:14,793 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1664, Test RMSE: 9.8725, Test MAPE: 0.2716
+2024-12-24 10:00:14,797 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4121, Test RMSE: 10.3323, Test MAPE: 0.2874
+2024-12-24 10:00:14,802 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5699, Test RMSE: 10.6174, Test MAPE: 0.2967
+2024-12-24 10:00:14,807 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6768, Test RMSE: 10.8150, Test MAPE: 0.3038
+2024-12-24 10:00:14,811 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7601, Test RMSE: 10.9613, Test MAPE: 0.3088
+2024-12-24 10:00:14,838 - easytorch-training - INFO - Result <test>: [test_time: 492.90 (s), test_MAE: 6.3864, test_RMSE: 10.3033, test_MAPE: 0.2851]
+2024-12-24 10:00:14,896 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_076.pt saved
+2024-12-24 10:00:14,897 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:43:05
+2024-12-24 10:00:14,897 - easytorch-training - INFO - Epoch 77 / 100
+2024-12-24 10:08:05,428 - easytorch-training - INFO - Result <train>: [train_time: 470.53 (s), lr: 6.25e-05, train_MAE: 6.0471, train_RMSE: 9.5669, train_MAPE: 0.2666]
+2024-12-24 10:08:05,429 - easytorch-training - INFO - Start validation.
+2024-12-24 10:11:57,558 - easytorch-training - INFO - Result <val>: [val_time: 232.13 (s), val_MAE: 6.2522, val_RMSE: 9.9803, val_MAPE: 0.3091]
+2024-12-24 10:11:57,635 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 10:20:05,372 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7354, Test RMSE: 9.1091, Test MAPE: 0.2434
+2024-12-24 10:20:05,378 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1709, Test RMSE: 9.8793, Test MAPE: 0.2729
+2024-12-24 10:20:05,383 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4158, Test RMSE: 10.3440, Test MAPE: 0.2878
+2024-12-24 10:20:05,388 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5724, Test RMSE: 10.6287, Test MAPE: 0.2971
+2024-12-24 10:20:05,393 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6780, Test RMSE: 10.8250, Test MAPE: 0.3033
+2024-12-24 10:20:05,398 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7585, Test RMSE: 10.9641, Test MAPE: 0.3080
+2024-12-24 10:20:05,429 - easytorch-training - INFO - Result <test>: [test_time: 487.79 (s), test_MAE: 6.3885, test_RMSE: 10.3113, test_MAPE: 0.2854]
+2024-12-24 10:20:05,481 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_077.pt saved
+2024-12-24 10:20:05,482 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:47:04
+2024-12-24 10:20:05,482 - easytorch-training - INFO - Epoch 78 / 100
+2024-12-24 10:27:50,128 - easytorch-training - INFO - Result <train>: [train_time: 464.65 (s), lr: 6.25e-05, train_MAE: 6.0219, train_RMSE: 9.5422, train_MAPE: 0.2587]
+2024-12-24 10:27:50,129 - easytorch-training - INFO - Start validation.
+2024-12-24 10:32:04,270 - easytorch-training - INFO - Result <val>: [val_time: 254.14 (s), val_MAE: 6.2513, val_RMSE: 9.9812, val_MAPE: 0.3088]
+2024-12-24 10:32:04,347 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 10:38:31,716 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7303, Test RMSE: 9.1063, Test MAPE: 0.2420
+2024-12-24 10:38:31,721 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1654, Test RMSE: 9.8777, Test MAPE: 0.2719
+2024-12-24 10:38:31,726 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4108, Test RMSE: 10.3386, Test MAPE: 0.2875
+2024-12-24 10:38:31,731 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5686, Test RMSE: 10.6231, Test MAPE: 0.2967
+2024-12-24 10:38:31,736 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6745, Test RMSE: 10.8147, Test MAPE: 0.3029
+2024-12-24 10:38:31,741 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7571, Test RMSE: 10.9615, Test MAPE: 0.3068
+2024-12-24 10:38:31,772 - easytorch-training - INFO - Result <test>: [test_time: 387.42 (s), test_MAE: 6.3844, test_RMSE: 10.3065, test_MAPE: 0.2846]
+2024-12-24 10:38:31,819 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_078.pt saved
+2024-12-24 10:38:31,819 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:49:08
+2024-12-24 10:38:31,819 - easytorch-training - INFO - Epoch 79 / 100
+2024-12-24 10:45:20,235 - easytorch-training - INFO - Result <train>: [train_time: 408.42 (s), lr: 6.25e-05, train_MAE: 6.0270, train_RMSE: 9.5491, train_MAPE: 0.2596]
+2024-12-24 10:45:20,236 - easytorch-training - INFO - Start validation.
+2024-12-24 10:48:32,712 - easytorch-training - INFO - Result <val>: [val_time: 192.48 (s), val_MAE: 6.2484, val_RMSE: 9.9744, val_MAPE: 0.3112]
+2024-12-24 10:48:32,786 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 10:54:59,646 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7317, Test RMSE: 9.1093, Test MAPE: 0.2439
+2024-12-24 10:54:59,652 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1649, Test RMSE: 9.8760, Test MAPE: 0.2740
+2024-12-24 10:54:59,657 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4087, Test RMSE: 10.3338, Test MAPE: 0.2893
+2024-12-24 10:54:59,662 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5646, Test RMSE: 10.6167, Test MAPE: 0.2980
+2024-12-24 10:54:59,667 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6706, Test RMSE: 10.8112, Test MAPE: 0.3048
+2024-12-24 10:54:59,672 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7523, Test RMSE: 10.9540, Test MAPE: 0.3088
+2024-12-24 10:54:59,703 - easytorch-training - INFO - Result <test>: [test_time: 386.92 (s), test_MAE: 6.3821, test_RMSE: 10.3028, test_MAPE: 0.2865]
+2024-12-24 10:54:59,752 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_079.pt saved
+2024-12-24 10:54:59,752 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:48:39
+2024-12-24 10:54:59,752 - easytorch-training - INFO - Epoch 80 / 100
+2024-12-24 11:01:48,180 - easytorch-training - INFO - Result <train>: [train_time: 408.43 (s), lr: 6.25e-05, train_MAE: 6.0301, train_RMSE: 9.5490, train_MAPE: 0.2638]
+2024-12-24 11:01:48,181 - easytorch-training - INFO - Start validation.
+2024-12-24 11:05:01,816 - easytorch-training - INFO - Result <val>: [val_time: 193.64 (s), val_MAE: 6.2534, val_RMSE: 9.9839, val_MAPE: 0.3121]
+2024-12-24 11:14:09,492 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7323, Test RMSE: 9.1008, Test MAPE: 0.2436
+2024-12-24 11:14:09,498 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1712, Test RMSE: 9.8761, Test MAPE: 0.2743
+2024-12-24 11:14:09,503 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4197, Test RMSE: 10.3488, Test MAPE: 0.2900
+2024-12-24 11:14:09,508 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5770, Test RMSE: 10.6383, Test MAPE: 0.2995
+2024-12-24 11:14:09,513 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6837, Test RMSE: 10.8357, Test MAPE: 0.3065
+2024-12-24 11:14:09,518 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7651, Test RMSE: 10.9783, Test MAPE: 0.3105
+2024-12-24 11:14:09,549 - easytorch-training - INFO - Result <test>: [test_time: 547.73 (s), test_MAE: 6.3915, test_RMSE: 10.3164, test_MAPE: 0.2874]
+2024-12-24 11:14:09,601 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_080.pt saved
+2024-12-24 11:14:09,626 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:51:33
+2024-12-24 11:14:09,626 - easytorch-training - INFO - Epoch 81 / 100
+2024-12-24 11:23:10,993 - easytorch-training - INFO - Result <train>: [train_time: 541.37 (s), lr: 6.25e-05, train_MAE: 6.0267, train_RMSE: 9.5452, train_MAPE: 0.2644]
+2024-12-24 11:23:10,995 - easytorch-training - INFO - Start validation.
+2024-12-24 11:27:47,526 - easytorch-training - INFO - Result <val>: [val_time: 276.53 (s), val_MAE: 6.2503, val_RMSE: 9.9710, val_MAPE: 0.3098]
+2024-12-24 11:34:52,283 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7339, Test RMSE: 9.1026, Test MAPE: 0.2445
+2024-12-24 11:34:52,291 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1682, Test RMSE: 9.8697, Test MAPE: 0.2727
+2024-12-24 11:34:52,297 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4156, Test RMSE: 10.3333, Test MAPE: 0.2879
+2024-12-24 11:34:52,302 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5732, Test RMSE: 10.6226, Test MAPE: 0.2974
+2024-12-24 11:34:52,307 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6786, Test RMSE: 10.8170, Test MAPE: 0.3036
+2024-12-24 11:34:52,312 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7605, Test RMSE: 10.9615, Test MAPE: 0.3071
+2024-12-24 11:34:52,346 - easytorch-training - INFO - Result <test>: [test_time: 424.82 (s), test_MAE: 6.3883, test_RMSE: 10.3041, test_MAPE: 0.2855]
+2024-12-24 11:34:52,393 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_081.pt saved
+2024-12-24 11:34:52,393 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:56:18
+2024-12-24 11:34:52,393 - easytorch-training - INFO - Epoch 82 / 100
+2024-12-24 11:41:45,262 - easytorch-training - INFO - Result <train>: [train_time: 412.87 (s), lr: 6.25e-05, train_MAE: 6.0297, train_RMSE: 9.5567, train_MAPE: 0.2630]
+2024-12-24 11:41:45,263 - easytorch-training - INFO - Start validation.
+2024-12-24 11:44:59,401 - easytorch-training - INFO - Result <val>: [val_time: 194.14 (s), val_MAE: 6.2520, val_RMSE: 9.9782, val_MAPE: 0.3096]
+2024-12-24 11:51:33,058 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7346, Test RMSE: 9.1045, Test MAPE: 0.2429
+2024-12-24 11:51:33,064 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1704, Test RMSE: 9.8783, Test MAPE: 0.2719
+2024-12-24 11:51:33,069 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4166, Test RMSE: 10.3424, Test MAPE: 0.2871
+2024-12-24 11:51:33,074 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5761, Test RMSE: 10.6372, Test MAPE: 0.2961
+2024-12-24 11:51:33,079 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6837, Test RMSE: 10.8367, Test MAPE: 0.3033
+2024-12-24 11:51:33,084 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7655, Test RMSE: 10.9804, Test MAPE: 0.3070
+2024-12-24 11:51:33,115 - easytorch-training - INFO - Result <test>: [test_time: 393.71 (s), test_MAE: 6.3912, test_RMSE: 10.3166, test_MAPE: 0.2847]
+2024-12-24 11:51:33,162 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_082.pt saved
+2024-12-24 11:51:33,162 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:56:00
+2024-12-24 11:51:33,162 - easytorch-training - INFO - Epoch 83 / 100
+2024-12-24 11:58:21,823 - easytorch-training - INFO - Result <train>: [train_time: 408.66 (s), lr: 6.25e-05, train_MAE: 6.0306, train_RMSE: 9.5502, train_MAPE: 0.2686]
+2024-12-24 11:58:21,824 - easytorch-training - INFO - Start validation.
+2024-12-24 12:02:27,092 - easytorch-training - INFO - Result <val>: [val_time: 245.27 (s), val_MAE: 6.2510, val_RMSE: 9.9742, val_MAPE: 0.3143]
+2024-12-24 12:11:44,940 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7353, Test RMSE: 9.0955, Test MAPE: 0.2469
+2024-12-24 12:11:44,946 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1715, Test RMSE: 9.8738, Test MAPE: 0.2761
+2024-12-24 12:11:44,951 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4162, Test RMSE: 10.3384, Test MAPE: 0.2922
+2024-12-24 12:11:44,956 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5719, Test RMSE: 10.6260, Test MAPE: 0.3009
+2024-12-24 12:11:44,961 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6774, Test RMSE: 10.8191, Test MAPE: 0.3084
+2024-12-24 12:11:44,966 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7587, Test RMSE: 10.9616, Test MAPE: 0.3123
+2024-12-24 12:11:44,998 - easytorch-training - INFO - Result <test>: [test_time: 557.90 (s), test_MAE: 6.3885, test_RMSE: 10.3055, test_MAPE: 0.2895]
+2024-12-24 12:11:45,049 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_083.pt saved
+2024-12-24 12:11:45,050 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 16:59:58
+2024-12-24 12:11:45,050 - easytorch-training - INFO - Epoch 84 / 100
+2024-12-24 12:20:36,487 - easytorch-training - INFO - Result <train>: [train_time: 531.44 (s), lr: 6.25e-05, train_MAE: 6.0257, train_RMSE: 9.5483, train_MAPE: 0.2651]
+2024-12-24 12:20:36,488 - easytorch-training - INFO - Start validation.
+2024-12-24 12:24:30,336 - easytorch-training - INFO - Result <val>: [val_time: 233.85 (s), val_MAE: 6.2484, val_RMSE: 9.9694, val_MAPE: 0.3110]
+2024-12-24 12:24:30,410 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 12:31:14,851 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7309, Test RMSE: 9.0999, Test MAPE: 0.2432
+2024-12-24 12:31:14,857 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1671, Test RMSE: 9.8687, Test MAPE: 0.2730
+2024-12-24 12:31:14,862 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4117, Test RMSE: 10.3330, Test MAPE: 0.2887
+2024-12-24 12:31:14,867 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5667, Test RMSE: 10.6142, Test MAPE: 0.2974
+2024-12-24 12:31:14,872 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6724, Test RMSE: 10.8057, Test MAPE: 0.3046
+2024-12-24 12:31:14,877 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7552, Test RMSE: 10.9489, Test MAPE: 0.3085
+2024-12-24 12:31:14,908 - easytorch-training - INFO - Result <test>: [test_time: 404.50 (s), test_MAE: 6.3840, test_RMSE: 10.2978, test_MAPE: 0.2859]
+2024-12-24 12:31:14,959 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_084.pt saved
+2024-12-24 12:31:14,960 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:03:00
+2024-12-24 12:31:14,960 - easytorch-training - INFO - Epoch 85 / 100
+2024-12-24 12:40:08,598 - easytorch-training - INFO - Result <train>: [train_time: 533.64 (s), lr: 6.25e-05, train_MAE: 6.0266, train_RMSE: 9.5476, train_MAPE: 0.2628]
+2024-12-24 12:40:08,599 - easytorch-training - INFO - Start validation.
+2024-12-24 12:43:24,167 - easytorch-training - INFO - Result <val>: [val_time: 195.57 (s), val_MAE: 6.2518, val_RMSE: 9.9806, val_MAPE: 0.3130]
+2024-12-24 12:52:25,196 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7319, Test RMSE: 9.1007, Test MAPE: 0.2443
+2024-12-24 12:52:25,202 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1693, Test RMSE: 9.8725, Test MAPE: 0.2747
+2024-12-24 12:52:25,207 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4186, Test RMSE: 10.3471, Test MAPE: 0.2907
+2024-12-24 12:52:25,212 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5781, Test RMSE: 10.6436, Test MAPE: 0.2999
+2024-12-24 12:52:25,220 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6853, Test RMSE: 10.8441, Test MAPE: 0.3068
+2024-12-24 12:52:25,226 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7651, Test RMSE: 10.9838, Test MAPE: 0.3101
+2024-12-24 12:52:25,258 - easytorch-training - INFO - Result <test>: [test_time: 541.09 (s), test_MAE: 6.3914, test_RMSE: 10.3189, test_MAPE: 0.2878]
+2024-12-24 12:52:25,327 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_085.pt saved
+2024-12-24 12:52:25,328 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:07:55
+2024-12-24 12:52:25,328 - easytorch-training - INFO - Epoch 86 / 100
+2024-12-24 13:00:21,873 - easytorch-training - INFO - Result <train>: [train_time: 476.54 (s), lr: 6.25e-05, train_MAE: 6.0353, train_RMSE: 9.5698, train_MAPE: 0.2657]
+2024-12-24 13:00:21,875 - easytorch-training - INFO - Start validation.
+2024-12-24 13:04:18,362 - easytorch-training - INFO - Result <val>: [val_time: 236.49 (s), val_MAE: 6.2486, val_RMSE: 9.9698, val_MAPE: 0.3110]
+2024-12-24 13:12:13,892 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7332, Test RMSE: 9.1028, Test MAPE: 0.2435
+2024-12-24 13:12:13,898 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1712, Test RMSE: 9.8762, Test MAPE: 0.2734
+2024-12-24 13:12:13,903 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4192, Test RMSE: 10.3468, Test MAPE: 0.2894
+2024-12-24 13:12:13,908 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5778, Test RMSE: 10.6324, Test MAPE: 0.2987
+2024-12-24 13:12:13,913 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6845, Test RMSE: 10.8270, Test MAPE: 0.3052
+2024-12-24 13:12:13,918 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7650, Test RMSE: 10.9679, Test MAPE: 0.3086
+2024-12-24 13:12:13,949 - easytorch-training - INFO - Result <test>: [test_time: 475.59 (s), test_MAE: 6.3918, test_RMSE: 10.3120, test_MAPE: 0.2865]
+2024-12-24 13:12:14,002 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_086.pt saved
+2024-12-24 13:12:14,002 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:11:09
+2024-12-24 13:12:14,002 - easytorch-training - INFO - Epoch 87 / 100
+2024-12-24 13:20:20,650 - easytorch-training - INFO - Result <train>: [train_time: 486.65 (s), lr: 6.25e-05, train_MAE: 6.0380, train_RMSE: 9.5723, train_MAPE: 0.2661]
+2024-12-24 13:20:20,651 - easytorch-training - INFO - Start validation.
+2024-12-24 13:24:09,337 - easytorch-training - INFO - Result <val>: [val_time: 228.69 (s), val_MAE: 6.2468, val_RMSE: 9.9636, val_MAPE: 0.3115]
+2024-12-24 13:24:09,424 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 13:32:32,143 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7316, Test RMSE: 9.0979, Test MAPE: 0.2437
+2024-12-24 13:32:32,148 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1669, Test RMSE: 9.8624, Test MAPE: 0.2733
+2024-12-24 13:32:32,154 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4128, Test RMSE: 10.3236, Test MAPE: 0.2892
+2024-12-24 13:32:32,158 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5694, Test RMSE: 10.6061, Test MAPE: 0.2991
+2024-12-24 13:32:32,164 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6747, Test RMSE: 10.7998, Test MAPE: 0.3059
+2024-12-24 13:32:32,169 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7545, Test RMSE: 10.9385, Test MAPE: 0.3098
+2024-12-24 13:32:32,200 - easytorch-training - INFO - Result <test>: [test_time: 502.77 (s), test_MAE: 6.3850, test_RMSE: 10.2907, test_MAPE: 0.2868]
+2024-12-24 13:32:32,251 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_087.pt saved
+2024-12-24 13:32:32,252 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:14:52
+2024-12-24 13:32:32,252 - easytorch-training - INFO - Epoch 88 / 100
+2024-12-24 13:40:31,853 - easytorch-training - INFO - Result <train>: [train_time: 479.60 (s), lr: 6.25e-05, train_MAE: 6.0308, train_RMSE: 9.5643, train_MAPE: 0.2646]
+2024-12-24 13:40:31,855 - easytorch-training - INFO - Start validation.
+2024-12-24 13:44:51,368 - easytorch-training - INFO - Result <val>: [val_time: 259.51 (s), val_MAE: 6.2452, val_RMSE: 9.9671, val_MAPE: 0.3119]
+2024-12-24 13:44:51,445 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 13:52:59,333 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7325, Test RMSE: 9.1036, Test MAPE: 0.2438
+2024-12-24 13:52:59,339 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1689, Test RMSE: 9.8734, Test MAPE: 0.2744
+2024-12-24 13:52:59,344 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4140, Test RMSE: 10.3358, Test MAPE: 0.2900
+2024-12-24 13:52:59,350 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5687, Test RMSE: 10.6146, Test MAPE: 0.2991
+2024-12-24 13:52:59,355 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6743, Test RMSE: 10.8067, Test MAPE: 0.3070
+2024-12-24 13:52:59,360 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7553, Test RMSE: 10.9490, Test MAPE: 0.3103
+2024-12-24 13:52:59,392 - easytorch-training - INFO - Result <test>: [test_time: 487.95 (s), test_MAE: 6.3856, test_RMSE: 10.2999, test_MAPE: 0.2874]
+2024-12-24 13:52:59,460 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_088.pt saved
+2024-12-24 13:52:59,460 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:18:41
+2024-12-24 13:52:59,460 - easytorch-training - INFO - Epoch 89 / 100
+2024-12-24 14:00:40,645 - easytorch-training - INFO - Result <train>: [train_time: 461.18 (s), lr: 6.25e-05, train_MAE: 6.0202, train_RMSE: 9.5380, train_MAPE: 0.2634]
+2024-12-24 14:00:40,646 - easytorch-training - INFO - Start validation.
+2024-12-24 14:04:33,020 - easytorch-training - INFO - Result <val>: [val_time: 232.37 (s), val_MAE: 6.2507, val_RMSE: 9.9763, val_MAPE: 0.3090]
+2024-12-24 14:12:46,969 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7338, Test RMSE: 9.1071, Test MAPE: 0.2427
+2024-12-24 14:12:46,975 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1735, Test RMSE: 9.8839, Test MAPE: 0.2723
+2024-12-24 14:12:46,980 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4202, Test RMSE: 10.3510, Test MAPE: 0.2873
+2024-12-24 14:12:46,985 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5792, Test RMSE: 10.6417, Test MAPE: 0.2961
+2024-12-24 14:12:46,990 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6855, Test RMSE: 10.8371, Test MAPE: 0.3034
+2024-12-24 14:12:46,995 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7667, Test RMSE: 10.9792, Test MAPE: 0.3060
+2024-12-24 14:12:47,026 - easytorch-training - INFO - Result <test>: [test_time: 494.00 (s), test_MAE: 6.3932, test_RMSE: 10.3199, test_MAPE: 0.2846]
+2024-12-24 14:12:47,077 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_089.pt saved
+2024-12-24 14:12:47,078 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:21:40
+2024-12-24 14:12:47,078 - easytorch-training - INFO - Epoch 90 / 100
+2024-12-24 14:20:44,582 - easytorch-training - INFO - Result <train>: [train_time: 477.50 (s), lr: 6.25e-05, train_MAE: 6.0023, train_RMSE: 9.5106, train_MAPE: 0.2631]
+2024-12-24 14:20:44,584 - easytorch-training - INFO - Start validation.
+2024-12-24 14:24:38,450 - easytorch-training - INFO - Result <val>: [val_time: 233.87 (s), val_MAE: 6.2488, val_RMSE: 9.9670, val_MAPE: 0.3097]
+2024-12-24 14:32:59,855 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7354, Test RMSE: 9.1071, Test MAPE: 0.2434
+2024-12-24 14:32:59,860 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1753, Test RMSE: 9.8846, Test MAPE: 0.2721
+2024-12-24 14:32:59,866 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4211, Test RMSE: 10.3467, Test MAPE: 0.2876
+2024-12-24 14:32:59,871 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5799, Test RMSE: 10.6327, Test MAPE: 0.2964
+2024-12-24 14:32:59,876 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6850, Test RMSE: 10.8241, Test MAPE: 0.3037
+2024-12-24 14:32:59,881 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7664, Test RMSE: 10.9671, Test MAPE: 0.3076
+2024-12-24 14:32:59,915 - easytorch-training - INFO - Result <test>: [test_time: 501.46 (s), test_MAE: 6.3939, test_RMSE: 10.3134, test_MAPE: 0.2851]
+2024-12-24 14:32:59,963 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_090.pt saved
+2024-12-24 14:32:59,987 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:25:02
+2024-12-24 14:32:59,988 - easytorch-training - INFO - Epoch 91 / 100
+2024-12-24 14:40:41,541 - easytorch-training - INFO - Result <train>: [train_time: 461.55 (s), lr: 6.25e-05, train_MAE: 6.0192, train_RMSE: 9.5439, train_MAPE: 0.2613]
+2024-12-24 14:40:41,542 - easytorch-training - INFO - Start validation.
+2024-12-24 14:44:42,267 - easytorch-training - INFO - Result <val>: [val_time: 240.72 (s), val_MAE: 6.2466, val_RMSE: 9.9650, val_MAPE: 0.3113]
+2024-12-24 14:52:59,973 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7318, Test RMSE: 9.0975, Test MAPE: 0.2439
+2024-12-24 14:52:59,979 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1701, Test RMSE: 9.8709, Test MAPE: 0.2738
+2024-12-24 14:52:59,984 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4184, Test RMSE: 10.3395, Test MAPE: 0.2899
+2024-12-24 14:52:59,989 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5768, Test RMSE: 10.6294, Test MAPE: 0.2996
+2024-12-24 14:52:59,994 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6829, Test RMSE: 10.8268, Test MAPE: 0.3066
+2024-12-24 14:52:59,999 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7644, Test RMSE: 10.9727, Test MAPE: 0.3106
+2024-12-24 14:53:00,030 - easytorch-training - INFO - Result <test>: [test_time: 497.76 (s), test_MAE: 6.3907, test_RMSE: 10.3094, test_MAPE: 0.2874]
+2024-12-24 14:53:00,081 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_091.pt saved
+2024-12-24 14:53:00,081 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:28:07
+2024-12-24 14:53:00,081 - easytorch-training - INFO - Epoch 92 / 100
+2024-12-24 15:00:57,184 - easytorch-training - INFO - Result <train>: [train_time: 477.10 (s), lr: 6.25e-05, train_MAE: 6.0153, train_RMSE: 9.5226, train_MAPE: 0.2613]
+2024-12-24 15:00:57,186 - easytorch-training - INFO - Start validation.
+2024-12-24 15:04:47,390 - easytorch-training - INFO - Result <val>: [val_time: 230.20 (s), val_MAE: 6.2431, val_RMSE: 9.9649, val_MAPE: 0.3105]
+2024-12-24 15:04:47,488 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 15:13:07,918 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7302, Test RMSE: 9.0993, Test MAPE: 0.2436
+2024-12-24 15:13:07,925 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1690, Test RMSE: 9.8702, Test MAPE: 0.2737
+2024-12-24 15:13:07,930 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4144, Test RMSE: 10.3346, Test MAPE: 0.2892
+2024-12-24 15:13:07,935 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5696, Test RMSE: 10.6165, Test MAPE: 0.2976
+2024-12-24 15:13:07,940 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6743, Test RMSE: 10.8081, Test MAPE: 0.3049
+2024-12-24 15:13:07,945 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7525, Test RMSE: 10.9462, Test MAPE: 0.3081
+2024-12-24 15:13:07,976 - easytorch-training - INFO - Result <test>: [test_time: 500.49 (s), test_MAE: 6.3850, test_RMSE: 10.2986, test_MAPE: 0.2862]
+2024-12-24 15:13:08,046 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_092.pt saved
+2024-12-24 15:13:08,046 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:31:16
+2024-12-24 15:13:08,047 - easytorch-training - INFO - Epoch 93 / 100
+2024-12-24 15:20:54,114 - easytorch-training - INFO - Result <train>: [train_time: 466.07 (s), lr: 6.25e-05, train_MAE: 6.0166, train_RMSE: 9.5336, train_MAPE: 0.2611]
+2024-12-24 15:20:54,119 - easytorch-training - INFO - Start validation.
+2024-12-24 15:24:56,287 - easytorch-training - INFO - Result <val>: [val_time: 242.17 (s), val_MAE: 6.2440, val_RMSE: 9.9508, val_MAPE: 0.3129]
+2024-12-24 15:33:06,827 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7342, Test RMSE: 9.0955, Test MAPE: 0.2467
+2024-12-24 15:33:06,833 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1705, Test RMSE: 9.8618, Test MAPE: 0.2763
+2024-12-24 15:33:06,838 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4161, Test RMSE: 10.3199, Test MAPE: 0.2916
+2024-12-24 15:33:06,843 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5716, Test RMSE: 10.5990, Test MAPE: 0.2999
+2024-12-24 15:33:06,848 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6762, Test RMSE: 10.7881, Test MAPE: 0.3063
+2024-12-24 15:33:06,853 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7573, Test RMSE: 10.9304, Test MAPE: 0.3107
+2024-12-24 15:33:06,884 - easytorch-training - INFO - Result <test>: [test_time: 490.60 (s), test_MAE: 6.3876, test_RMSE: 10.2849, test_MAPE: 0.2886]
+2024-12-24 15:33:06,934 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_093.pt saved
+2024-12-24 15:33:06,934 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:34:11
+2024-12-24 15:33:06,935 - easytorch-training - INFO - Epoch 94 / 100
+2024-12-24 15:41:01,123 - easytorch-training - INFO - Result <train>: [train_time: 474.19 (s), lr: 6.25e-05, train_MAE: 6.0218, train_RMSE: 9.5413, train_MAPE: 0.2657]
+2024-12-24 15:41:01,124 - easytorch-training - INFO - Start validation.
+2024-12-24 15:44:57,609 - easytorch-training - INFO - Result <val>: [val_time: 236.48 (s), val_MAE: 6.2447, val_RMSE: 9.9677, val_MAPE: 0.3094]
+2024-12-24 15:53:02,074 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7351, Test RMSE: 9.1077, Test MAPE: 0.2434
+2024-12-24 15:53:02,081 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1756, Test RMSE: 9.8908, Test MAPE: 0.2725
+2024-12-24 15:53:02,086 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4212, Test RMSE: 10.3557, Test MAPE: 0.2880
+2024-12-24 15:53:02,091 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5788, Test RMSE: 10.6438, Test MAPE: 0.2969
+2024-12-24 15:53:02,096 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6842, Test RMSE: 10.8361, Test MAPE: 0.3038
+2024-12-24 15:53:02,101 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7625, Test RMSE: 10.9714, Test MAPE: 0.3085
+2024-12-24 15:53:02,132 - easytorch-training - INFO - Result <test>: [test_time: 484.52 (s), test_MAE: 6.3929, test_RMSE: 10.3207, test_MAPE: 0.2855]
+2024-12-24 15:53:02,183 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_094.pt saved
+2024-12-24 15:53:02,183 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:36:58
+2024-12-24 15:53:02,183 - easytorch-training - INFO - Epoch 95 / 100
+2024-12-24 16:01:02,549 - easytorch-training - INFO - Result <train>: [train_time: 480.37 (s), lr: 6.25e-05, train_MAE: 6.0097, train_RMSE: 9.5258, train_MAPE: 0.2631]
+2024-12-24 16:01:02,550 - easytorch-training - INFO - Start validation.
+2024-12-24 16:04:48,303 - easytorch-training - INFO - Result <val>: [val_time: 225.75 (s), val_MAE: 6.2444, val_RMSE: 9.9617, val_MAPE: 0.3103]
+2024-12-24 16:12:33,482 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7340, Test RMSE: 9.0991, Test MAPE: 0.2440
+2024-12-24 16:12:33,488 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1726, Test RMSE: 9.8751, Test MAPE: 0.2732
+2024-12-24 16:12:33,493 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4197, Test RMSE: 10.3448, Test MAPE: 0.2885
+2024-12-24 16:12:33,498 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5759, Test RMSE: 10.6302, Test MAPE: 0.2975
+2024-12-24 16:12:33,502 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6801, Test RMSE: 10.8217, Test MAPE: 0.3039
+2024-12-24 16:12:33,507 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7590, Test RMSE: 10.9605, Test MAPE: 0.3075
+2024-12-24 16:12:33,535 - easytorch-training - INFO - Result <test>: [test_time: 465.23 (s), test_MAE: 6.3902, test_RMSE: 10.3083, test_MAPE: 0.2858]
+2024-12-24 16:12:33,581 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_095.pt saved
+2024-12-24 16:12:33,581 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:39:17
+2024-12-24 16:12:33,581 - easytorch-training - INFO - Epoch 96 / 100
+2024-12-24 16:20:31,183 - easytorch-training - INFO - Result <train>: [train_time: 477.60 (s), lr: 6.25e-05, train_MAE: 6.0222, train_RMSE: 9.5447, train_MAPE: 0.2663]
+2024-12-24 16:20:31,185 - easytorch-training - INFO - Start validation.
+2024-12-24 16:24:41,180 - easytorch-training - INFO - Result <val>: [val_time: 249.99 (s), val_MAE: 6.2385, val_RMSE: 9.9569, val_MAPE: 0.3106]
+2024-12-24 16:24:41,286 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_best_val_MAE.pt saved
+2024-12-24 16:32:57,463 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7306, Test RMSE: 9.1039, Test MAPE: 0.2429
+2024-12-24 16:32:57,469 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1664, Test RMSE: 9.8718, Test MAPE: 0.2723
+2024-12-24 16:32:57,474 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4114, Test RMSE: 10.3317, Test MAPE: 0.2881
+2024-12-24 16:32:57,479 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5674, Test RMSE: 10.6120, Test MAPE: 0.2977
+2024-12-24 16:32:57,484 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6723, Test RMSE: 10.8047, Test MAPE: 0.3047
+2024-12-24 16:32:57,489 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7507, Test RMSE: 10.9411, Test MAPE: 0.3089
+2024-12-24 16:32:57,520 - easytorch-training - INFO - Result <test>: [test_time: 496.23 (s), test_MAE: 6.3831, test_RMSE: 10.2968, test_MAPE: 0.2858]
+2024-12-24 16:32:57,569 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_096.pt saved
+2024-12-24 16:32:57,570 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:42:28
+2024-12-24 16:32:57,570 - easytorch-training - INFO - Epoch 97 / 100
+2024-12-24 16:40:54,044 - easytorch-training - INFO - Result <train>: [train_time: 476.47 (s), lr: 6.25e-05, train_MAE: 6.0123, train_RMSE: 9.5310, train_MAPE: 0.2650]
+2024-12-24 16:40:54,045 - easytorch-training - INFO - Start validation.
+2024-12-24 16:45:05,512 - easytorch-training - INFO - Result <val>: [val_time: 251.47 (s), val_MAE: 6.2422, val_RMSE: 9.9626, val_MAPE: 0.3088]
+2024-12-24 16:53:23,580 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7343, Test RMSE: 9.1062, Test MAPE: 0.2437
+2024-12-24 16:53:23,586 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1710, Test RMSE: 9.8787, Test MAPE: 0.2719
+2024-12-24 16:53:23,591 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4166, Test RMSE: 10.3441, Test MAPE: 0.2870
+2024-12-24 16:53:23,596 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5732, Test RMSE: 10.6269, Test MAPE: 0.2963
+2024-12-24 16:53:23,601 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6792, Test RMSE: 10.8234, Test MAPE: 0.3027
+2024-12-24 16:53:23,606 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7603, Test RMSE: 10.9649, Test MAPE: 0.3070
+2024-12-24 16:53:23,638 - easytorch-training - INFO - Result <test>: [test_time: 498.12 (s), test_MAE: 6.3891, test_RMSE: 10.3103, test_MAPE: 0.2848]
+2024-12-24 16:53:23,686 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_097.pt saved
+2024-12-24 16:53:23,687 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:45:37
+2024-12-24 16:53:23,687 - easytorch-training - INFO - Epoch 98 / 100
+2024-12-24 17:01:31,276 - easytorch-training - INFO - Result <train>: [train_time: 487.59 (s), lr: 6.25e-05, train_MAE: 6.0128, train_RMSE: 9.5215, train_MAPE: 0.2621]
+2024-12-24 17:01:31,277 - easytorch-training - INFO - Start validation.
+2024-12-24 17:05:54,442 - easytorch-training - INFO - Result <val>: [val_time: 263.16 (s), val_MAE: 6.2475, val_RMSE: 9.9719, val_MAPE: 0.3132]
+2024-12-24 17:13:53,906 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7361, Test RMSE: 9.1077, Test MAPE: 0.2452
+2024-12-24 17:13:53,912 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1804, Test RMSE: 9.8892, Test MAPE: 0.2761
+2024-12-24 17:13:53,917 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4247, Test RMSE: 10.3566, Test MAPE: 0.2913
+2024-12-24 17:13:53,922 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5833, Test RMSE: 10.6461, Test MAPE: 0.3004
+2024-12-24 17:13:53,927 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6899, Test RMSE: 10.8428, Test MAPE: 0.3067
+2024-12-24 17:13:53,932 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7703, Test RMSE: 10.9828, Test MAPE: 0.3107
+2024-12-24 17:13:53,963 - easytorch-training - INFO - Result <test>: [test_time: 479.52 (s), test_MAE: 6.3975, test_RMSE: 10.3242, test_MAPE: 0.2884]
+2024-12-24 17:13:54,012 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_098.pt saved
+2024-12-24 17:13:54,013 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:48:47
+2024-12-24 17:13:54,013 - easytorch-training - INFO - Epoch 99 / 100
+2024-12-24 17:22:18,862 - easytorch-training - INFO - Result <train>: [train_time: 504.85 (s), lr: 6.25e-05, train_MAE: 6.0142, train_RMSE: 9.5398, train_MAPE: 0.2622]
+2024-12-24 17:22:18,864 - easytorch-training - INFO - Start validation.
+2024-12-24 17:26:20,251 - easytorch-training - INFO - Result <val>: [val_time: 241.39 (s), val_MAE: 6.2441, val_RMSE: 9.9616, val_MAPE: 0.3109]
+2024-12-24 17:35:14,565 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7333, Test RMSE: 9.1012, Test MAPE: 0.2429
+2024-12-24 17:35:14,571 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1712, Test RMSE: 9.8689, Test MAPE: 0.2738
+2024-12-24 17:35:14,576 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4172, Test RMSE: 10.3337, Test MAPE: 0.2894
+2024-12-24 17:35:14,581 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5761, Test RMSE: 10.6287, Test MAPE: 0.2979
+2024-12-24 17:35:14,586 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6803, Test RMSE: 10.8193, Test MAPE: 0.3050
+2024-12-24 17:35:14,591 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7599, Test RMSE: 10.9575, Test MAPE: 0.3085
+2024-12-24 17:35:14,622 - easytorch-training - INFO - Result <test>: [test_time: 534.37 (s), test_MAE: 6.3897, test_RMSE: 10.3046, test_MAPE: 0.2863]
+2024-12-24 17:35:14,674 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_099.pt saved
+2024-12-24 17:35:14,674 - easytorch-training - INFO - The estimated training finish time is 2024-12-24 17:52:43
+2024-12-24 17:35:14,674 - easytorch-training - INFO - Epoch 100 / 100
+2024-12-24 17:43:12,694 - easytorch-training - INFO - Result <train>: [train_time: 478.02 (s), lr: 6.25e-05, train_MAE: 6.0246, train_RMSE: 9.5536, train_MAPE: 0.2623]
+2024-12-24 17:43:12,696 - easytorch-training - INFO - Start validation.
+2024-12-24 17:47:20,689 - easytorch-training - INFO - Result <val>: [val_time: 247.99 (s), val_MAE: 6.2439, val_RMSE: 9.9647, val_MAPE: 0.3114]
+2024-12-24 17:55:23,833 - easytorch-training - INFO - Evaluate best model on test data for horizon 1, Test MAE: 5.7321, Test RMSE: 9.0996, Test MAPE: 0.2434
+2024-12-24 17:55:23,839 - easytorch-training - INFO - Evaluate best model on test data for horizon 2, Test MAE: 6.1713, Test RMSE: 9.8741, Test MAPE: 0.2733
+2024-12-24 17:55:23,844 - easytorch-training - INFO - Evaluate best model on test data for horizon 3, Test MAE: 6.4189, Test RMSE: 10.3438, Test MAPE: 0.2893
+2024-12-24 17:55:23,849 - easytorch-training - INFO - Evaluate best model on test data for horizon 4, Test MAE: 6.5749, Test RMSE: 10.6256, Test MAPE: 0.2991
+2024-12-24 17:55:23,854 - easytorch-training - INFO - Evaluate best model on test data for horizon 5, Test MAE: 6.6794, Test RMSE: 10.8133, Test MAPE: 0.3061
+2024-12-24 17:55:23,859 - easytorch-training - INFO - Evaluate best model on test data for horizon 6, Test MAE: 6.7585, Test RMSE: 10.9521, Test MAPE: 0.3092
+2024-12-24 17:55:23,890 - easytorch-training - INFO - Result <test>: [test_time: 483.20 (s), test_MAE: 6.3892, test_RMSE: 10.3043, test_MAPE: 0.2867]
+2024-12-24 17:55:23,938 - easytorch-training - INFO - Checkpoint checkpoints/STDMAE_100/1d7e5087a90f85fa313d05ce8c8ffdab/STDMAE_100.pt saved
+2024-12-24 17:55:23,961 - easytorch-training - INFO - The training finished at 2024-12-24 17:55:23

@@ -1,0 +1,124 @@
+DESCRIPTION: STDMAE(EXPY-TKY) configuration
+RUNNER: <class 'stdmae.stdmae_runner.stdmae_runner.STDMAERunner'>
+DATASET_CLS: <class 'stdmae.stdmae_data.forecasting_dataset.ForecastingDataset'>
+DATASET_NAME: EXPY-TKY
+DATASET_TYPE: Traffic Speed
+DATASET_INPUT_LEN: 6
+DATASET_OUTPUT_LEN: 6
+DATASET_ARGS:
+  seq_len: 288
+GPU_NUM: 2
+ENV:
+  SEED: 666
+  CUDNN:
+    ENABLED: True
+MODEL:
+  NAME: STDMAE
+  ARCH: <class 'stdmae.stdmae_arch.stdmae.STDMAE'>
+  PARAM:
+    dataset_name: EXPY-TKY
+    pre_trained_tmae_path: mask_save/TMAE_EXPY_288.pt
+    pre_trained_smae_path: mask_save/SMAE_EXPY_288.pt
+    mask_args:
+      patch_size: 6
+      in_channel: 1
+      embed_dim: 96
+      num_heads: 4
+      mlp_ratio: 4
+      dropout: 0.1
+      mask_ratio: 0.25
+      encoder_depth: 4
+      decoder_depth: 1
+      mode: forecasting
+    backend_args:
+      num_nodes: 1843
+      supports: [tensor([[0.0000e+00, 1.5078e-05, 2.9121e-05,  ..., 4.2355e-04, 5.6617e-04,
+         3.2833e-04],
+        [1.4864e-05, 0.0000e+00, 1.3857e-05,  ..., 4.2114e-04, 5.6414e-04,
+         3.1218e-04],
+        [2.8323e-05, 1.3672e-05, 0.0000e+00,  ..., 4.1843e-04, 5.6223e-04,
+         2.9719e-04],
+        ...,
+        [3.9667e-04, 4.0009e-04, 4.0291e-04,  ..., 0.0000e+00, 5.2787e-04,
+         3.9611e-04],
+        [3.5793e-03, 3.6178e-03, 3.6546e-03,  ..., 3.5634e-03, 0.0000e+00,
+         4.0000e-03],
+        [2.7160e-04, 2.6196e-04, 2.5277e-04,  ..., 3.4988e-04, 5.2339e-04,
+         0.0000e+00]]), tensor([[0.0000e+00, 1.5078e-05, 2.9121e-05,  ..., 4.2355e-04, 5.6617e-04,
+         3.2833e-04],
+        [1.4864e-05, 0.0000e+00, 1.3857e-05,  ..., 4.2114e-04, 5.6414e-04,
+         3.1218e-04],
+        [2.8323e-05, 1.3672e-05, 0.0000e+00,  ..., 4.1843e-04, 5.6223e-04,
+         2.9719e-04],
+        ...,
+        [3.9667e-04, 4.0009e-04, 4.0291e-04,  ..., 0.0000e+00, 5.2787e-04,
+         3.9611e-04],
+        [3.5793e-03, 3.6178e-03, 3.6546e-03,  ..., 3.5634e-03, 0.0000e+00,
+         4.0000e-03],
+        [2.7160e-04, 2.6196e-04, 2.5277e-04,  ..., 3.4988e-04, 5.2339e-04,
+         0.0000e+00]])]
+      dropout: 0.3
+      gcn_bool: True
+      addaptadj: True
+      aptinit: None
+      in_dim: 2
+      out_dim: 6
+      residual_channels: 32
+      dilation_channels: 32
+      skip_channels: 256
+      end_channels: 512
+      kernel_size: 2
+      blocks: 4
+      layers: 2
+  FROWARD_FEATURES: [0, 1]
+  TARGET_FEATURES: [0]
+  DDP_FIND_UNUSED_PARAMETERS: True
+TRAIN:
+  LOSS: masked_mae
+  OPTIM:
+    TYPE: Adam
+    PARAM:
+      lr: 0.002
+      weight_decay: 1e-05
+      eps: 1e-08
+  LR_SCHEDULER:
+    TYPE: MultiStepLR
+    PARAM:
+      milestones: [1, 18, 36, 54, 72]
+      gamma: 0.5
+  CLIP_GRAD_PARAM:
+    max_norm: 3.0
+  NUM_EPOCHS: 100
+  CKPT_SAVE_DIR: checkpoints/STDMAE_100
+  DATA:
+    DIR: datasets/EXPY-TKY
+    BATCH_SIZE: 4
+    PREFETCH: False
+    SHUFFLE: True
+    NUM_WORKERS: 2
+    PIN_MEMORY: True
+  NULL_VAL: 0.0
+  CL:
+    WARM_EPOCHS: 0
+    CL_EPOCHS: 6
+    PREDICTION_LENGTH: 6
+VAL:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/EXPY-TKY
+    BATCH_SIZE: 4
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: True
+TEST:
+  INTERVAL: 1
+  DATA:
+    DIR: datasets/EXPY-TKY
+    BATCH_SIZE: 4
+    PREFETCH: False
+    SHUFFLE: False
+    NUM_WORKERS: 2
+    PIN_MEMORY: True
+  EVALUATION_HORIZONS: [1, 2, 3, 4, 5, 6]
+MD5: 1d7e5087a90f85fa313d05ce8c8ffdab
