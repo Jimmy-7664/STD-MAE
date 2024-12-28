@@ -65,6 +65,10 @@ PEMSD7M&L
 :-------------------------:
 ![](results/performanceD7M&L.png)  
 
+EXPY-TKY           
+:-------------------------:
+![](results/performance_EXPYTKY.png)  
+
 You can check more baseline results at [Torch-MTS](https://github.com/XDZhelheim/Torch-MTS).
 
 ## 💿 Dependencies
