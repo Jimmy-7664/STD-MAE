@@ -28,7 +28,7 @@ BATCH_SIZE_ALL=8
 
 # ================= environment ================= #
 CFG.ENV = EasyDict()
-CFG.ENV.SEED = random.randint(0,10000000)
+CFG.ENV.SEED = 0
 CFG.ENV.CUDNN = EasyDict()
 CFG.ENV.CUDNN.ENABLED = True
 # ================= model ================= #
