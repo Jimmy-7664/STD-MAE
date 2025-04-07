@@ -41,7 +41,7 @@ CFG.ENV.CUDNN.ENABLED = True
 # ================= model ================= #
 CFG.MODEL = EasyDict()
 CFG.MODEL.NAME = "STDMAEDCRNN"
-CFG.MODEL.ARCH = STMask
+CFG.MODEL.ARCH = STDMAE
 adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME +
                      "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
