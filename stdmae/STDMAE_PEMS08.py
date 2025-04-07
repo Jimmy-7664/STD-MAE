@@ -19,22 +19,21 @@ from basicts.utils import load_adj
 CFG = EasyDict()
 
 # ================= general ================= #
-CFG.DESCRIPTION = "STDMAE(PEMS04) configuration"
+CFG.DESCRIPTION = "STDMAE(PEMS08) configuration"
 CFG.RUNNER = STDMAEDCRNNRunner
 CFG.DATASET_CLS = ForecastingDataset
-CFG.DATASET_NAME = "PEMS04"
+CFG.DATASET_NAME = "PEMS08"
 CFG.DATASET_TYPE = "Traffic flow"
 CFG.DATASET_INPUT_LEN = 12
 CFG.DATASET_OUTPUT_LEN = 12
 CFG.DATASET_ARGS = {
-    "seq_len": 288*3
+    "seq_len": 288*7
     }
 CFG.GPU_NUM = 1
-CFG._ = _
-CFG.NULL_VAL = 0.0
+
 # ================= environment ================= #
 CFG.ENV = EasyDict()
-CFG.ENV.SEED = 2
+CFG.ENV.SEED = 0
 CFG.ENV.CUDNN = EasyDict()
 CFG.ENV.CUDNN.ENABLED = True
 
@@ -46,8 +45,8 @@ adj_mx, _ = load_adj("datasets/" + CFG.DATASET_NAME +
                      "/adj_mx.pkl", "doubletransition")
 CFG.MODEL.PARAM = {
     "dataset_name": CFG.DATASET_NAME,
-    "pre_trained_tmae_path": "mask_save/TMAE_PEMS04_864.pt",
-    "pre_trained_smae_path": "mask_save/SMAE_PEMS04_864.pt",
+    "pre_trained_tmae_path": "mask_save/TMAE_PEMS08_2016.pt",
+    "pre_trained_smae_path": "mask_save/SMAE_PEMS08_2016.pt",
     "mask_args": {
                     "patch_size":12,
                     "in_channel":1,
@@ -65,7 +64,7 @@ CFG.MODEL.PARAM = {
     "horizon": 12,
     "input_dim": 2,
     "max_diffusion_step": 2,
-    "num_nodes": 307,
+    "num_nodes": 170,
     "num_rnn_layers": 2,
     "output_dim": 1,
     "rnn_units": 64,
@@ -94,11 +93,13 @@ CFG.TRAIN.LR_SCHEDULER.PARAM = {
     "gamma": 0.3
 }
 
+
 # ================= train ================= #
 # CFG.TRAIN.CLIP_GRAD_PARAM = {
-#     "max_norm": 5.0
+#     "max_norm": 3.0
 # }
 CFG.TRAIN.NUM_EPOCHS = 200
+
 CFG.TRAIN.CKPT_SAVE_DIR = os.path.join(
     "checkpoints",
     "_".join([CFG.MODEL.NAME, str(CFG.TRAIN.NUM_EPOCHS)])
@@ -113,7 +114,7 @@ CFG.TRAIN.DATA.BATCH_SIZE = 16
 CFG.TRAIN.DATA.PREFETCH = False
 CFG.TRAIN.DATA.SHUFFLE = True
 CFG.TRAIN.DATA.NUM_WORKERS = 2
-CFG.TRAIN.DATA.PIN_MEMORY = False
+CFG.TRAIN.DATA.PIN_MEMORY = True
 
 
 # ================= validate ================= #
@@ -128,11 +129,12 @@ CFG.VAL.DATA.BATCH_SIZE = 16
 CFG.VAL.DATA.PREFETCH = False
 CFG.VAL.DATA.SHUFFLE = False
 CFG.VAL.DATA.NUM_WORKERS = 2
-CFG.VAL.DATA.PIN_MEMORY = False
+CFG.VAL.DATA.PIN_MEMORY = True
 
 # ================= test ================= #
 CFG.TEST = EasyDict()
 CFG.TEST.INTERVAL = 1
+# evluation
 # test data
 CFG.TEST.DATA = EasyDict()
 # read data
@@ -142,4 +144,4 @@ CFG.TEST.DATA.BATCH_SIZE = 16
 CFG.TEST.DATA.PREFETCH = False
 CFG.TEST.DATA.SHUFFLE = False
 CFG.TEST.DATA.NUM_WORKERS = 2
-CFG.TEST.DATA.PIN_MEMORY = False
+CFG.TEST.DATA.PIN_MEMORY = True
