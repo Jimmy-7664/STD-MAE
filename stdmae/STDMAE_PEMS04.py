@@ -30,7 +30,6 @@ CFG.DATASET_ARGS = {
     "seq_len": 288*3
     }
 CFG.GPU_NUM = 1
-CFG._ = _
 CFG.NULL_VAL = 0.0
 # ================= environment ================= #
 CFG.ENV = EasyDict()
