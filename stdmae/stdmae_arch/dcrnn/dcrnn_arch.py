@@ -150,20 +150,15 @@ class DCRNN(nn.Module, Seq2SeqAttrs):
 
         # DCRNN
         encoder_hidden_state = self.encoder(history_data)
-        # print(encoder_hidden_state.shape)
         encoder_hidden_state = encoder_hidden_state.view(self.num_rnn_layers, batch_size, num_nodes, -1)
-        # print("Enco:",encoder_hidden_state.shape)
-        hidden_states_t = self.fc_his_t(hidden_states[:,:,:96])
-        # print("hidden_states_t:",hidden_states_t.shape)
+        hidden_states_t = self.fc_his_t(hidden_states[:,:,:hidden_states.shape[-1]//2])
          # B, N, D
         hidden_states_t = hidden_states_t.view(batch_size,num_nodes,encoder_hidden_state.shape[-1],encoder_hidden_state.shape[0])
         hidden_states_t=hidden_states_t.permute(3,0,1,2)
-        print("hidden_states_t:",hidden_states_t.shape)         # B, N, D
-        hidden_states_s = self.fc_his_s(hidden_states[:,:,96:])
+        hidden_states_s = self.fc_his_s(hidden_states[:,:,hidden_states.shape[-1]//2:])
          # B, N, D
         hidden_states_s = hidden_states_s.view(batch_size,num_nodes,encoder_hidden_state.shape[-1],encoder_hidden_state.shape[0])
         hidden_states_s=hidden_states_s.permute(3,0,1,2)
-        # print("hidden_states_s:",hidden_states_s.shape)
 
         encoder_hidden_state += hidden_states_t
         encoder_hidden_state += hidden_states_s       
