@@ -13,7 +13,17 @@
 ## Citation
 > [!NOTE] 
 > If you find this repository useful for your research, please cite our work :)
-> 
+>
+> IJCAI-2024 Version
+> ```LaTeX
+>@inproceedings{gao2024spatial,
+>  title={Spatial-temporal-decoupled masked pre-training for spatiotemporal forecasting},
+>  author={Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Ma, Yuxin and Song, Xuan},
+>  booktitle={Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence},
+>  pages={3998--4006},
+>  year={2024}
+>}
+>  ```
 > ArXiv Version
 > ```LaTeX
 > @article{gao2023spatio,
@@ -22,23 +32,7 @@
 >   journal={arXiv preprint arXiv:2312.00516},
 >   year={2023}
 > }
->  ```
-> IJCAI-2024 Version
-> ```LaTeX
->@inproceedings{ijcai2024p0442,
->  title     = {Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting},
->  author    = {Gao, Haotian and Jiang, Renhe and Dong, Zheng and Deng, Jinliang and Ma, Yuxin and Song, Xuan},
->  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
->               Artificial Intelligence, {IJCAI-24}},
->  publisher = {International Joint Conferences on Artificial Intelligence Organization},
->  editor    = {Kate Larson},
->  pages     = {3998--4006},
->  year      = {2024},
->  month     = {8},
->  note      = {Main Track},
->  doi       = {10.24963/ijcai.2024/442},
->  url       = {https://doi.org/10.24963/ijcai.2024/442},
->}
+>
 >  ```
 ## Performance on Spatiotemporal Forecasting Benchmarks
 * **Please note you can get a much better performance on PEMS07 dataset using pre-training length of 2016. But it is a time-cosuming operation.**
