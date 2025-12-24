@@ -32,7 +32,7 @@ class STDMAE(nn.Module):
         
         checkpoint_dict = torch.load(self.pre_trained_smae_path)
         self.smae.load_state_dict(checkpoint_dict["model_state_dict"])
-        
+        self.smae.spatial=True
         # freeze parameters
         for param in self.tmae.parameters():
             param.requires_grad = False
