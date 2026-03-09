@@ -38,6 +38,10 @@ class STDMAE(nn.Module):
             param.requires_grad = False
         for param in self.smae.parameters():
             param.requires_grad = False
+        # keep pre-trained encoders deterministic (disable dropout/bn updates)
+        self.tmae.eval()
+        self.smae.eval()
+        
     def forward(self, history_data: torch.Tensor, long_history_data: torch.Tensor, future_data: torch.Tensor, batch_seen: int, epoch: int, **kwargs) -> torch.Tensor:
         """Feed forward of STDMAE.
 
