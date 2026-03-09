@@ -58,8 +58,9 @@ class STDMAE(nn.Module):
 
         batch_size, _, num_nodes, _ = history_data.shape
 
-        hidden_states_t = self.tmae(long_history_data[..., [0]])
-        hidden_states_s = self.smae(long_history_data[..., [0]])
+        with torch.no_grad():
+            hidden_states_t = self.tmae(long_history_data[..., [0]])
+            hidden_states_s = self.smae(long_history_data[..., [0]])
         hidden_states=torch.cat((hidden_states_t,hidden_states_s),-1)
         
         # enhance
